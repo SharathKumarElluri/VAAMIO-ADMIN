@@ -1,0 +1,11 @@
+{
+  "remoteName": "origin",
+  "projects": [
+    {
+      "id": "prj_8jrd1B0G3YS6Qb1wqLsyfYkXxENj",
+      "name": "vaamio-admin",
+      "directory": ".",
+      "orgId": "team_HpdsMTcjYm7ON2zlnHJYlAFx"
+    }
+  ]
+}
