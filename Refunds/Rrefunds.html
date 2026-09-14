@@ -1,0 +1,2529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="VAAMIO Admin Refunds">
+
+    <title>VAAMIO | Refunds</title>
+
+
+    <!-- =====================================================
+         BOOTSTRAP
+    ====================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         REFUNDS CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="Refunds.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     MOBILE HEADER
+===================================================== -->
+
+<header class="admin-mobile-header">
+
+    <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        type="button"
+        aria-label="Open admin menu"
+        title="Open admin menu">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+
+    <div class="mobile-brand">
+
+        <strong>VAAMIO</strong>
+
+        <small>ADMIN PANEL</small>
+
+    </div>
+
+
+    <button
+        class="mobile-notification"
+        type="button"
+        aria-label="Notifications"
+        title="Notifications">
+
+        <i class="fa-regular fa-bell"></i>
+
+        <span>3</span>
+
+    </button>
+
+</header>
+
+
+
+<!-- =====================================================
+     SIDEBAR OVERLAY
+===================================================== -->
+
+<div
+    class="sidebar-overlay"
+    id="sidebarOverlay">
+</div>
+
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside
+    class="admin-sidebar"
+    id="adminSidebar">
+
+
+    <!-- LOGO -->
+
+    <div class="admin-logo">
+
+        <strong>VAAMIO</strong>
+
+        <span>ADMIN PANEL</span>
+
+    </div>
+
+
+    <!-- ADMIN USER -->
+
+    <div class="admin-user">
+
+        <div class="admin-avatar">
+            A
+        </div>
+
+        <div>
+
+            <strong>Admin</strong>
+
+            <small>Super Admin</small>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+    <nav class="admin-nav">
+
+
+        <!-- MAIN -->
+
+        <div class="nav-heading">
+            MAIN
+        </div>
+
+
+        <a
+            href="../index.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-chart-pie"></i>
+
+            <span>Dashboard</span>
+
+        </a>
+
+
+
+        <!-- SALES -->
+
+        <div class="nav-heading">
+            SALES
+        </div>
+
+
+        <a
+            href="../Orders/Orders.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            <span>Orders</span>
+
+            <b>12</b>
+
+        </a>
+
+
+        <a
+            href="../Payments/Payments.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-credit-card"></i>
+
+            <span>Payments</span>
+
+        </a>
+
+
+        <a
+            href="Refunds.html"
+            class="nav-link active">
+
+            <i class="fa-solid fa-rotate-left"></i>
+
+            <span>Refunds</span>
+
+        </a>
+
+
+        <a
+            href="../Shipping/Shipping.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-truck"></i>
+
+            <span>Shipping</span>
+
+        </a>
+
+
+
+        <!-- CATALOG -->
+
+        <div class="nav-heading">
+            CATALOG
+        </div>
+
+
+        <a
+            href="../Products/Products.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-box"></i>
+
+            <span>Products</span>
+
+        </a>
+
+
+        <a
+            href="../Categories/Categories.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-layer-group"></i>
+
+            <span>Categories</span>
+
+        </a>
+
+
+        <a
+            href="../Inventory/Inventory.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-warehouse"></i>
+
+            <span>Inventory</span>
+
+            <b class="warning">
+                3
+            </b>
+
+        </a>
+
+
+
+        <!-- CUSTOMERS -->
+
+        <div class="nav-heading">
+            CUSTOMERS
+        </div>
+
+
+        <a
+            href="../Customers/Customers.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-users"></i>
+
+            <span>Customers</span>
+
+        </a>
+
+
+        <a
+            href="../Reviews/Reviews.html"
+            class="nav-link">
+
+            <i class="fa-regular fa-star"></i>
+
+            <span>Reviews</span>
+
+        </a>
+
+
+        <a
+            href="../Support/Support.html"
+            class="nav-link">
+
+            <i class="fa-regular fa-comments"></i>
+
+            <span>Support</span>
+
+        </a>
+
+
+
+        <!-- MARKETING -->
+
+        <div class="nav-heading">
+            MARKETING
+        </div>
+
+
+        <a
+            href="../Coupons/Coupons.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-ticket"></i>
+
+            <span>Coupons</span>
+
+        </a>
+
+
+        <a
+            href="../Offers/Offers.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-bullseye"></i>
+
+            <span>Offers</span>
+
+        </a>
+
+
+        <a
+            href="../Banners/Banners.html"
+            class="nav-link">
+
+            <i class="fa-regular fa-image"></i>
+
+            <span>Banners</span>
+
+        </a>
+
+
+        <a
+            href="../Newsletter/Newsletter.html"
+            class="nav-link">
+
+            <i class="fa-regular fa-envelope"></i>
+
+            <span>Newsletter</span>
+
+        </a>
+
+
+
+        <!-- BUSINESS -->
+
+        <div class="nav-heading">
+            BUSINESS
+        </div>
+
+
+        <a
+            href="../Bulk-Orders/Bulk-Orders.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-handshake"></i>
+
+            <span>Bulk Orders</span>
+
+        </a>
+
+
+        <a
+            href="../Distributor-Review/Distributor.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-store"></i>
+
+            <span>Distributor-Review</span>
+
+        </a>
+
+
+        <a
+            href="../Franchise/Franchise.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-building"></i>
+
+            <span>Franchise</span>
+
+        </a>
+
+
+
+        <!-- REPORTS -->
+
+        <div class="nav-heading">
+            REPORTS
+        </div>
+
+
+        <a
+            href="../Sales-Reports/Sales-Reports.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            <span>Sales Reports</span>
+
+        </a>
+
+
+        <a
+            href="../Product-Reports/Product-Reports.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-chart-column"></i>
+
+            <span>Product Reports</span>
+
+        </a>
+
+
+
+        <!-- SYSTEM -->
+
+        <div class="nav-heading">
+            SYSTEM
+        </div>
+
+
+        <a
+            href="../Staff-Roles/Staff-Roles.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-user-shield"></i>
+
+            <span>Staff & Roles</span>
+
+        </a>
+
+
+        <a
+            href="../Audit-Logs/Audit-Logs.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-file-shield"></i>
+
+            <span>Audit Logs</span>
+
+        </a>
+
+
+        <a
+            href="../Settings/Settings.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-gear"></i>
+
+            <span>Settings</span>
+
+        </a>
+
+
+        <div class="nav-divider"></div>
+
+
+        <a
+            href="../index.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            <span>View Website</span>
+
+        </a>
+
+
+        <a
+            href="#"
+            class="nav-link logout-link">
+
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+            <span>Logout</span>
+
+        </a>
+
+    </nav>
+
+</aside>
+
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main class="admin-main">
+
+
+    <!-- =================================================
+         TOPBAR
+    ================================================== -->
+
+    <header class="admin-topbar">
+
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="search"
+                id="globalRefundSearch"
+                placeholder="Search refunds, orders, customers..."
+                aria-label="Search refunds">
+
+        </div>
+
+
+        <div class="topbar-right">
+
+
+            <button
+                class="notification-btn"
+                type="button"
+                aria-label="Notifications"
+                title="Notifications">
+
+                <i class="fa-regular fa-bell"></i>
+
+                <span>3</span>
+
+            </button>
+
+
+            <div class="admin-profile">
+
+                <div class="profile-avatar">
+                    A
+                </div>
+
+                <div>
+
+                    <strong>Admin</strong>
+
+                    <small>Super Admin</small>
+
+                </div>
+
+                <i class="fa-solid fa-chevron-down"></i>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================================
+         CONTENT
+    ================================================== -->
+
+    <div class="admin-content">
+
+
+        <!-- =================================================
+             PAGE HEADER
+        ================================================== -->
+
+        <section class="page-header">
+
+
+            <div>
+
+                <span class="page-eyebrow">
+                    SALES MANAGEMENT
+                </span>
+
+                <h1>
+                    Refunds
+                </h1>
+
+                <p>
+                    Review refund requests, processed refunds and customer returns.
+                </p>
+
+            </div>
+
+
+            <button
+                class="refund-export-btn"
+                id="exportRefundsBtn"
+                type="button"
+                aria-label="Export refunds"
+                title="Export refunds">
+
+                <i class="fa-solid fa-download"></i>
+
+                Export Refunds
+
+            </button>
+
+        </section>
+
+
+
+        <!-- =================================================
+             REFUND STATISTICS
+        ================================================== -->
+
+        <div class="row g-3">
+
+
+            <!-- TOTAL REFUNDS -->
+
+            <div class="col-6 col-xl-3">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+
+                        <i class="fa-solid fa-rotate-left"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Total Refunds
+                        </span>
+
+                        <strong>
+                            74
+                        </strong>
+
+                        <small>
+                            <i class="fa-solid fa-arrow-up"></i>
+                            5.4% this month
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PENDING -->
+
+            <div class="col-6 col-xl-3">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">
+
+                        <i class="fa-solid fa-clock"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Pending
+                        </span>
+
+                        <strong>
+                            12
+                        </strong>
+
+                        <small>
+                            Awaiting review
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- APPROVED -->
+
+            <div class="col-6 col-xl-3">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Approved
+                        </span>
+
+                        <strong>
+                            9
+                        </strong>
+
+                        <small>
+                            Ready to process
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- REFUNDED -->
+
+            <div class="col-6 col-xl-3">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon red">
+
+                        <i class="fa-solid fa-money-bill-transfer"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Refunded
+                        </span>
+
+                        <strong>
+                            53
+                        </strong>
+
+                        <small>
+                            Successfully completed
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             REFUND OVERVIEW
+        ================================================== -->
+
+        <section class="dashboard-grid mt-4">
+
+
+            <!-- REFUND SUMMARY -->
+
+            <div class="admin-card">
+
+
+                <div class="admin-card-header">
+
+                    <div>
+
+                        <span>
+                            REFUND OVERVIEW
+                        </span>
+
+                        <h2>
+                            Refund Summary
+                        </h2>
+
+                    </div>
+
+
+                    <select
+                        class="refund-period-select"
+                        aria-label="Select refund period">
+
+                        <option>
+                            This Month
+                        </option>
+
+                        <option>
+                            Last Month
+                        </option>
+
+                        <option>
+                            Last 3 Months
+                        </option>
+
+                        <option>
+                            This Year
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="refund-total">
+
+                    <strong>
+                        ₹18,420
+                    </strong>
+
+                    <span>
+                        Total Refunded
+                    </span>
+
+                </div>
+
+
+                <div class="refund-breakdown">
+
+
+                    <div class="refund-breakdown-item">
+
+                        <div class="refund-breakdown-icon pending">
+
+                            <i class="fa-solid fa-clock"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Pending
+                            </span>
+
+                            <strong>
+                                ₹4,120
+                            </strong>
+
+                            <small>
+                                12 requests
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="refund-breakdown-item">
+
+                        <div class="refund-breakdown-icon approved">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Approved
+                            </span>
+
+                            <strong>
+                                ₹2,860
+                            </strong>
+
+                            <small>
+                                9 requests
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="refund-breakdown-item">
+
+                        <div class="refund-breakdown-icon completed">
+
+                            <i class="fa-solid fa-money-bill-transfer"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Completed
+                            </span>
+
+                            <strong>
+                                ₹11,440
+                            </strong>
+
+                            <small>
+                                53 refunds
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="refund-breakdown-item">
+
+                        <div class="refund-breakdown-icon rejected">
+
+                            <i class="fa-solid fa-circle-xmark"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Rejected
+                            </span>
+
+                            <strong>
+                                ₹1,240
+                            </strong>
+
+                            <small>
+                                6 requests
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- REFUND REASONS -->
+
+            <div class="admin-card">
+
+
+                <div class="admin-card-header">
+
+                    <div>
+
+                        <span>
+                            CUSTOMER RETURNS
+                        </span>
+
+                        <h2>
+                            Refund Reasons
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="reason-list">
+
+
+                    <div class="reason-item">
+
+                        <div class="reason-top">
+
+                            <strong>
+                                Product damaged
+                            </strong>
+
+                            <span>
+                                32%
+                            </span>
+
+                        </div>
+
+                        <div class="reason-bar">
+
+                            <span class="reason-32"></span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="reason-item">
+
+                        <div class="reason-top">
+
+                            <strong>
+                                Wrong product
+                            </strong>
+
+                            <span>
+                                24%
+                            </span>
+
+                        </div>
+
+                        <div class="reason-bar">
+
+                            <span class="reason-24"></span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="reason-item">
+
+                        <div class="reason-top">
+
+                            <strong>
+                                Product quality
+                            </strong>
+
+                            <span>
+                                21%
+                            </span>
+
+                        </div>
+
+                        <div class="reason-bar">
+
+                            <span class="reason-21"></span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="reason-item">
+
+                        <div class="reason-top">
+
+                            <strong>
+                                Customer changed mind
+                            </strong>
+
+                            <span>
+                                14%
+                            </span>
+
+                        </div>
+
+                        <div class="reason-bar">
+
+                            <span class="reason-14"></span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="reason-item">
+
+                        <div class="reason-top">
+
+                            <strong>
+                                Other
+                            </strong>
+
+                            <span>
+                                9%
+                            </span>
+
+                        </div>
+
+                        <div class="reason-bar">
+
+                            <span class="reason-9"></span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ALL REFUNDS
+        ================================================== -->
+
+        <section class="admin-card mt-4">
+
+
+            <div class="admin-card-header">
+
+                <div>
+
+                    <span>
+                        REFUND MANAGEMENT
+                    </span>
+
+                    <h2>
+                        All Refunds
+                    </h2>
+
+                </div>
+
+
+                <span class="refund-count">
+                    74 Refund Requests
+                </span>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 FILTERS
+            ================================================== -->
+
+            <div class="refund-filters">
+
+
+                <div class="refund-search">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        id="refundSearch"
+                        placeholder="Search refund ID, order or customer..."
+                        aria-label="Search refund ID, order or customer">
+
+                </div>
+
+
+                <label class="refund-filter-label">
+
+                    <span>Status</span>
+
+                    <select
+                        id="refundStatusFilter"
+                        class="refund-filter-select"
+                        aria-label="Filter refunds by status">
+
+                        <option value="all">
+                            All Status
+                        </option>
+
+                        <option value="pending">
+                            Pending
+                        </option>
+
+                        <option value="approved">
+                            Approved
+                        </option>
+
+                        <option value="refunded">
+                            Refunded
+                        </option>
+
+                        <option value="rejected">
+                            Rejected
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <label class="refund-filter-label">
+
+                    <span>Reason</span>
+
+                    <select
+                        id="refundReasonFilter"
+                        class="refund-filter-select"
+                        aria-label="Filter refunds by reason">
+
+                        <option value="all">
+                            All Reasons
+                        </option>
+
+                        <option value="damaged">
+                            Product Damaged
+                        </option>
+
+                        <option value="wrong">
+                            Wrong Product
+                        </option>
+
+                        <option value="quality">
+                            Product Quality
+                        </option>
+
+                        <option value="changed">
+                            Changed Mind
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <label class="refund-filter-label">
+
+                    <span>Sort</span>
+
+                    <select
+                        class="refund-filter-select"
+                        aria-label="Sort refunds">
+
+                        <option>
+                            Newest
+                        </option>
+
+                        <option>
+                            Oldest
+                        </option>
+
+                        <option>
+                            Amount: High to Low
+                        </option>
+
+                        <option>
+                            Amount: Low to High
+                        </option>
+
+                    </select>
+
+                </label>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 DESKTOP TABLE
+            ================================================== -->
+
+            <div class="admin-table-wrapper">
+
+                <table class="admin-table refunds-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Refund
+                            </th>
+
+                            <th>
+                                Order
+                            </th>
+
+                            <th>
+                                Customer
+                            </th>
+
+                            <th>
+                                Date
+                            </th>
+
+                            <th>
+                                Reason
+                            </th>
+
+                            <th>
+                                Amount
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                            <th>
+                                Action
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <!-- REFUND 1 -->
+
+                        <tr
+                            data-status="pending"
+                            data-reason="damaged">
+
+                            <td>
+
+                                <strong>
+                                    REF1024
+                                </strong>
+
+                            </td>
+
+                            <td>
+                                #VAAM1024
+                            </td>
+
+                            <td>
+                                Rahul Sharma
+                            </td>
+
+                            <td>
+                                Sep 14, 2026
+                            </td>
+
+                            <td>
+                                Product Damaged
+                            </td>
+
+                            <td>
+
+                                <strong>
+                                    ₹499
+                                </strong>
+
+                            </td>
+
+                            <td>
+
+                                <span class="refund-status pending">
+                                    Pending
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button
+                                    class="admin-view-btn"
+                                    type="button"
+                                    aria-label="View refund REF1024"
+                                    title="View refund">
+
+                                    <i class="fa-solid fa-eye"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- REFUND 2 -->
+
+                        <tr
+                            data-status="approved"
+                            data-reason="wrong">
+
+                            <td>
+
+                                <strong>
+                                    REF1023
+                                </strong>
+
+                            </td>
+
+                            <td>
+                                #VAAM1023
+                            </td>
+
+                            <td>
+                                Sneha Reddy
+                            </td>
+
+                            <td>
+                                Sep 14, 2026
+                            </td>
+
+                            <td>
+                                Wrong Product
+                            </td>
+
+                            <td>
+
+                                <strong>
+                                    ₹899
+                                </strong>
+
+                            </td>
+
+                            <td>
+
+                                <span class="refund-status approved">
+                                    Approved
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button
+                                    class="admin-view-btn"
+                                    type="button"
+                                    aria-label="View refund REF1023"
+                                    title="View refund">
+
+                                    <i class="fa-solid fa-eye"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- REFUND 3 -->
+
+                        <tr
+                            data-status="refunded"
+                            data-reason="quality">
+
+                            <td>
+
+                                <strong>
+                                    REF1022
+                                </strong>
+
+                            </td>
+
+                            <td>
+                                #VAAM1022
+                            </td>
+
+                            <td>
+                                Arjun Kumar
+                            </td>
+
+                            <td>
+                                Sep 13, 2026
+                            </td>
+
+                            <td>
+                                Product Quality
+                            </td>
+
+                            <td>
+
+                                <strong>
+                                    ₹649
+                                </strong>
+
+                            </td>
+
+                            <td>
+
+                                <span class="refund-status refunded">
+                                    Refunded
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button
+                                    class="admin-view-btn"
+                                    type="button"
+                                    aria-label="View refund REF1022"
+                                    title="View refund">
+
+                                    <i class="fa-solid fa-eye"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- REFUND 4 -->
+
+                        <tr
+                            data-status="pending"
+                            data-reason="changed">
+
+                            <td>
+
+                                <strong>
+                                    REF1021
+                                </strong>
+
+                            </td>
+
+                            <td>
+                                #VAAM1021
+                            </td>
+
+                            <td>
+                                Priya Singh
+                            </td>
+
+                            <td>
+                                Sep 13, 2026
+                            </td>
+
+                            <td>
+                                Changed Mind
+                            </td>
+
+                            <td>
+
+                                <strong>
+                                    ₹729
+                                </strong>
+
+                            </td>
+
+                            <td>
+
+                                <span class="refund-status pending">
+                                    Pending
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button
+                                    class="admin-view-btn"
+                                    type="button"
+                                    aria-label="View refund REF1021"
+                                    title="View refund">
+
+                                    <i class="fa-solid fa-eye"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- REFUND 5 -->
+
+                        <tr
+                            data-status="rejected"
+                            data-reason="quality">
+
+                            <td>
+
+                                <strong>
+                                    REF1020
+                                </strong>
+
+                            </td>
+
+                            <td>
+                                #VAAM1020
+                            </td>
+
+                            <td>
+                                Kiran Reddy
+                            </td>
+
+                            <td>
+                                Sep 12, 2026
+                            </td>
+
+                            <td>
+                                Product Quality
+                            </td>
+
+                            <td>
+
+                                <strong>
+                                    ₹1,099
+                                </strong>
+
+                            </td>
+
+                            <td>
+
+                                <span class="refund-status rejected">
+                                    Rejected
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button
+                                    class="admin-view-btn"
+                                    type="button"
+                                    aria-label="View refund REF1020"
+                                    title="View refund">
+
+                                    <i class="fa-solid fa-eye"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- REFUND 6 -->
+
+                        <tr
+                            data-status="refunded"
+                            data-reason="damaged">
+
+                            <td>
+
+                                <strong>
+                                    REF1019
+                                </strong>
+
+                            </td>
+
+                            <td>
+                                #VAAM1019
+                            </td>
+
+                            <td>
+                                Vikas Mehta
+                            </td>
+
+                            <td>
+                                Sep 12, 2026
+                            </td>
+
+                            <td>
+                                Product Damaged
+                            </td>
+
+                            <td>
+
+                                <strong>
+                                    ₹1,179
+                                </strong>
+
+                            </td>
+
+                            <td>
+
+                                <span class="refund-status refunded">
+                                    Refunded
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button
+                                    class="admin-view-btn"
+                                    type="button"
+                                    aria-label="View refund REF1019"
+                                    title="View refund">
+
+                                    <i class="fa-solid fa-eye"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 MOBILE REFUND CARDS
+            ================================================== -->
+
+            <div class="mobile-refunds">
+
+
+                <!-- REFUND 1 -->
+
+                <article
+                    class="mobile-refund-card"
+                    data-status="pending"
+                    data-reason="damaged">
+
+
+                    <div class="mobile-refund-top">
+
+                        <div>
+
+                            <strong>
+                                REF1024
+                            </strong>
+
+                            <small>
+                                #VAAM1024 • Sep 14, 2026
+                            </small>
+
+                        </div>
+
+
+                        <span class="refund-status pending">
+                            Pending
+                        </span>
+
+                    </div>
+
+
+                    <div class="mobile-refund-customer">
+
+                        <strong>
+                            Rahul Sharma
+                        </strong>
+
+                        <small>
+                            Product Damaged
+                        </small>
+
+                    </div>
+
+
+                    <div class="mobile-refund-info">
+
+                        <div>
+
+                            <span>
+                                Reason
+                            </span>
+
+                            <strong>
+                                Damaged
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Amount
+                            </span>
+
+                            <strong>
+                                ₹499
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="mobile-refund-btn"
+                        type="button"
+                        aria-label="View refund REF1024"
+                        title="View refund">
+
+                        <i class="fa-solid fa-eye"></i>
+
+                        View Refund
+
+                    </button>
+
+                </article>
+
+
+
+                <!-- REFUND 2 -->
+
+                <article
+                    class="mobile-refund-card"
+                    data-status="approved"
+                    data-reason="wrong">
+
+
+                    <div class="mobile-refund-top">
+
+                        <div>
+
+                            <strong>
+                                REF1023
+                            </strong>
+
+                            <small>
+                                #VAAM1023 • Sep 14, 2026
+                            </small>
+
+                        </div>
+
+
+                        <span class="refund-status approved">
+                            Approved
+                        </span>
+
+                    </div>
+
+
+                    <div class="mobile-refund-customer">
+
+                        <strong>
+                            Sneha Reddy
+                        </strong>
+
+                        <small>
+                            Wrong Product
+                        </small>
+
+                    </div>
+
+
+                    <div class="mobile-refund-info">
+
+                        <div>
+
+                            <span>
+                                Reason
+                            </span>
+
+                            <strong>
+                                Wrong Product
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Amount
+                            </span>
+
+                            <strong>
+                                ₹899
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="mobile-refund-btn"
+                        type="button"
+                        aria-label="View refund REF1023"
+                        title="View refund">
+
+                        <i class="fa-solid fa-eye"></i>
+
+                        View Refund
+
+                    </button>
+
+                </article>
+
+
+
+                <!-- REFUND 3 -->
+
+                <article
+                    class="mobile-refund-card"
+                    data-status="refunded"
+                    data-reason="quality">
+
+
+                    <div class="mobile-refund-top">
+
+                        <div>
+
+                            <strong>
+                                REF1022
+                            </strong>
+
+                            <small>
+                                #VAAM1022 • Sep 13, 2026
+                            </small>
+
+                        </div>
+
+
+                        <span class="refund-status refunded">
+                            Refunded
+                        </span>
+
+                    </div>
+
+
+                    <div class="mobile-refund-customer">
+
+                        <strong>
+                            Arjun Kumar
+                        </strong>
+
+                        <small>
+                            Product Quality
+                        </small>
+
+                    </div>
+
+
+                    <div class="mobile-refund-info">
+
+                        <div>
+
+                            <span>
+                                Reason
+                            </span>
+
+                            <strong>
+                                Quality
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Amount
+                            </span>
+
+                            <strong>
+                                ₹649
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="mobile-refund-btn"
+                        type="button"
+                        aria-label="View refund REF1022"
+                        title="View refund">
+
+                        <i class="fa-solid fa-eye"></i>
+
+                        View Refund
+
+                    </button>
+
+                </article>
+
+
+
+                <!-- REFUND 4 -->
+
+                <article
+                    class="mobile-refund-card"
+                    data-status="pending"
+                    data-reason="changed">
+
+
+                    <div class="mobile-refund-top">
+
+                        <div>
+
+                            <strong>
+                                REF1021
+                            </strong>
+
+                            <small>
+                                #VAAM1021 • Sep 13, 2026
+                            </small>
+
+                        </div>
+
+
+                        <span class="refund-status pending">
+                            Pending
+                        </span>
+
+                    </div>
+
+
+                    <div class="mobile-refund-customer">
+
+                        <strong>
+                            Priya Singh
+                        </strong>
+
+                        <small>
+                            Changed Mind
+                        </small>
+
+                    </div>
+
+
+                    <div class="mobile-refund-info">
+
+                        <div>
+
+                            <span>
+                                Reason
+                            </span>
+
+                            <strong>
+                                Changed Mind
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Amount
+                            </span>
+
+                            <strong>
+                                ₹729
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="mobile-refund-btn"
+                        type="button"
+                        aria-label="View refund REF1021"
+                        title="View refund">
+
+                        <i class="fa-solid fa-eye"></i>
+
+                        View Refund
+
+                    </button>
+
+                </article>
+
+
+
+                <!-- REFUND 5 -->
+
+                <article
+                    class="mobile-refund-card"
+                    data-status="rejected"
+                    data-reason="quality">
+
+
+                    <div class="mobile-refund-top">
+
+                        <div>
+
+                            <strong>
+                                REF1020
+                            </strong>
+
+                            <small>
+                                #VAAM1020 • Sep 12, 2026
+                            </small>
+
+                        </div>
+
+
+                        <span class="refund-status rejected">
+                            Rejected
+                        </span>
+
+                    </div>
+
+
+                    <div class="mobile-refund-customer">
+
+                        <strong>
+                            Kiran Reddy
+                        </strong>
+
+                        <small>
+                            Product Quality
+                        </small>
+
+                    </div>
+
+
+                    <div class="mobile-refund-info">
+
+                        <div>
+
+                            <span>
+                                Reason
+                            </span>
+
+                            <strong>
+                                Quality
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Amount
+                            </span>
+
+                            <strong>
+                                ₹1,099
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="mobile-refund-btn"
+                        type="button"
+                        aria-label="View refund REF1020"
+                        title="View refund">
+
+                        <i class="fa-solid fa-eye"></i>
+
+                        View Refund
+
+                    </button>
+
+                </article>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PAGINATION
+            ================================================== -->
+
+            <div class="refund-pagination">
+
+
+                <span>
+                    Showing 1–6 of 74 refund requests
+                </span>
+
+
+                <div class="pagination-buttons">
+
+
+                    <button
+                        type="button"
+                        disabled
+                        aria-label="Previous page"
+                        title="Previous page">
+
+                        <i class="fa-solid fa-chevron-left"></i>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="current"
+                        aria-label="Page 1"
+                        title="Page 1">
+
+                        1
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        aria-label="Page 2"
+                        title="Page 2">
+
+                        2
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        aria-label="Page 3"
+                        title="Page 3">
+
+                        3
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        aria-label="Page 4"
+                        title="Page 4">
+
+                        4
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        aria-label="Next page"
+                        title="Next page">
+
+                        <i class="fa-solid fa-chevron-right"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+
+<!-- =====================================================
+     BOOTSTRAP JS
+===================================================== -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+
+<!-- =====================================================
+     REFUNDS JS
+===================================================== -->
+
+<script>
+
+    /* =====================================================
+       MOBILE SIDEBAR
+    ====================================================== */
+
+    const mobileMenuBtn =
+        document.getElementById("mobileMenuBtn");
+
+    const adminSidebar =
+        document.getElementById("adminSidebar");
+
+    const sidebarOverlay =
+        document.getElementById("sidebarOverlay");
+
+
+    mobileMenuBtn.addEventListener(
+        "click",
+        function () {
+
+            adminSidebar.classList.toggle("show");
+
+            sidebarOverlay.classList.toggle("show");
+
+        }
+    );
+
+
+    sidebarOverlay.addEventListener(
+        "click",
+        function () {
+
+            adminSidebar.classList.remove("show");
+
+            sidebarOverlay.classList.remove("show");
+
+        }
+    );
+
+
+
+    /* =====================================================
+       REFUND FILTERING
+    ====================================================== */
+
+    const refundSearch =
+        document.getElementById("refundSearch");
+
+    const refundStatusFilter =
+        document.getElementById(
+            "refundStatusFilter"
+        );
+
+    const refundReasonFilter =
+        document.getElementById(
+            "refundReasonFilter"
+        );
+
+
+    function filterRefunds() {
+
+        const searchValue =
+            refundSearch.value
+                .trim()
+                .toLowerCase();
+
+        const selectedStatus =
+            refundStatusFilter.value;
+
+        const selectedReason =
+            refundReasonFilter.value;
+
+
+        document
+            .querySelectorAll(
+                ".refunds-table tbody tr"
+            )
+            .forEach(row => {
+
+                const rowText =
+                    row.innerText.toLowerCase();
+
+                const rowStatus =
+                    row.dataset.status;
+
+                const rowReason =
+                    row.dataset.reason;
+
+
+                const searchMatch =
+                    rowText.includes(searchValue);
+
+                const statusMatch =
+                    selectedStatus === "all" ||
+                    rowStatus === selectedStatus;
+
+                const reasonMatch =
+                    selectedReason === "all" ||
+                    rowReason === selectedReason;
+
+
+                row.style.display =
+                    searchMatch &&
+                    statusMatch &&
+                    reasonMatch
+                        ? ""
+                        : "none";
+
+            });
+
+
+        document
+            .querySelectorAll(
+                ".mobile-refund-card"
+            )
+            .forEach(card => {
+
+                const cardText =
+                    card.innerText.toLowerCase();
+
+                const cardStatus =
+                    card.dataset.status;
+
+                const cardReason =
+                    card.dataset.reason;
+
+
+                const searchMatch =
+                    cardText.includes(searchValue);
+
+                const statusMatch =
+                    selectedStatus === "all" ||
+                    cardStatus === selectedStatus;
+
+                const reasonMatch =
+                    selectedReason === "all" ||
+                    cardReason === selectedReason;
+
+
+                card.style.display =
+                    searchMatch &&
+                    statusMatch &&
+                    reasonMatch
+                        ? ""
+                        : "none";
+
+            });
+
+    }
+
+
+    refundSearch.addEventListener(
+        "input",
+        filterRefunds
+    );
+
+
+    refundStatusFilter.addEventListener(
+        "change",
+        filterRefunds
+    );
+
+
+    refundReasonFilter.addEventListener(
+        "change",
+        filterRefunds
+    );
+
+
+
+    /* =====================================================
+       GLOBAL SEARCH
+    ====================================================== */
+
+    const globalRefundSearch =
+        document.getElementById(
+            "globalRefundSearch"
+        );
+
+
+    globalRefundSearch.addEventListener(
+        "input",
+        function () {
+
+            refundSearch.value =
+                this.value;
+
+            filterRefunds();
+
+        }
+    );
+
+
+
+    /* =====================================================
+       EXPORT REFUNDS
+    ====================================================== */
+
+    document
+        .getElementById("exportRefundsBtn")
+        .addEventListener(
+            "click",
+            function () {
+
+                alert(
+                    "Refund export started."
+                );
+
+            }
+        );
+
+
+
+    /* =====================================================
+       VIEW REFUND
+    ====================================================== */
+
+    document
+        .querySelectorAll(
+            ".admin-view-btn, .mobile-refund-btn"
+        )
+        .forEach(button => {
+
+            button.addEventListener(
+                "click",
+                function () {
+
+                    alert(
+                        "Refund details will open here."
+                    );
+
+                }
+            );
+
+        });
+
+
+
+    /* =====================================================
+       LOGOUT
+    ====================================================== */
+
+    document
+        .querySelector(".logout-link")
+        .addEventListener(
+            "click",
+            function (event) {
+
+                event.preventDefault();
+
+                const confirmed =
+                    confirm(
+                        "Are you sure you want to logout?"
+                    );
+
+                if (confirmed) {
+
+                    window.location.href =
+                        "../index.html";
+
+                }
+
+            }
+        );
+
+</script>
+
+
+</body>
+
+</html>

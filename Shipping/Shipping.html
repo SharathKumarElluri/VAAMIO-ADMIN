@@ -1,0 +1,2473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="VAAMIO Admin Shipping">
+
+    <title>VAAMIO | Shipping</title>
+
+
+    <!-- =====================================================
+         BOOTSTRAP
+    ====================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         SHIPPING CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="Shipping.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     MOBILE HEADER
+===================================================== -->
+
+<header class="admin-mobile-header">
+
+    <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        type="button"
+        aria-label="Open admin menu"
+        title="Open admin menu">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+
+    <div class="mobile-brand">
+
+        <strong>VAAMIO</strong>
+
+        <small>ADMIN PANEL</small>
+
+    </div>
+
+
+    <button
+        class="mobile-notification"
+        type="button"
+        aria-label="Notifications"
+        title="Notifications">
+
+        <i class="fa-regular fa-bell"></i>
+
+        <span>3</span>
+
+    </button>
+
+</header>
+
+
+
+<!-- =====================================================
+     SIDEBAR OVERLAY
+===================================================== -->
+
+<div
+    class="sidebar-overlay"
+    id="sidebarOverlay">
+</div>
+
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside
+    class="admin-sidebar"
+    id="adminSidebar">
+
+
+    <!-- LOGO -->
+
+    <div class="admin-logo">
+
+        <strong>VAAMIO</strong>
+
+        <span>ADMIN PANEL</span>
+
+    </div>
+
+
+    <!-- ADMIN USER -->
+
+    <div class="admin-user">
+
+        <div class="admin-avatar">
+            A
+        </div>
+
+        <div>
+
+            <strong>Admin</strong>
+
+            <small>Super Admin</small>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+    <nav class="admin-nav">
+
+
+        <!-- MAIN -->
+
+        <div class="nav-heading">
+            MAIN
+        </div>
+
+
+        <a
+            href="../index.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-chart-pie"></i>
+
+            <span>Dashboard</span>
+
+        </a>
+
+
+
+        <!-- SALES -->
+
+        <div class="nav-heading">
+            SALES
+        </div>
+
+
+        <a
+            href="../Orders/Orders.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            <span>Orders</span>
+
+            <b>12</b>
+
+        </a>
+
+
+        <a
+            href="../Payments/Payments.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-credit-card"></i>
+
+            <span>Payments</span>
+
+        </a>
+
+
+        <a
+            href="/Refunds/Rrefunds.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-rotate-left"></i>
+
+            <span>Refunds</span>
+
+        </a>
+
+
+        <a
+            href="Shipping.html"
+            class="nav-link active">
+
+            <i class="fa-solid fa-truck"></i>
+
+            <span>Shipping</span>
+
+        </a>
+
+
+
+        <!-- CATALOG -->
+
+        <div class="nav-heading">
+            CATALOG
+        </div>
+
+
+        <a
+            href="../Products/Products.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-box"></i>
+
+            <span>Products</span>
+
+        </a>
+
+
+        <a
+            href="../Categories/Categories.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-layer-group"></i>
+
+            <span>Categories</span>
+
+        </a>
+
+
+        <a
+            href="../Inventory/Inventory.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-warehouse"></i>
+
+            <span>Inventory</span>
+
+            <b class="warning">
+                3
+            </b>
+
+        </a>
+
+
+
+        <!-- CUSTOMERS -->
+
+        <div class="nav-heading">
+            CUSTOMERS
+        </div>
+
+
+        <a
+            href="../Customers/Customers.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-users"></i>
+
+            <span>Customers</span>
+
+        </a>
+
+
+        <a href="../Reviews/Reviews.html" class="nav-link">
+
+            <i class="fa-regular fa-star"></i>
+
+            <span>Reviews</span>
+
+        </a>
+
+
+        <a
+            href="../Support/Support.html"
+            class="nav-link">
+
+            <i class="fa-regular fa-comments"></i>
+
+            <span>Support</span>
+
+        </a>
+
+
+
+        <!-- MARKETING -->
+
+        <div class="nav-heading">
+            MARKETING
+        </div>
+
+
+        <a
+            href="../Coupons/Coupons.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-ticket"></i>
+
+            <span>Coupons</span>
+
+        </a>
+
+
+        <a
+            href="../Offers/Offers.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-bullseye"></i>
+
+            <span>Offers</span>
+
+        </a>
+
+
+        <a
+            href="../Banners/Banners.html"
+            class="nav-link">
+
+            <i class="fa-regular fa-image"></i>
+
+            <span>Banners</span>
+
+        </a>
+
+
+        <a
+            href="../Newsletter/Newsletter.html"
+            class="nav-link">
+
+            <i class="fa-regular fa-envelope"></i>
+
+            <span>Newsletter</span>
+
+        </a>
+
+
+
+        <!-- BUSINESS -->
+
+        <div class="nav-heading">
+            BUSINESS
+        </div>
+
+
+        <a
+            href="../Bulk-Orders/Bulk-Orders.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-handshake"></i>
+
+            <span>Bulk Orders</span>
+
+        </a>
+
+
+        <a
+            href="../Distributor-Review/Distributor.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-store"></i>
+
+            <span>Distributor-Review</span>
+
+        </a>
+
+
+        <a
+            href="../Franchise/Franchise.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-building"></i>
+
+            <span>Franchise</span>
+
+        </a>
+
+
+
+        <!-- REPORTS -->
+
+        <div class="nav-heading">
+            REPORTS
+        </div>
+
+
+        <a
+            href="../Sales-Reports/Sales-Reports.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            <span>Sales Reports</span>
+
+        </a>
+
+
+        <a
+            href="../Product-Reports/Product-Reports.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-chart-column"></i>
+
+            <span>Product Reports</span>
+
+        </a>
+
+
+
+        <!-- SYSTEM -->
+
+        <div class="nav-heading">
+            SYSTEM
+        </div>
+
+
+        <a
+            href="../Staff-Roles/Staff-Roles.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-user-shield"></i>
+
+            <span>Staff & Roles</span>
+
+        </a>
+
+
+        <a
+            href="../Audit-Logs/Audit-Logs.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-file-shield"></i>
+
+            <span>Audit Logs</span>
+
+        </a>
+
+
+        <a
+            href="../Settings/Settings.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-gear"></i>
+
+            <span>Settings</span>
+
+        </a>
+
+
+        <div class="nav-divider"></div>
+
+
+        <a
+            href="../index.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            <span>View Website</span>
+
+        </a>
+
+
+        <a
+            href="#"
+            class="nav-link logout-link">
+
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+            <span>Logout</span>
+
+        </a>
+
+    </nav>
+
+</aside>
+
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main class="admin-main">
+
+
+    <!-- =================================================
+         TOPBAR
+    ================================================== -->
+
+    <header class="admin-topbar">
+
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="search"
+                id="globalShippingSearch"
+                placeholder="Search shipments, orders, customers..."
+                aria-label="Search shipments">
+
+        </div>
+
+
+        <div class="topbar-right">
+
+
+            <button
+                class="notification-btn"
+                type="button"
+                aria-label="Notifications"
+                title="Notifications">
+
+                <i class="fa-regular fa-bell"></i>
+
+                <span>3</span>
+
+            </button>
+
+
+            <div class="admin-profile">
+
+                <div class="profile-avatar">
+                    A
+                </div>
+
+                <div>
+
+                    <strong>Admin</strong>
+
+                    <small>Super Admin</small>
+
+                </div>
+
+                <i class="fa-solid fa-chevron-down"></i>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================================
+         CONTENT
+    ================================================== -->
+
+    <div class="admin-content">
+
+
+        <!-- =================================================
+             PAGE HEADER
+        ================================================== -->
+
+        <section class="page-header">
+
+
+            <div>
+
+                <span class="page-eyebrow">
+                    FULFILLMENT MANAGEMENT
+                </span>
+
+                <h1>
+                    Shipping
+                </h1>
+
+                <p>
+                    Manage shipments, delivery status, couriers and tracking information.
+                </p>
+
+            </div>
+
+
+            <button
+                class="shipping-export-btn"
+                id="exportShippingBtn"
+                type="button"
+                aria-label="Export shipments"
+                title="Export shipments">
+
+                <i class="fa-solid fa-download"></i>
+
+                Export Shipments
+
+            </button>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SHIPPING STATISTICS
+        ================================================== -->
+
+        <div class="row g-3">
+
+
+            <!-- TOTAL SHIPMENTS -->
+
+            <div class="col-6 col-xl-3">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+
+                        <i class="fa-solid fa-truck"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Total Shipments
+                        </span>
+
+                        <strong>
+                            1,148
+                        </strong>
+
+                        <small>
+                            <i class="fa-solid fa-arrow-up"></i>
+                            9.4% this month
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- READY TO SHIP -->
+
+            <div class="col-6 col-xl-3">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">
+
+                        <i class="fa-solid fa-box"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Ready to Ship
+                        </span>
+
+                        <strong>
+                            42
+                        </strong>
+
+                        <small>
+                            Awaiting pickup
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- IN TRANSIT -->
+
+            <div class="col-6 col-xl-3">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+
+                        <i class="fa-solid fa-route"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            In Transit
+                        </span>
+
+                        <strong>
+                            94
+                        </strong>
+
+                        <small>
+                            Currently moving
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DELIVERED -->
+
+            <div class="col-6 col-xl-3">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Delivered
+                        </span>
+
+                        <strong>
+                            978
+                        </strong>
+
+                        <small>
+                            Successfully delivered
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             SHIPPING OVERVIEW
+        ================================================== -->
+
+        <section class="dashboard-grid mt-4">
+
+
+            <!-- DELIVERY PERFORMANCE -->
+
+            <div class="admin-card">
+
+                <div class="admin-card-header">
+
+                    <div>
+
+                        <span>
+                            DELIVERY PERFORMANCE
+                        </span>
+
+                        <h2>
+                            Shipping Overview
+                        </h2>
+
+                    </div>
+
+
+                    <select
+                        class="shipping-period-select"
+                        aria-label="Select shipping period">
+
+                        <option>
+                            This Month
+                        </option>
+
+                        <option>
+                            Last Month
+                        </option>
+
+                        <option>
+                            Last 3 Months
+                        </option>
+
+                        <option>
+                            This Year
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="delivery-summary">
+
+
+                    <div class="delivery-rate">
+
+                        <strong>
+                            94.2%
+                        </strong>
+
+                        <span>
+                            On-time delivery
+                        </span>
+
+                    </div>
+
+
+                    <div class="delivery-progress">
+
+                        <div class="delivery-progress-top">
+
+                            <span>
+                                Delivery Success Rate
+                            </span>
+
+                            <strong>
+                                94.2%
+                            </strong>
+
+                        </div>
+
+
+                        <div class="delivery-bar">
+
+                            <span>
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="delivery-mini-stats">
+
+
+                        <div>
+
+                            <span>
+                                Avg. Delivery
+                            </span>
+
+                            <strong>
+                                2.8 Days
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Failed Delivery
+                            </span>
+
+                            <strong>
+                                2.4%
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                RTO Rate
+                            </span>
+
+                            <strong>
+                                3.4%
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SHIPPING PARTNERS -->
+
+            <div class="admin-card">
+
+                <div class="admin-card-header">
+
+                    <div>
+
+                        <span>
+                            COURIER NETWORK
+                        </span>
+
+                        <h2>
+                            Shipping Partners
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="shipping-partners">
+
+
+                    <div class="partner-item">
+
+                        <div class="partner-icon">
+
+                            <i class="fa-solid fa-truck-fast"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                BlueDart
+                            </strong>
+
+                            <small>
+                                382 shipments
+                            </small>
+
+                        </div>
+
+                        <b>
+                            96%
+                        </b>
+
+                    </div>
+
+
+                    <div class="partner-item">
+
+                        <div class="partner-icon">
+
+                            <i class="fa-solid fa-truck"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Delhivery
+                            </strong>
+
+                            <small>
+                                315 shipments
+                            </small>
+
+                        </div>
+
+                        <b>
+                            94%
+                        </b>
+
+                    </div>
+
+
+                    <div class="partner-item">
+
+                        <div class="partner-icon">
+
+                            <i class="fa-solid fa-boxes-stacked"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                DTDC
+                            </strong>
+
+                            <small>
+                                246 shipments
+                            </small>
+
+                        </div>
+
+                        <b>
+                            92%
+                        </b>
+
+                    </div>
+
+
+                    <div class="partner-item">
+
+                        <div class="partner-icon">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Ecom Express
+                            </strong>
+
+                            <small>
+                                205 shipments
+                            </small>
+
+                        </div>
+
+                        <b>
+                            91%
+                        </b>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ALL SHIPMENTS
+        ================================================== -->
+
+        <section class="admin-card mt-4">
+
+
+            <div class="admin-card-header">
+
+                <div>
+
+                    <span>
+                        SHIPPING MANAGEMENT
+                    </span>
+
+                    <h2>
+                        All Shipments
+                    </h2>
+
+                </div>
+
+
+                <span class="shipment-count">
+                    1,148 Shipments
+                </span>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 FILTERS
+            ================================================== -->
+
+            <div class="shipping-filters">
+
+
+                <div class="shipping-search">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        id="shippingSearch"
+                        placeholder="Search tracking ID, order or customer..."
+                        aria-label="Search shipment">
+
+                </div>
+
+
+                <label class="shipping-filter-label">
+
+                    <span>Status</span>
+
+                    <select
+                        id="shippingStatusFilter"
+                        class="shipping-filter-select"
+                        aria-label="Filter shipments by status">
+
+                        <option value="all">
+                            All Status
+                        </option>
+
+                        <option value="ready">
+                            Ready to Ship
+                        </option>
+
+                        <option value="transit">
+                            In Transit
+                        </option>
+
+                        <option value="delivered">
+                            Delivered
+                        </option>
+
+                        <option value="failed">
+                            Delivery Failed
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <label class="shipping-filter-label">
+
+                    <span>Courier</span>
+
+                    <select
+                        id="shippingCourierFilter"
+                        class="shipping-filter-select"
+                        aria-label="Filter shipments by courier">
+
+                        <option value="all">
+                            All Couriers
+                        </option>
+
+                        <option value="bluedart">
+                            BlueDart
+                        </option>
+
+                        <option value="delhivery">
+                            Delhivery
+                        </option>
+
+                        <option value="dtdc">
+                            DTDC
+                        </option>
+
+                        <option value="ecom">
+                            Ecom Express
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <label class="shipping-filter-label">
+
+                    <span>Sort</span>
+
+                    <select
+                        class="shipping-filter-select"
+                        aria-label="Sort shipments">
+
+                        <option>
+                            Newest
+                        </option>
+
+                        <option>
+                            Oldest
+                        </option>
+
+                        <option>
+                            Estimated Delivery
+                        </option>
+
+                    </select>
+
+                </label>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 DESKTOP TABLE
+            ================================================== -->
+
+            <div class="admin-table-wrapper">
+
+                <table class="admin-table shipping-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Tracking
+                            </th>
+
+                            <th>
+                                Order
+                            </th>
+
+                            <th>
+                                Customer
+                            </th>
+
+                            <th>
+                                Courier
+                            </th>
+
+                            <th>
+                                Shipped
+                            </th>
+
+                            <th>
+                                Delivery
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                            <th>
+                                Action
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <!-- SHIPMENT 1 -->
+
+                        <tr
+                            data-status="transit"
+                            data-courier="bluedart">
+
+                            <td>
+
+                                <strong>
+                                    BD78452103
+                                </strong>
+
+                            </td>
+
+                            <td>
+                                #VAAM1024
+                            </td>
+
+                            <td>
+                                Rahul Sharma
+                            </td>
+
+                            <td>
+
+                                <span class="courier-name">
+                                    BlueDart
+                                </span>
+
+                            </td>
+
+                            <td>
+                                Sep 14
+                            </td>
+
+                            <td>
+                                Sep 16
+                            </td>
+
+                            <td>
+
+                                <span class="shipping-status transit">
+                                    In Transit
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button
+                                    class="admin-view-btn"
+                                    type="button"
+                                    aria-label="Track shipment BD78452103"
+                                    title="Track shipment">
+
+                                    <i class="fa-solid fa-location-arrow"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- SHIPMENT 2 -->
+
+                        <tr
+                            data-status="delivered"
+                            data-courier="delhivery">
+
+                            <td>
+
+                                <strong>
+                                    DL65238190
+                                </strong>
+
+                            </td>
+
+                            <td>
+                                #VAAM1023
+                            </td>
+
+                            <td>
+                                Sneha Reddy
+                            </td>
+
+                            <td>
+
+                                <span class="courier-name">
+                                    Delhivery
+                                </span>
+
+                            </td>
+
+                            <td>
+                                Sep 13
+                            </td>
+
+                            <td>
+                                Sep 15
+                            </td>
+
+                            <td>
+
+                                <span class="shipping-status delivered">
+                                    Delivered
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button
+                                    class="admin-view-btn"
+                                    type="button"
+                                    aria-label="Track shipment DL65238190"
+                                    title="Track shipment">
+
+                                    <i class="fa-solid fa-location-arrow"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- SHIPMENT 3 -->
+
+                        <tr
+                            data-status="ready"
+                            data-courier="dtdc">
+
+                            <td>
+
+                                <strong>
+                                    DT48920177
+                                </strong>
+
+                            </td>
+
+                            <td>
+                                #VAAM1022
+                            </td>
+
+                            <td>
+                                Arjun Kumar
+                            </td>
+
+                            <td>
+
+                                <span class="courier-name">
+                                    DTDC
+                                </span>
+
+                            </td>
+
+                            <td>
+                                Sep 14
+                            </td>
+
+                            <td>
+                                Sep 17
+                            </td>
+
+                            <td>
+
+                                <span class="shipping-status ready">
+                                    Ready to Ship
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button
+                                    class="admin-view-btn"
+                                    type="button"
+                                    aria-label="Track shipment DT48920177"
+                                    title="Track shipment">
+
+                                    <i class="fa-solid fa-location-arrow"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- SHIPMENT 4 -->
+
+                        <tr
+                            data-status="transit"
+                            data-courier="ecom">
+
+                            <td>
+
+                                <strong>
+                                    EC33182764
+                                </strong>
+
+                            </td>
+
+                            <td>
+                                #VAAM1021
+                            </td>
+
+                            <td>
+                                Priya Singh
+                            </td>
+
+                            <td>
+
+                                <span class="courier-name">
+                                    Ecom Express
+                                </span>
+
+                            </td>
+
+                            <td>
+                                Sep 13
+                            </td>
+
+                            <td>
+                                Sep 16
+                            </td>
+
+                            <td>
+
+                                <span class="shipping-status transit">
+                                    In Transit
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button
+                                    class="admin-view-btn"
+                                    type="button"
+                                    aria-label="Track shipment EC33182764"
+                                    title="Track shipment">
+
+                                    <i class="fa-solid fa-location-arrow"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- SHIPMENT 5 -->
+
+                        <tr
+                            data-status="delivered"
+                            data-courier="bluedart">
+
+                            <td>
+
+                                <strong>
+                                    BD78451987
+                                </strong>
+
+                            </td>
+
+                            <td>
+                                #VAAM1020
+                            </td>
+
+                            <td>
+                                Kiran Reddy
+                            </td>
+
+                            <td>
+
+                                <span class="courier-name">
+                                    BlueDart
+                                </span>
+
+                            </td>
+
+                            <td>
+                                Sep 12
+                            </td>
+
+                            <td>
+                                Sep 14
+                            </td>
+
+                            <td>
+
+                                <span class="shipping-status delivered">
+                                    Delivered
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button
+                                    class="admin-view-btn"
+                                    type="button"
+                                    aria-label="Track shipment BD78451987"
+                                    title="Track shipment">
+
+                                    <i class="fa-solid fa-location-arrow"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- SHIPMENT 6 -->
+
+                        <tr
+                            data-status="failed"
+                            data-courier="delhivery">
+
+                            <td>
+
+                                <strong>
+                                    DL65237952
+                                </strong>
+
+                            </td>
+
+                            <td>
+                                #VAAM1019
+                            </td>
+
+                            <td>
+                                Vikas Mehta
+                            </td>
+
+                            <td>
+
+                                <span class="courier-name">
+                                    Delhivery
+                                </span>
+
+                            </td>
+
+                            <td>
+                                Sep 12
+                            </td>
+
+                            <td>
+                                Sep 15
+                            </td>
+
+                            <td>
+
+                                <span class="shipping-status failed">
+                                    Delivery Failed
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button
+                                    class="admin-view-btn"
+                                    type="button"
+                                    aria-label="Track shipment DL65237952"
+                                    title="Track shipment">
+
+                                    <i class="fa-solid fa-location-arrow"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 MOBILE SHIPPING CARDS
+            ================================================== -->
+
+            <div class="mobile-shipments">
+
+
+                <!-- SHIPMENT 1 -->
+
+                <article
+                    class="mobile-shipment-card"
+                    data-status="transit"
+                    data-courier="bluedart">
+
+
+                    <div class="mobile-shipment-top">
+
+                        <div>
+
+                            <strong>
+                                BD78452103
+                            </strong>
+
+                            <small>
+                                #VAAM1024 • Sep 14, 2026
+                            </small>
+
+                        </div>
+
+
+                        <span class="shipping-status transit">
+                            In Transit
+                        </span>
+
+                    </div>
+
+
+                    <div class="mobile-shipment-customer">
+
+                        <strong>
+                            Rahul Sharma
+                        </strong>
+
+                        <small>
+                            BlueDart
+                        </small>
+
+                    </div>
+
+
+                    <div class="mobile-shipment-info">
+
+                        <div>
+
+                            <span>
+                                Shipped
+                            </span>
+
+                            <strong>
+                                Sep 14
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Delivery
+                            </span>
+
+                            <strong>
+                                Sep 16
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="mobile-shipment-btn"
+                        type="button"
+                        aria-label="Track shipment BD78452103"
+                        title="Track shipment">
+
+                        <i class="fa-solid fa-location-arrow"></i>
+
+                        Track Shipment
+
+                    </button>
+
+                </article>
+
+
+
+                <!-- SHIPMENT 2 -->
+
+                <article
+                    class="mobile-shipment-card"
+                    data-status="delivered"
+                    data-courier="delhivery">
+
+
+                    <div class="mobile-shipment-top">
+
+                        <div>
+
+                            <strong>
+                                DL65238190
+                            </strong>
+
+                            <small>
+                                #VAAM1023 • Sep 14, 2026
+                            </small>
+
+                        </div>
+
+
+                        <span class="shipping-status delivered">
+                            Delivered
+                        </span>
+
+                    </div>
+
+
+                    <div class="mobile-shipment-customer">
+
+                        <strong>
+                            Sneha Reddy
+                        </strong>
+
+                        <small>
+                            Delhivery
+                        </small>
+
+                    </div>
+
+
+                    <div class="mobile-shipment-info">
+
+                        <div>
+
+                            <span>
+                                Shipped
+                            </span>
+
+                            <strong>
+                                Sep 13
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Delivery
+                            </span>
+
+                            <strong>
+                                Sep 15
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="mobile-shipment-btn"
+                        type="button"
+                        aria-label="Track shipment DL65238190"
+                        title="Track shipment">
+
+                        <i class="fa-solid fa-location-arrow"></i>
+
+                        Track Shipment
+
+                    </button>
+
+                </article>
+
+
+
+                <!-- SHIPMENT 3 -->
+
+                <article
+                    class="mobile-shipment-card"
+                    data-status="ready"
+                    data-courier="dtdc">
+
+
+                    <div class="mobile-shipment-top">
+
+                        <div>
+
+                            <strong>
+                                DT48920177
+                            </strong>
+
+                            <small>
+                                #VAAM1022 • Sep 14, 2026
+                            </small>
+
+                        </div>
+
+
+                        <span class="shipping-status ready">
+                            Ready to Ship
+                        </span>
+
+                    </div>
+
+
+                    <div class="mobile-shipment-customer">
+
+                        <strong>
+                            Arjun Kumar
+                        </strong>
+
+                        <small>
+                            DTDC
+                        </small>
+
+                    </div>
+
+
+                    <div class="mobile-shipment-info">
+
+                        <div>
+
+                            <span>
+                                Shipped
+                            </span>
+
+                            <strong>
+                                Sep 14
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Delivery
+                            </span>
+
+                            <strong>
+                                Sep 17
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="mobile-shipment-btn"
+                        type="button"
+                        aria-label="Track shipment DT48920177"
+                        title="Track shipment">
+
+                        <i class="fa-solid fa-location-arrow"></i>
+
+                        Track Shipment
+
+                    </button>
+
+                </article>
+
+
+
+                <!-- SHIPMENT 4 -->
+
+                <article
+                    class="mobile-shipment-card"
+                    data-status="transit"
+                    data-courier="ecom">
+
+
+                    <div class="mobile-shipment-top">
+
+                        <div>
+
+                            <strong>
+                                EC33182764
+                            </strong>
+
+                            <small>
+                                #VAAM1021 • Sep 13, 2026
+                            </small>
+
+                        </div>
+
+
+                        <span class="shipping-status transit">
+                            In Transit
+                        </span>
+
+                    </div>
+
+
+                    <div class="mobile-shipment-customer">
+
+                        <strong>
+                            Priya Singh
+                        </strong>
+
+                        <small>
+                            Ecom Express
+                        </small>
+
+                    </div>
+
+
+                    <div class="mobile-shipment-info">
+
+                        <div>
+
+                            <span>
+                                Shipped
+                            </span>
+
+                            <strong>
+                                Sep 13
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Delivery
+                            </span>
+
+                            <strong>
+                                Sep 16
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="mobile-shipment-btn"
+                        type="button"
+                        aria-label="Track shipment EC33182764"
+                        title="Track shipment">
+
+                        <i class="fa-solid fa-location-arrow"></i>
+
+                        Track Shipment
+
+                    </button>
+
+                </article>
+
+
+
+                <!-- SHIPMENT 5 -->
+
+                <article
+                    class="mobile-shipment-card"
+                    data-status="delivered"
+                    data-courier="bluedart">
+
+
+                    <div class="mobile-shipment-top">
+
+                        <div>
+
+                            <strong>
+                                BD78451987
+                            </strong>
+
+                            <small>
+                                #VAAM1020 • Sep 12, 2026
+                            </small>
+
+                        </div>
+
+
+                        <span class="shipping-status delivered">
+                            Delivered
+                        </span>
+
+                    </div>
+
+
+                    <div class="mobile-shipment-customer">
+
+                        <strong>
+                            Kiran Reddy
+                        </strong>
+
+                        <small>
+                            BlueDart
+                        </small>
+
+                    </div>
+
+
+                    <div class="mobile-shipment-info">
+
+                        <div>
+
+                            <span>
+                                Shipped
+                            </span>
+
+                            <strong>
+                                Sep 12
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Delivery
+                            </span>
+
+                            <strong>
+                                Sep 14
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="mobile-shipment-btn"
+                        type="button"
+                        aria-label="Track shipment BD78451987"
+                        title="Track shipment">
+
+                        <i class="fa-solid fa-location-arrow"></i>
+
+                        Track Shipment
+
+                    </button>
+
+                </article>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PAGINATION
+            ================================================== -->
+
+            <div class="shipping-pagination">
+
+                <span>
+                    Showing 1–6 of 1,148 shipments
+                </span>
+
+
+                <div class="pagination-buttons">
+
+                    <button
+                        type="button"
+                        disabled
+                        aria-label="Previous page"
+                        title="Previous page">
+
+                        <i class="fa-solid fa-chevron-left"></i>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="current"
+                        aria-label="Page 1"
+                        title="Page 1">
+
+                        1
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        aria-label="Page 2"
+                        title="Page 2">
+
+                        2
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        aria-label="Page 3"
+                        title="Page 3">
+
+                        3
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        aria-label="Page 4"
+                        title="Page 4">
+
+                        4
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        aria-label="Next page"
+                        title="Next page">
+
+                        <i class="fa-solid fa-chevron-right"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+
+<!-- =====================================================
+     BOOTSTRAP JS
+===================================================== -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+
+<!-- =====================================================
+     SHIPPING JS
+===================================================== -->
+
+<script>
+
+    /* =====================================================
+       MOBILE SIDEBAR
+    ====================================================== */
+
+    const mobileMenuBtn =
+        document.getElementById("mobileMenuBtn");
+
+    const adminSidebar =
+        document.getElementById("adminSidebar");
+
+    const sidebarOverlay =
+        document.getElementById("sidebarOverlay");
+
+
+    mobileMenuBtn.addEventListener(
+        "click",
+        function () {
+
+            adminSidebar.classList.toggle("show");
+
+            sidebarOverlay.classList.toggle("show");
+
+        }
+    );
+
+
+    sidebarOverlay.addEventListener(
+        "click",
+        function () {
+
+            adminSidebar.classList.remove("show");
+
+            sidebarOverlay.classList.remove("show");
+
+        }
+    );
+
+
+
+    /* =====================================================
+       SHIPPING FILTERING
+    ====================================================== */
+
+    const shippingSearch =
+        document.getElementById("shippingSearch");
+
+    const shippingStatusFilter =
+        document.getElementById(
+            "shippingStatusFilter"
+        );
+
+    const shippingCourierFilter =
+        document.getElementById(
+            "shippingCourierFilter"
+        );
+
+
+    function filterShipments() {
+
+        const searchValue =
+            shippingSearch.value
+                .trim()
+                .toLowerCase();
+
+        const selectedStatus =
+            shippingStatusFilter.value;
+
+        const selectedCourier =
+            shippingCourierFilter.value;
+
+
+        document
+            .querySelectorAll(
+                ".shipping-table tbody tr"
+            )
+            .forEach(row => {
+
+                const rowText =
+                    row.innerText.toLowerCase();
+
+                const rowStatus =
+                    row.dataset.status;
+
+                const rowCourier =
+                    row.dataset.courier;
+
+
+                const searchMatch =
+                    rowText.includes(searchValue);
+
+                const statusMatch =
+                    selectedStatus === "all" ||
+                    rowStatus === selectedStatus;
+
+                const courierMatch =
+                    selectedCourier === "all" ||
+                    rowCourier === selectedCourier;
+
+
+                row.style.display =
+                    searchMatch &&
+                    statusMatch &&
+                    courierMatch
+                        ? ""
+                        : "none";
+
+            });
+
+
+        document
+            .querySelectorAll(
+                ".mobile-shipment-card"
+            )
+            .forEach(card => {
+
+                const cardText =
+                    card.innerText.toLowerCase();
+
+                const cardStatus =
+                    card.dataset.status;
+
+                const cardCourier =
+                    card.dataset.courier;
+
+
+                const searchMatch =
+                    cardText.includes(searchValue);
+
+                const statusMatch =
+                    selectedStatus === "all" ||
+                    cardStatus === selectedStatus;
+
+                const courierMatch =
+                    selectedCourier === "all" ||
+                    cardCourier === selectedCourier;
+
+
+                card.style.display =
+                    searchMatch &&
+                    statusMatch &&
+                    courierMatch
+                        ? ""
+                        : "none";
+
+            });
+
+    }
+
+
+    shippingSearch.addEventListener(
+        "input",
+        filterShipments
+    );
+
+
+    shippingStatusFilter.addEventListener(
+        "change",
+        filterShipments
+    );
+
+
+    shippingCourierFilter.addEventListener(
+        "change",
+        filterShipments
+    );
+
+
+
+    /* =====================================================
+       GLOBAL SEARCH
+    ====================================================== */
+
+    const globalShippingSearch =
+        document.getElementById(
+            "globalShippingSearch"
+        );
+
+
+    globalShippingSearch.addEventListener(
+        "input",
+        function () {
+
+            shippingSearch.value =
+                this.value;
+
+            filterShipments();
+
+        }
+    );
+
+
+
+    /* =====================================================
+       EXPORT
+    ====================================================== */
+
+    document
+        .getElementById("exportShippingBtn")
+        .addEventListener(
+            "click",
+            function () {
+
+                alert(
+                    "Shipping export started."
+                );
+
+            }
+        );
+
+
+
+    /* =====================================================
+       TRACK SHIPMENT
+    ====================================================== */
+
+    document
+        .querySelectorAll(
+            ".admin-view-btn, .mobile-shipment-btn"
+        )
+        .forEach(button => {
+
+            button.addEventListener(
+                "click",
+                function () {
+
+                    alert(
+                        "Shipment tracking details will open here."
+                    );
+
+                }
+            );
+
+        });
+
+
+
+    /* =====================================================
+       LOGOUT
+    ====================================================== */
+
+    document
+        .querySelector(".logout-link")
+        .addEventListener(
+            "click",
+            function (event) {
+
+                event.preventDefault();
+
+                const confirmed =
+                    confirm(
+                        "Are you sure you want to logout?"
+                    );
+
+                if (confirmed) {
+
+                    window.location.href =
+                        "../index.html";
+
+                }
+
+            }
+        );
+
+</script>
+
+
+</body>
+
+</html>

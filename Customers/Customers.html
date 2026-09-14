@@ -1,0 +1,2751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="VAAMIO Admin Customers">
+
+    <title>VAAMIO | Customers</title>
+
+
+    <!-- =====================================================
+         BOOTSTRAP
+    ====================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         CUSTOMERS CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="Customers.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     MOBILE HEADER
+===================================================== -->
+
+<header class="admin-mobile-header">
+
+    <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        type="button"
+        aria-label="Open admin menu"
+        title="Open admin menu">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+
+    <div class="mobile-brand">
+
+        <strong>VAAMIO</strong>
+
+        <small>ADMIN PANEL</small>
+
+    </div>
+
+
+    <button
+        class="mobile-notification"
+        type="button"
+        aria-label="Notifications"
+        title="Notifications">
+
+        <i class="fa-regular fa-bell"></i>
+
+        <span>3</span>
+
+    </button>
+
+</header>
+
+
+
+<!-- =====================================================
+     SIDEBAR OVERLAY
+===================================================== -->
+
+<div
+    class="sidebar-overlay"
+    id="sidebarOverlay">
+</div>
+
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside
+    class="admin-sidebar"
+    id="adminSidebar">
+
+
+    <!-- =================================================
+         LOGO
+    ================================================== -->
+
+    <div class="admin-logo">
+
+        <strong>VAAMIO</strong>
+
+        <span>ADMIN PANEL</span>
+
+    </div>
+
+
+    <!-- =================================================
+         ADMIN USER
+    ================================================== -->
+
+    <div class="admin-user">
+
+        <div class="admin-avatar">
+            A
+        </div>
+
+        <div>
+
+            <strong>Admin</strong>
+
+            <small>Super Admin</small>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+    <nav class="admin-nav">
+
+
+        <!-- MAIN -->
+
+        <div class="nav-heading">
+            MAIN
+        </div>
+
+
+        <a
+            href="../index.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-chart-pie"></i>
+
+            <span>Dashboard</span>
+
+        </a>
+
+
+
+        <!-- SALES -->
+
+        <div class="nav-heading">
+            SALES
+        </div>
+
+
+        <a
+            href="../Orders/Orders.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            <span>Orders</span>
+
+            <b>12</b>
+
+        </a>
+
+
+        <a
+            href="../Payments/Payments.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-credit-card"></i>
+
+            <span>Payments</span>
+
+        </a>
+
+
+        <a
+            href="/Refunds/Rrefunds.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-rotate-left"></i>
+
+            <span>Refunds</span>
+
+        </a>
+
+
+        <a
+            href="../Shipping/Shipping.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-truck"></i>
+
+            <span>Shipping</span>
+
+        </a>
+
+
+
+        <!-- CATALOG -->
+
+        <div class="nav-heading">
+            CATALOG
+        </div>
+
+
+        <a
+            href="../Products/Products.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-box"></i>
+
+            <span>Products</span>
+
+        </a>
+
+
+        <a
+            href="../Categories/Categories.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-layer-group"></i>
+
+            <span>Categories</span>
+
+        </a>
+
+
+        <a
+            href="../Inventory/Inventory.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-warehouse"></i>
+
+            <span>Inventory</span>
+
+            <b class="warning">
+                3
+            </b>
+
+        </a>
+
+
+
+        <!-- CUSTOMERS -->
+
+        <div class="nav-heading">
+            CUSTOMERS
+        </div>
+
+
+        <a
+            href="Customers.html"
+            class="nav-link active">
+
+            <i class="fa-solid fa-users"></i>
+
+            <span>Customers</span>
+
+        </a>
+
+
+        <a
+            href="../Reviews/Reviews.html"
+            class="nav-link">
+
+            <i class="fa-regular fa-star"></i>
+
+            <span>Reviews</span>
+
+        </a>
+
+
+        <a
+            href="../Support/Support.html"
+            class="nav-link">
+
+            <i class="fa-regular fa-comments"></i>
+
+            <span>Support</span>
+
+        </a>
+
+
+
+        <!-- MARKETING -->
+
+        <div class="nav-heading">
+            MARKETING
+        </div>
+
+
+        <a
+            href="../Coupons/Coupons.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-ticket"></i>
+
+            <span>Coupons</span>
+
+        </a>
+
+
+        <a
+            href="../Offers/Offers.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-bullseye"></i>
+
+            <span>Offers</span>
+
+        </a>
+
+
+        <a
+            href="../Banners/Banners.html"
+            class="nav-link">
+
+            <i class="fa-regular fa-image"></i>
+
+            <span>Banners</span>
+
+        </a>
+
+
+        <a
+            href="../Newsletter/Newsletter.html"
+            class="nav-link">
+
+            <i class="fa-regular fa-envelope"></i>
+
+            <span>Newsletter</span>
+
+        </a>
+
+
+
+        <!-- BUSINESS -->
+
+        <div class="nav-heading">
+            BUSINESS
+        </div>
+
+
+        <a
+            href="../Bulk-Orders/Bulk-Orders.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-handshake"></i>
+
+            <span>Bulk Orders</span>
+
+        </a>
+
+
+        <a
+            href="../Distributor-Review/Distributor.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-store"></i>
+
+            <span>Distributor-Review</span>
+
+        </a>
+
+
+        <a
+            href="../Franchise/Franchise.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-building"></i>
+
+            <span>Franchise</span>
+
+        </a>
+
+
+
+        <!-- REPORTS -->
+
+        <div class="nav-heading">
+            REPORTS
+        </div>
+
+
+        <a
+            href="../Sales-Reports/Sales-Reports.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            <span>Sales Reports</span>
+
+        </a>
+
+
+        <a
+            href="../Product-Reports/Product-Reports.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-chart-column"></i>
+
+            <span>Product Reports</span>
+
+        </a>
+
+
+
+        <!-- SYSTEM -->
+
+        <div class="nav-heading">
+            SYSTEM
+        </div>
+
+
+        <a
+            href="../Staff-Roles/Staff-Roles.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-user-shield"></i>
+
+            <span>Staff & Roles</span>
+
+        </a>
+
+
+        <a
+            href="../Audit-Logs/Audit-Logs.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-file-shield"></i>
+
+            <span>Audit Logs</span>
+
+        </a>
+
+
+        <a
+            href="../Settings/Settings.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-gear"></i>
+
+            <span>Settings</span>
+
+        </a>
+
+
+        <div class="nav-divider"></div>
+
+
+        <a
+            href="../index.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            <span>View Website</span>
+
+        </a>
+
+
+        <a
+            href="#"
+            class="nav-link logout-link">
+
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+            <span>Logout</span>
+
+        </a>
+
+    </nav>
+
+</aside>
+
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main class="admin-main">
+
+
+    <!-- =================================================
+         TOPBAR
+    ================================================== -->
+
+    <header class="admin-topbar">
+
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="search"
+                id="globalCustomerSearch"
+                placeholder="Search customers, email, phone..."
+                aria-label="Search customers">
+
+        </div>
+
+
+        <div class="topbar-right">
+
+
+            <button
+                class="notification-btn"
+                type="button"
+                aria-label="Notifications"
+                title="Notifications">
+
+                <i class="fa-regular fa-bell"></i>
+
+                <span>3</span>
+
+            </button>
+
+
+            <div class="admin-profile">
+
+                <div class="profile-avatar">
+                    A
+                </div>
+
+                <div>
+
+                    <strong>Admin</strong>
+
+                    <small>Super Admin</small>
+
+                </div>
+
+                <i class="fa-solid fa-chevron-down"></i>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================================
+         CONTENT
+    ================================================== -->
+
+    <div class="admin-content">
+
+
+        <!-- =================================================
+             PAGE HEADER
+        ================================================== -->
+
+        <section class="page-header">
+
+            <div>
+
+                <span class="page-eyebrow">
+                    CUSTOMER MANAGEMENT
+                </span>
+
+                <h1>
+                    Customers
+                </h1>
+
+                <p>
+                    Manage customer profiles, orders, activity and account information.
+                </p>
+
+            </div>
+
+
+            <button
+                class="customer-export-btn"
+                id="exportCustomersBtn"
+                type="button"
+                aria-label="Export customers"
+                title="Export customers">
+
+                <i class="fa-solid fa-download"></i>
+
+                Export Customers
+
+            </button>
+
+        </section>
+
+
+
+        <!-- =================================================
+             STAT CARDS
+        ================================================== -->
+
+        <div class="row g-3">
+
+
+            <!-- TOTAL CUSTOMERS -->
+
+            <div class="col-6 col-xl-3">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+
+                        <i class="fa-solid fa-users"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Total Customers
+                        </span>
+
+                        <strong>
+                            843
+                        </strong>
+
+                        <small>
+                            <i class="fa-solid fa-arrow-up"></i>
+                            6.7% this month
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- NEW CUSTOMERS -->
+
+            <div class="col-6 col-xl-3">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+
+                        <i class="fa-solid fa-user-plus"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            New Customers
+                        </span>
+
+                        <strong>
+                            96
+                        </strong>
+
+                        <small>
+                            Added this month
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ACTIVE CUSTOMERS -->
+
+            <div class="col-6 col-xl-3">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">
+
+                        <i class="fa-solid fa-user-check"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Active Customers
+                        </span>
+
+                        <strong>
+                            716
+                        </strong>
+
+                        <small>
+                            Purchased recently
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- VIP CUSTOMERS -->
+
+            <div class="col-6 col-xl-3">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon red">
+
+                        <i class="fa-solid fa-crown"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            VIP Customers
+                        </span>
+
+                        <strong>
+                            84
+                        </strong>
+
+                        <small>
+                            High-value customers
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             CUSTOMER OVERVIEW
+        ================================================== -->
+
+        <section class="dashboard-grid mt-4">
+
+
+            <!-- CUSTOMER GROWTH -->
+
+            <div class="admin-card">
+
+                <div class="admin-card-header">
+
+                    <div>
+
+                        <span>
+                            CUSTOMER GROWTH
+                        </span>
+
+                        <h2>
+                            Customer Overview
+                        </h2>
+
+                    </div>
+
+
+                    <select
+                        class="customer-period-select"
+                        aria-label="Select customer period">
+
+                        <option>
+                            This Month
+                        </option>
+
+                        <option>
+                            Last Month
+                        </option>
+
+                        <option>
+                            Last 3 Months
+                        </option>
+
+                        <option>
+                            This Year
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="customer-total">
+
+                    <strong>
+                        843
+                    </strong>
+
+                    <span>
+                        Total Customers
+                    </span>
+
+                </div>
+
+
+                <div class="customer-growth-bar">
+
+                    <div class="growth-segment active-segment">
+                    </div>
+
+                    <div class="growth-segment new-segment">
+                    </div>
+
+                    <div class="growth-segment inactive-segment">
+                    </div>
+
+                </div>
+
+
+                <div class="customer-growth-legend">
+
+
+                    <div class="customer-legend-item">
+
+                        <span class="legend-dot active"></span>
+
+                        <div>
+
+                            <strong>
+                                Active
+                            </strong>
+
+                            <small>
+                                716 customers
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="customer-legend-item">
+
+                        <span class="legend-dot new"></span>
+
+                        <div>
+
+                            <strong>
+                                New
+                            </strong>
+
+                            <small>
+                                96 customers
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="customer-legend-item">
+
+                        <span class="legend-dot inactive"></span>
+
+                        <div>
+
+                            <strong>
+                                Inactive
+                            </strong>
+
+                            <small>
+                                31 customers
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CUSTOMER SEGMENTS -->
+
+            <div class="admin-card">
+
+                <div class="admin-card-header">
+
+                    <div>
+
+                        <span>
+                            CUSTOMER SEGMENTS
+                        </span>
+
+                        <h2>
+                            Customer Types
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="customer-segments">
+
+
+                    <div class="segment-item">
+
+                        <div class="segment-icon regular">
+
+                            <i class="fa-solid fa-user"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Regular
+                            </strong>
+
+                            <small>
+                                523 customers
+                            </small>
+
+                        </div>
+
+                        <b>
+                            62%
+                        </b>
+
+                    </div>
+
+
+                    <div class="segment-item">
+
+                        <div class="segment-icon vip">
+
+                            <i class="fa-solid fa-crown"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                VIP
+                            </strong>
+
+                            <small>
+                                84 customers
+                            </small>
+
+                        </div>
+
+                        <b>
+                            10%
+                        </b>
+
+                    </div>
+
+
+                    <div class="segment-item">
+
+                        <div class="segment-icon new">
+
+                            <i class="fa-solid fa-user-plus"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                New
+                            </strong>
+
+                            <small>
+                                96 customers
+                            </small>
+
+                        </div>
+
+                        <b>
+                            11%
+                        </b>
+
+                    </div>
+
+
+                    <div class="segment-item">
+
+                        <div class="segment-icon inactive">
+
+                            <i class="fa-solid fa-user-clock"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Inactive
+                            </strong>
+
+                            <small>
+                                140 customers
+                            </small>
+
+                        </div>
+
+                        <b>
+                            17%
+                        </b>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ALL CUSTOMERS
+        ================================================== -->
+
+        <section class="admin-card mt-4">
+
+
+            <div class="admin-card-header">
+
+                <div>
+
+                    <span>
+                        CUSTOMER DATABASE
+                    </span>
+
+                    <h2>
+                        All Customers
+                    </h2>
+
+                </div>
+
+
+                <span class="customer-count">
+                    843 Customers
+                </span>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 FILTERS
+            ================================================== -->
+
+            <div class="customer-filters">
+
+
+                <div class="customer-search">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        id="customerSearch"
+                        placeholder="Search name, email or phone..."
+                        aria-label="Search customer name, email or phone">
+
+                </div>
+
+
+                <label class="customer-filter-label">
+
+                    <span>Status</span>
+
+                    <select
+                        id="customerStatusFilter"
+                        class="customer-filter-select"
+                        aria-label="Filter customers by status">
+
+                        <option value="all">
+                            All Status
+                        </option>
+
+                        <option value="active">
+                            Active
+                        </option>
+
+                        <option value="new">
+                            New
+                        </option>
+
+                        <option value="inactive">
+                            Inactive
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <label class="customer-filter-label">
+
+                    <span>Type</span>
+
+                    <select
+                        id="customerTypeFilter"
+                        class="customer-filter-select"
+                        aria-label="Filter customers by type">
+
+                        <option value="all">
+                            All Types
+                        </option>
+
+                        <option value="regular">
+                            Regular
+                        </option>
+
+                        <option value="vip">
+                            VIP
+                        </option>
+
+                        <option value="new">
+                            New
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <label class="customer-filter-label">
+
+                    <span>Sort</span>
+
+                    <select
+                        class="customer-filter-select"
+                        aria-label="Sort customers">
+
+                        <option>
+                            Newest
+                        </option>
+
+                        <option>
+                            Oldest
+                        </option>
+
+                        <option>
+                            Highest Spent
+                        </option>
+
+                        <option>
+                            Most Orders
+                        </option>
+
+                    </select>
+
+                </label>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 DESKTOP TABLE
+            ================================================== -->
+
+            <div class="admin-table-wrapper">
+
+                <table class="admin-table customers-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Customer
+                            </th>
+
+                            <th>
+                                Contact
+                            </th>
+
+                            <th>
+                                Orders
+                            </th>
+
+                            <th>
+                                Total Spent
+                            </th>
+
+                            <th>
+                                Last Order
+                            </th>
+
+                            <th>
+                                Type
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                            <th>
+                                Action
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <!-- CUSTOMER 1 -->
+
+                        <tr
+                            data-status="active"
+                            data-type="vip">
+
+                            <td>
+
+                                <div class="customer-cell">
+
+                                    <div class="customer-avatar">
+                                        RS
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Rahul Sharma
+                                        </strong>
+
+                                        <small>
+                                            Joined Aug 2025
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+                                <div class="contact-cell">
+
+                                    <span>
+                                        rahul@example.com
+                                    </span>
+
+                                    <small>
+                                        +91 98765 43210
+                                    </small>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                28
+                            </td>
+
+
+                            <td>
+
+                                <strong>
+                                    ₹42,860
+                                </strong>
+
+                            </td>
+
+
+                            <td>
+                                Sep 14, 2026
+                            </td>
+
+
+                            <td>
+
+                                <span class="customer-type vip">
+                                    VIP
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="customer-status active">
+                                    Active
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <button
+                                    class="admin-view-btn view-customer-btn"
+                                    type="button"
+                                    aria-label="View Rahul Sharma"
+                                    title="View customer">
+
+                                    <i class="fa-solid fa-eye"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- CUSTOMER 2 -->
+
+                        <tr
+                            data-status="active"
+                            data-type="regular">
+
+                            <td>
+
+                                <div class="customer-cell">
+
+                                    <div class="customer-avatar green-avatar">
+                                        SR
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Sneha Reddy
+                                        </strong>
+
+                                        <small>
+                                            Joined Jan 2026
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+                                <div class="contact-cell">
+
+                                    <span>
+                                        sneha@example.com
+                                    </span>
+
+                                    <small>
+                                        +91 98480 12345
+                                    </small>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                16
+                            </td>
+
+
+                            <td>
+
+                                <strong>
+                                    ₹24,690
+                                </strong>
+
+                            </td>
+
+
+                            <td>
+                                Sep 14, 2026
+                            </td>
+
+
+                            <td>
+
+                                <span class="customer-type regular">
+                                    Regular
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="customer-status active">
+                                    Active
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <button
+                                    class="admin-view-btn view-customer-btn"
+                                    type="button"
+                                    aria-label="View Sneha Reddy"
+                                    title="View customer">
+
+                                    <i class="fa-solid fa-eye"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- CUSTOMER 3 -->
+
+                        <tr
+                            data-status="new"
+                            data-type="new">
+
+                            <td>
+
+                                <div class="customer-cell">
+
+                                    <div class="customer-avatar orange-avatar">
+                                        AK
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Arjun Kumar
+                                        </strong>
+
+                                        <small>
+                                            Joined Sep 2026
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+                                <div class="contact-cell">
+
+                                    <span>
+                                        arjun@example.com
+                                    </span>
+
+                                    <small>
+                                        +91 99887 66554
+                                    </small>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                3
+                            </td>
+
+
+                            <td>
+
+                                <strong>
+                                    ₹4,285
+                                </strong>
+
+                            </td>
+
+
+                            <td>
+                                Sep 13, 2026
+                            </td>
+
+
+                            <td>
+
+                                <span class="customer-type new">
+                                    New
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="customer-status new">
+                                    New
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <button
+                                    class="admin-view-btn view-customer-btn"
+                                    type="button"
+                                    aria-label="View Arjun Kumar"
+                                    title="View customer">
+
+                                    <i class="fa-solid fa-eye"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- CUSTOMER 4 -->
+
+                        <tr
+                            data-status="active"
+                            data-type="regular">
+
+                            <td>
+
+                                <div class="customer-cell">
+
+                                    <div class="customer-avatar purple-avatar">
+                                        PS
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Priya Singh
+                                        </strong>
+
+                                        <small>
+                                            Joined Mar 2026
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+                                <div class="contact-cell">
+
+                                    <span>
+                                        priya@example.com
+                                    </span>
+
+                                    <small>
+                                        +91 91234 56789
+                                    </small>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                12
+                            </td>
+
+
+                            <td>
+
+                                <strong>
+                                    ₹18,920
+                                </strong>
+
+                            </td>
+
+
+                            <td>
+                                Sep 13, 2026
+                            </td>
+
+
+                            <td>
+
+                                <span class="customer-type regular">
+                                    Regular
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="customer-status active">
+                                    Active
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <button
+                                    class="admin-view-btn view-customer-btn"
+                                    type="button"
+                                    aria-label="View Priya Singh"
+                                    title="View customer">
+
+                                    <i class="fa-solid fa-eye"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- CUSTOMER 5 -->
+
+                        <tr
+                            data-status="inactive"
+                            data-type="regular">
+
+                            <td>
+
+                                <div class="customer-cell">
+
+                                    <div class="customer-avatar red-avatar">
+                                        KR
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Kiran Reddy
+                                        </strong>
+
+                                        <small>
+                                            Joined Jun 2025
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+                                <div class="contact-cell">
+
+                                    <span>
+                                        kiran@example.com
+                                    </span>
+
+                                    <small>
+                                        +91 90000 11223
+                                    </small>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                21
+                            </td>
+
+
+                            <td>
+
+                                <strong>
+                                    ₹31,540
+                                </strong>
+
+                            </td>
+
+
+                            <td>
+                                Aug 28, 2026
+                            </td>
+
+
+                            <td>
+
+                                <span class="customer-type regular">
+                                    Regular
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="customer-status inactive">
+                                    Inactive
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <button
+                                    class="admin-view-btn view-customer-btn"
+                                    type="button"
+                                    aria-label="View Kiran Reddy"
+                                    title="View customer">
+
+                                    <i class="fa-solid fa-eye"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- CUSTOMER 6 -->
+
+                        <tr
+                            data-status="active"
+                            data-type="vip">
+
+                            <td>
+
+                                <div class="customer-cell">
+
+                                    <div class="customer-avatar">
+                                        VM
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Vikas Mehta
+                                        </strong>
+
+                                        <small>
+                                            Joined May 2025
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+                                <div class="contact-cell">
+
+                                    <span>
+                                        vikas@example.com
+                                    </span>
+
+                                    <small>
+                                        +91 98888 22110
+                                    </small>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                24
+                            </td>
+
+
+                            <td>
+
+                                <strong>
+                                    ₹38,720
+                                </strong>
+
+                            </td>
+
+
+                            <td>
+                                Sep 12, 2026
+                            </td>
+
+
+                            <td>
+
+                                <span class="customer-type vip">
+                                    VIP
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="customer-status active">
+                                    Active
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <button
+                                    class="admin-view-btn view-customer-btn"
+                                    type="button"
+                                    aria-label="View Vikas Mehta"
+                                    title="View customer">
+
+                                    <i class="fa-solid fa-eye"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 MOBILE CUSTOMERS
+            ================================================== -->
+
+            <div class="mobile-customers">
+
+
+                <!-- CUSTOMER 1 -->
+
+                <article
+                    class="mobile-customer-card"
+                    data-status="active"
+                    data-type="vip">
+
+
+                    <div class="mobile-customer-top">
+
+                        <div class="customer-cell">
+
+                            <div class="customer-avatar">
+                                RS
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Rahul Sharma
+                                </strong>
+
+                                <small>
+                                    rahul@example.com
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="customer-status active">
+                            Active
+                        </span>
+
+                    </div>
+
+
+                    <div class="mobile-customer-info">
+
+                        <div>
+
+                            <span>
+                                Orders
+                            </span>
+
+                            <strong>
+                                28
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Spent
+                            </span>
+
+                            <strong>
+                                ₹42,860
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Type
+                            </span>
+
+                            <strong>
+                                VIP
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="mobile-customer-btn view-customer-btn"
+                        type="button"
+                        aria-label="View Rahul Sharma"
+                        title="View customer">
+
+                        <i class="fa-solid fa-eye"></i>
+
+                        View Customer
+
+                    </button>
+
+                </article>
+
+
+
+                <!-- CUSTOMER 2 -->
+
+                <article
+                    class="mobile-customer-card"
+                    data-status="active"
+                    data-type="regular">
+
+
+                    <div class="mobile-customer-top">
+
+                        <div class="customer-cell">
+
+                            <div class="customer-avatar green-avatar">
+                                SR
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Sneha Reddy
+                                </strong>
+
+                                <small>
+                                    sneha@example.com
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="customer-status active">
+                            Active
+                        </span>
+
+                    </div>
+
+
+                    <div class="mobile-customer-info">
+
+                        <div>
+
+                            <span>
+                                Orders
+                            </span>
+
+                            <strong>
+                                16
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Spent
+                            </span>
+
+                            <strong>
+                                ₹24,690
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Type
+                            </span>
+
+                            <strong>
+                                Regular
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="mobile-customer-btn view-customer-btn"
+                        type="button"
+                        aria-label="View Sneha Reddy"
+                        title="View customer">
+
+                        <i class="fa-solid fa-eye"></i>
+
+                        View Customer
+
+                    </button>
+
+                </article>
+
+
+
+                <!-- CUSTOMER 3 -->
+
+                <article
+                    class="mobile-customer-card"
+                    data-status="new"
+                    data-type="new">
+
+
+                    <div class="mobile-customer-top">
+
+                        <div class="customer-cell">
+
+                            <div class="customer-avatar orange-avatar">
+                                AK
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Arjun Kumar
+                                </strong>
+
+                                <small>
+                                    arjun@example.com
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="customer-status new">
+                            New
+                        </span>
+
+                    </div>
+
+
+                    <div class="mobile-customer-info">
+
+                        <div>
+
+                            <span>
+                                Orders
+                            </span>
+
+                            <strong>
+                                3
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Spent
+                            </span>
+
+                            <strong>
+                                ₹4,285
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Type
+                            </span>
+
+                            <strong>
+                                New
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="mobile-customer-btn view-customer-btn"
+                        type="button"
+                        aria-label="View Arjun Kumar"
+                        title="View customer">
+
+                        <i class="fa-solid fa-eye"></i>
+
+                        View Customer
+
+                    </button>
+
+                </article>
+
+
+
+                <!-- CUSTOMER 4 -->
+
+                <article
+                    class="mobile-customer-card"
+                    data-status="active"
+                    data-type="regular">
+
+
+                    <div class="mobile-customer-top">
+
+                        <div class="customer-cell">
+
+                            <div class="customer-avatar purple-avatar">
+                                PS
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Priya Singh
+                                </strong>
+
+                                <small>
+                                    priya@example.com
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="customer-status active">
+                            Active
+                        </span>
+
+                    </div>
+
+
+                    <div class="mobile-customer-info">
+
+                        <div>
+
+                            <span>
+                                Orders
+                            </span>
+
+                            <strong>
+                                12
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Spent
+                            </span>
+
+                            <strong>
+                                ₹18,920
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Type
+                            </span>
+
+                            <strong>
+                                Regular
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="mobile-customer-btn view-customer-btn"
+                        type="button"
+                        aria-label="View Priya Singh"
+                        title="View customer">
+
+                        <i class="fa-solid fa-eye"></i>
+
+                        View Customer
+
+                    </button>
+
+                </article>
+
+
+
+                <!-- CUSTOMER 5 -->
+
+                <article
+                    class="mobile-customer-card"
+                    data-status="inactive"
+                    data-type="regular">
+
+
+                    <div class="mobile-customer-top">
+
+                        <div class="customer-cell">
+
+                            <div class="customer-avatar red-avatar">
+                                KR
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Kiran Reddy
+                                </strong>
+
+                                <small>
+                                    kiran@example.com
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="customer-status inactive">
+                            Inactive
+                        </span>
+
+                    </div>
+
+
+                    <div class="mobile-customer-info">
+
+                        <div>
+
+                            <span>
+                                Orders
+                            </span>
+
+                            <strong>
+                                21
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Spent
+                            </span>
+
+                            <strong>
+                                ₹31,540
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Type
+                            </span>
+
+                            <strong>
+                                Regular
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="mobile-customer-btn view-customer-btn"
+                        type="button"
+                        aria-label="View Kiran Reddy"
+                        title="View customer">
+
+                        <i class="fa-solid fa-eye"></i>
+
+                        View Customer
+
+                    </button>
+
+                </article>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PAGINATION
+            ================================================== -->
+
+            <div class="customers-pagination">
+
+                <span>
+                    Showing 1–6 of 843 customers
+                </span>
+
+
+                <div class="pagination-buttons">
+
+                    <button
+                        type="button"
+                        disabled
+                        aria-label="Previous page"
+                        title="Previous page">
+
+                        <i class="fa-solid fa-chevron-left"></i>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="current"
+                        aria-label="Page 1"
+                        title="Page 1">
+
+                        1
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        aria-label="Page 2"
+                        title="Page 2">
+
+                        2
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        aria-label="Page 3"
+                        title="Page 3">
+
+                        3
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        aria-label="Page 4"
+                        title="Page 4">
+
+                        4
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        aria-label="Next page"
+                        title="Next page">
+
+                        <i class="fa-solid fa-chevron-right"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+
+<!-- =====================================================
+     BOOTSTRAP JS
+===================================================== -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+
+<!-- =====================================================
+     CUSTOMERS JS
+===================================================== -->
+
+<script>
+
+    /* =====================================================
+       MOBILE SIDEBAR
+    ====================================================== */
+
+    const mobileMenuBtn =
+        document.getElementById("mobileMenuBtn");
+
+    const adminSidebar =
+        document.getElementById("adminSidebar");
+
+    const sidebarOverlay =
+        document.getElementById("sidebarOverlay");
+
+
+    mobileMenuBtn.addEventListener(
+        "click",
+        function () {
+
+            adminSidebar.classList.toggle("show");
+
+            sidebarOverlay.classList.toggle("show");
+
+        }
+    );
+
+
+    sidebarOverlay.addEventListener(
+        "click",
+        function () {
+
+            adminSidebar.classList.remove("show");
+
+            sidebarOverlay.classList.remove("show");
+
+        }
+    );
+
+
+
+    /* =====================================================
+       CUSTOMER SEARCH AND FILTER
+    ====================================================== */
+
+    const customerSearch =
+        document.getElementById("customerSearch");
+
+    const customerStatusFilter =
+        document.getElementById(
+            "customerStatusFilter"
+        );
+
+    const customerTypeFilter =
+        document.getElementById(
+            "customerTypeFilter"
+        );
+
+
+    function filterCustomers() {
+
+        const searchValue =
+            customerSearch.value
+                .trim()
+                .toLowerCase();
+
+        const selectedStatus =
+            customerStatusFilter.value;
+
+        const selectedType =
+            customerTypeFilter.value;
+
+
+        document
+            .querySelectorAll(
+                ".customers-table tbody tr"
+            )
+            .forEach(row => {
+
+                const rowText =
+                    row.innerText.toLowerCase();
+
+                const rowStatus =
+                    row.dataset.status;
+
+                const rowType =
+                    row.dataset.type;
+
+
+                const searchMatch =
+                    rowText.includes(searchValue);
+
+                const statusMatch =
+                    selectedStatus === "all" ||
+                    rowStatus === selectedStatus;
+
+                const typeMatch =
+                    selectedType === "all" ||
+                    rowType === selectedType;
+
+
+                row.style.display =
+                    searchMatch &&
+                    statusMatch &&
+                    typeMatch
+                        ? ""
+                        : "none";
+
+            });
+
+
+        document
+            .querySelectorAll(
+                ".mobile-customer-card"
+            )
+            .forEach(card => {
+
+                const cardText =
+                    card.innerText.toLowerCase();
+
+                const cardStatus =
+                    card.dataset.status;
+
+                const cardType =
+                    card.dataset.type;
+
+
+                const searchMatch =
+                    cardText.includes(searchValue);
+
+                const statusMatch =
+                    selectedStatus === "all" ||
+                    cardStatus === selectedStatus;
+
+                const typeMatch =
+                    selectedType === "all" ||
+                    cardType === selectedType;
+
+
+                card.style.display =
+                    searchMatch &&
+                    statusMatch &&
+                    typeMatch
+                        ? ""
+                        : "none";
+
+            });
+
+    }
+
+
+    customerSearch.addEventListener(
+        "input",
+        filterCustomers
+    );
+
+
+    customerStatusFilter.addEventListener(
+        "change",
+        filterCustomers
+    );
+
+
+    customerTypeFilter.addEventListener(
+        "change",
+        filterCustomers
+    );
+
+
+
+    /* =====================================================
+       GLOBAL SEARCH
+    ====================================================== */
+
+    const globalCustomerSearch =
+        document.getElementById(
+            "globalCustomerSearch"
+        );
+
+
+    globalCustomerSearch.addEventListener(
+        "input",
+        function () {
+
+            customerSearch.value =
+                this.value;
+
+            filterCustomers();
+
+        }
+    );
+
+
+
+    /* =====================================================
+       EXPORT
+    ====================================================== */
+
+    document
+        .getElementById("exportCustomersBtn")
+        .addEventListener(
+            "click",
+            function () {
+
+                alert(
+                    "Customer export started."
+                );
+
+            }
+        );
+
+
+
+    /* =====================================================
+       VIEW CUSTOMER
+    ====================================================== */
+
+    document
+        .querySelectorAll(
+            ".view-customer-btn"
+        )
+        .forEach(button => {
+
+            button.addEventListener(
+                "click",
+                function () {
+
+                    alert(
+                        "Customer details will open here."
+                    );
+
+                }
+            );
+
+        });
+
+
+
+    /* =====================================================
+       LOGOUT
+    ====================================================== */
+
+    document
+        .querySelector(".logout-link")
+        .addEventListener(
+            "click",
+            function (event) {
+
+                event.preventDefault();
+
+                const confirmed =
+                    confirm(
+                        "Are you sure you want to logout?"
+                    );
+
+
+                if (confirmed) {
+
+                    window.location.href =
+                        "../index.html";
+
+                }
+
+            }
+        );
+
+</script>
+
+
+</body>
+
+</html>

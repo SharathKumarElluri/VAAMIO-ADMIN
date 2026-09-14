@@ -1,0 +1,2317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="VAAMIO Admin Categories">
+
+    <title>VAAMIO | Categories</title>
+
+
+    <!-- =====================================================
+         BOOTSTRAP
+    ====================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         CATEGORIES CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="Categories.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     MOBILE HEADER
+===================================================== -->
+
+<header class="admin-mobile-header">
+
+    <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        type="button"
+        aria-label="Open admin menu"
+        title="Open admin menu">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+
+    <div class="mobile-brand">
+
+        <strong>VAAMIO</strong>
+
+        <small>ADMIN PANEL</small>
+
+    </div>
+
+
+    <button
+        class="mobile-notification"
+        type="button"
+        aria-label="Notifications"
+        title="Notifications">
+
+        <i class="fa-regular fa-bell"></i>
+
+        <span>3</span>
+
+    </button>
+
+</header>
+
+
+
+<!-- =====================================================
+     SIDEBAR OVERLAY
+===================================================== -->
+
+<div
+    class="sidebar-overlay"
+    id="sidebarOverlay">
+</div>
+
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside
+    class="admin-sidebar"
+    id="adminSidebar">
+
+
+    <!-- LOGO -->
+
+    <div class="admin-logo">
+
+        <strong>VAAMIO</strong>
+
+        <span>ADMIN PANEL</span>
+
+    </div>
+
+
+    <!-- ADMIN USER -->
+
+    <div class="admin-user">
+
+        <div class="admin-avatar">
+            A
+        </div>
+
+        <div>
+
+            <strong>Admin</strong>
+
+            <small>Super Admin</small>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+    <nav class="admin-nav">
+
+
+        <!-- MAIN -->
+
+        <div class="nav-heading">
+            MAIN
+        </div>
+
+
+        <a
+            href="../index.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-chart-pie"></i>
+
+            <span>Dashboard</span>
+
+        </a>
+
+
+
+        <!-- SALES -->
+
+        <div class="nav-heading">
+            SALES
+        </div>
+
+
+        <a
+            href="../Orders/Orders.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            <span>Orders</span>
+
+            <b>12</b>
+
+        </a>
+
+
+        <a
+            href="../Payments/Payments.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-credit-card"></i>
+
+            <span>Payments</span>
+
+        </a>
+
+
+        <a
+            href="/Refunds/Rrefunds.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-rotate-left"></i>
+
+            <span>Refunds</span>
+
+        </a>
+
+
+        <a
+            href="../Shipping/Shipping.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-truck"></i>
+
+            <span>Shipping</span>
+
+        </a>
+
+
+
+        <!-- CATALOG -->
+
+        <div class="nav-heading">
+            CATALOG
+        </div>
+
+
+        <a
+            href="../Products/Products.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-box"></i>
+
+            <span>Products</span>
+
+        </a>
+
+
+        <a
+            href="Categories.html"
+            class="nav-link active">
+
+            <i class="fa-solid fa-layer-group"></i>
+
+            <span>Categories</span>
+
+        </a>
+
+
+        <a
+            href="../Inventory/Inventory.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-warehouse"></i>
+
+            <span>Inventory</span>
+
+            <b class="warning">
+                3
+            </b>
+
+        </a>
+
+
+
+        <!-- CUSTOMERS -->
+
+        <div class="nav-heading">
+            CUSTOMERS
+        </div>
+
+
+        <a
+            href="../Customers/Customers.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-users"></i>
+
+            <span>Customers</span>
+
+        </a>
+
+
+        <a
+            href="../Reviews/Reviews.html"
+            class="nav-link">
+
+            <i class="fa-regular fa-star"></i>
+
+            <span>Reviews</span>
+
+        </a>
+
+
+        <a
+            href="../Support/Support.html"
+            class="nav-link">
+
+            <i class="fa-regular fa-comments"></i>
+
+            <span>Support</span>
+
+        </a>
+
+
+
+        <!-- MARKETING -->
+
+        <div class="nav-heading">
+            MARKETING
+        </div>
+
+
+        <a
+            href="../Coupons/Coupons.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-ticket"></i>
+
+            <span>Coupons</span>
+
+        </a>
+
+
+        <a
+            href="../Offers/Offers.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-bullseye"></i>
+
+            <span>Offers</span>
+
+        </a>
+
+
+        <a
+            href="../Banners/Banners.html"
+            class="nav-link">
+
+            <i class="fa-regular fa-image"></i>
+
+            <span>Banners</span>
+
+        </a>
+
+
+        <a
+            href="../Newsletter/Newsletter.html"
+            class="nav-link">
+
+            <i class="fa-regular fa-envelope"></i>
+
+            <span>Newsletter</span>
+
+        </a>
+
+
+
+        <!-- BUSINESS -->
+
+        <div class="nav-heading">
+            BUSINESS
+        </div>
+
+
+        <a
+            href="../Bulk-Orders/Bulk-Orders.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-handshake"></i>
+
+            <span>Bulk Orders</span>
+
+        </a>
+
+
+        <a
+            href="../Distributor-Review/Distributor.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-store"></i>
+
+            <span>Distributor-Review</span>
+
+        </a>
+
+
+        <a
+            href="../Franchise/Franchise.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-building"></i>
+
+            <span>Franchise</span>
+
+        </a>
+
+
+
+        <!-- REPORTS -->
+
+        <div class="nav-heading">
+            REPORTS
+        </div>
+
+
+        <a
+            href="../Sales-Reports/Sales-Reports.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            <span>Sales Reports</span>
+
+        </a>
+
+
+        <a
+            href="../Product-Reports/Product-Reports.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-chart-column"></i>
+
+            <span>Product Reports</span>
+
+        </a>
+
+
+
+        <!-- SYSTEM -->
+
+        <div class="nav-heading">
+            SYSTEM
+        </div>
+
+
+        <a
+            href="../Staff-Roles/Staff-Roles.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-user-shield"></i>
+
+            <span>Staff & Roles</span>
+
+        </a>
+
+
+        <a
+            href="../Audit-Logs/Audit-Logs.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-file-shield"></i>
+
+            <span>Audit Logs</span>
+
+        </a>
+
+
+        <a
+            href="../Settings/Settings.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-gear"></i>
+
+            <span>Settings</span>
+
+        </a>
+
+
+        <div class="nav-divider"></div>
+
+
+        <a
+            href="../index.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            <span>View Website</span>
+
+        </a>
+
+
+        <a
+            href="#"
+            class="nav-link logout-link">
+
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+            <span>Logout</span>
+
+        </a>
+
+    </nav>
+
+</aside>
+
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main class="admin-main">
+
+
+    <!-- =================================================
+         TOPBAR
+    ================================================== -->
+
+    <header class="admin-topbar">
+
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="search"
+                id="globalCategorySearch"
+                placeholder="Search categories..."
+                aria-label="Search categories">
+
+        </div>
+
+
+        <div class="topbar-right">
+
+
+            <button
+                class="notification-btn"
+                type="button"
+                aria-label="Notifications"
+                title="Notifications">
+
+                <i class="fa-regular fa-bell"></i>
+
+                <span>3</span>
+
+            </button>
+
+
+            <div class="admin-profile">
+
+                <div class="profile-avatar">
+                    A
+                </div>
+
+                <div>
+
+                    <strong>Admin</strong>
+
+                    <small>Super Admin</small>
+
+                </div>
+
+                <i class="fa-solid fa-chevron-down"></i>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================================
+         CONTENT
+    ================================================== -->
+
+    <div class="admin-content">
+
+
+        <!-- =================================================
+             PAGE HEADER
+        ================================================== -->
+
+        <section class="page-header">
+
+            <div>
+
+                <span class="page-eyebrow">
+                    CATALOG MANAGEMENT
+                </span>
+
+                <h1>
+                    Categories
+                </h1>
+
+                <p>
+                    Organize your VAAMIO products into clear and manageable categories.
+                </p>
+
+            </div>
+
+
+            <button
+                class="category-add-btn"
+                id="addCategoryBtn"
+                type="button"
+                aria-label="Add new category"
+                title="Add new category">
+
+                <i class="fa-solid fa-plus"></i>
+
+                Add Category
+
+            </button>
+
+        </section>
+
+
+
+        <!-- =================================================
+             STAT CARDS
+        ================================================== -->
+
+        <div class="row g-3">
+
+
+            <!-- TOTAL CATEGORIES -->
+
+            <div class="col-6 col-xl-3">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+
+                        <i class="fa-solid fa-layer-group"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Total Categories
+                        </span>
+
+                        <strong>
+                            4
+                        </strong>
+
+                        <small>
+                            Product categories
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ACTIVE -->
+
+            <div class="col-6 col-xl-3">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Active
+                        </span>
+
+                        <strong>
+                            4
+                        </strong>
+
+                        <small>
+                            Currently visible
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRODUCTS -->
+
+            <div class="col-6 col-xl-3">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">
+
+                        <i class="fa-solid fa-box"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Products
+                        </span>
+
+                        <strong>
+                            36
+                        </strong>
+
+                        <small>
+                            Across all categories
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SUB CATEGORIES -->
+
+            <div class="col-6 col-xl-3">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon red">
+
+                        <i class="fa-solid fa-sitemap"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Sub Categories
+                        </span>
+
+                        <strong>
+                            8
+                        </strong>
+
+                        <small>
+                            Product variations
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             CATEGORY CARDS
+        ================================================== -->
+
+        <section class="admin-card mt-4">
+
+
+            <div class="admin-card-header">
+
+                <div>
+
+                    <span>
+                        PRODUCT ORGANIZATION
+                    </span>
+
+                    <h2>
+                        Category Overview
+                    </h2>
+
+                </div>
+
+
+                <span class="category-count">
+                    4 Categories
+                </span>
+
+            </div>
+
+
+            <div class="category-grid">
+
+
+                <!-- CHICKEN -->
+
+                <article
+                    class="category-card"
+                    data-category="chicken">
+
+
+                    <div class="category-card-top">
+
+                        <div class="category-icon chicken">
+
+                            <i class="fa-solid fa-drumstick-bite"></i>
+
+                        </div>
+
+
+                        <button
+                            class="category-menu-btn"
+                            type="button"
+                            aria-label="Category options"
+                            title="Category options">
+
+                            <i class="fa-solid fa-ellipsis"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="category-card-content">
+
+                        <h3>
+                            Chicken Pickles
+                        </h3>
+
+                        <p>
+                            Authentic chicken-based Telugu pickles.
+                        </p>
+
+
+                        <div class="category-card-meta">
+
+                            <span>
+                                Products
+                            </span>
+
+                            <strong>
+                                12
+                            </strong>
+
+                        </div>
+
+
+                        <div class="category-stock-bar">
+
+                            <span class="category-progress chicken-progress">
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="category-card-footer">
+
+                        <span class="category-active">
+                            Active
+                        </span>
+
+
+                        <button
+                            class="category-view-btn"
+                            type="button"
+                            aria-label="View Chicken Pickles"
+                            title="View category">
+
+                            View Category
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- SEAFOOD -->
+
+                <article
+                    class="category-card"
+                    data-category="seafood">
+
+
+                    <div class="category-card-top">
+
+                        <div class="category-icon seafood">
+
+                            <i class="fa-solid fa-fish"></i>
+
+                        </div>
+
+
+                        <button
+                            class="category-menu-btn"
+                            type="button"
+                            aria-label="Category options"
+                            title="Category options">
+
+                            <i class="fa-solid fa-ellipsis"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="category-card-content">
+
+                        <h3>
+                            Seafood Pickles
+                        </h3>
+
+                        <p>
+                            Coastal seafood recipes with bold spices.
+                        </p>
+
+
+                        <div class="category-card-meta">
+
+                            <span>
+                                Products
+                            </span>
+
+                            <strong>
+                                8
+                            </strong>
+
+                        </div>
+
+
+                        <div class="category-stock-bar">
+
+                            <span class="category-progress seafood-progress">
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="category-card-footer">
+
+                        <span class="category-active">
+                            Active
+                        </span>
+
+
+                        <button
+                            class="category-view-btn"
+                            type="button"
+                            aria-label="View Seafood Pickles"
+                            title="View category">
+
+                            View Category
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- MUTTON -->
+
+                <article
+                    class="category-card"
+                    data-category="meat">
+
+
+                    <div class="category-card-top">
+
+                        <div class="category-icon meat">
+
+                            <i class="fa-solid fa-bone"></i>
+
+                        </div>
+
+
+                        <button
+                            class="category-menu-btn"
+                            type="button"
+                            aria-label="Category options"
+                            title="Category options">
+
+                            <i class="fa-solid fa-ellipsis"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="category-card-content">
+
+                        <h3>
+                            Mutton & Meat
+                        </h3>
+
+                        <p>
+                            Traditional mutton and meat pickle varieties.
+                        </p>
+
+
+                        <div class="category-card-meta">
+
+                            <span>
+                                Products
+                            </span>
+
+                            <strong>
+                                9
+                            </strong>
+
+                        </div>
+
+
+                        <div class="category-stock-bar">
+
+                            <span class="category-progress meat-progress">
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="category-card-footer">
+
+                        <span class="category-active">
+                            Active
+                        </span>
+
+
+                        <button
+                            class="category-view-btn"
+                            type="button"
+                            aria-label="View Mutton and Meat"
+                            title="View category">
+
+                            View Category
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- COMBO -->
+
+                <article
+                    class="category-card"
+                    data-category="combo">
+
+
+                    <div class="category-card-top">
+
+                        <div class="category-icon combo">
+
+                            <i class="fa-solid fa-gift"></i>
+
+                        </div>
+
+
+                        <button
+                            class="category-menu-btn"
+                            type="button"
+                            aria-label="Category options"
+                            title="Category options">
+
+                            <i class="fa-solid fa-ellipsis"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="category-card-content">
+
+                        <h3>
+                            Combo Packs
+                        </h3>
+
+                        <p>
+                            Curated packs combining VAAMIO favourites.
+                        </p>
+
+
+                        <div class="category-card-meta">
+
+                            <span>
+                                Products
+                            </span>
+
+                            <strong>
+                                7
+                            </strong>
+
+                        </div>
+
+
+                        <div class="category-stock-bar">
+
+                            <span class="category-progress combo-progress">
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="category-card-footer">
+
+                        <span class="category-active">
+                            Active
+                        </span>
+
+
+                        <button
+                            class="category-view-btn"
+                            type="button"
+                            aria-label="View Combo Packs"
+                            title="View category">
+
+                            View Category
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ALL CATEGORIES
+        ================================================== -->
+
+        <section class="admin-card mt-4">
+
+
+            <div class="admin-card-header">
+
+                <div>
+
+                    <span>
+                        CATEGORY MANAGEMENT
+                    </span>
+
+                    <h2>
+                        All Categories
+                    </h2>
+
+                </div>
+
+
+                <span class="category-count">
+                    4 Categories
+                </span>
+
+            </div>
+
+
+
+            <!-- FILTERS -->
+
+            <div class="category-filters">
+
+
+                <div class="category-search">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        id="categorySearch"
+                        placeholder="Search category name..."
+                        aria-label="Search category name">
+
+                </div>
+
+
+                <label class="category-filter-label">
+
+                    <span>Status</span>
+
+                    <select
+                        id="categoryStatusFilter"
+                        class="category-filter-select"
+                        aria-label="Filter categories by status">
+
+                        <option value="all">
+                            All Status
+                        </option>
+
+                        <option value="active">
+                            Active
+                        </option>
+
+                        <option value="inactive">
+                            Inactive
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <label class="category-filter-label">
+
+                    <span>Sort</span>
+
+                    <select
+                        class="category-filter-select"
+                        aria-label="Sort categories">
+
+                        <option>
+                            Name: A-Z
+                        </option>
+
+                        <option>
+                            Name: Z-A
+                        </option>
+
+                        <option>
+                            Most Products
+                        </option>
+
+                        <option>
+                            Least Products
+                        </option>
+
+                    </select>
+
+                </label>
+
+            </div>
+
+
+
+            <!-- DESKTOP TABLE -->
+
+            <div class="admin-table-wrapper">
+
+                <table class="admin-table categories-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Category
+                            </th>
+
+                            <th>
+                                Description
+                            </th>
+
+                            <th>
+                                Products
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                            <th>
+                                Updated
+                            </th>
+
+                            <th>
+                                Action
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <tr data-status="active">
+
+
+                            <td>
+
+                                <div class="table-category">
+
+                                    <div class="table-category-icon chicken">
+
+                                        <i class="fa-solid fa-drumstick-bite"></i>
+
+                                    </div>
+
+                                    <strong>
+                                        Chicken Pickles
+                                    </strong>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                Chicken-based Telugu pickles
+                            </td>
+
+
+                            <td>
+                                12
+                            </td>
+
+
+                            <td>
+
+                                <span class="category-status active">
+                                    Active
+                                </span>
+
+                            </td>
+
+
+                            <td>
+                                Sep 12, 2026
+                            </td>
+
+
+                            <td>
+
+                                <div class="category-actions">
+
+                                    <button
+                                        class="admin-view-btn edit-category-btn"
+                                        type="button"
+                                        aria-label="Edit Chicken Pickles"
+                                        title="Edit category">
+
+                                        <i class="fa-solid fa-pen"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="admin-view-btn delete-category-btn"
+                                        type="button"
+                                        aria-label="Delete Chicken Pickles"
+                                        title="Delete category">
+
+                                        <i class="fa-solid fa-trash"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr data-status="active">
+
+
+                            <td>
+
+                                <div class="table-category">
+
+                                    <div class="table-category-icon seafood">
+
+                                        <i class="fa-solid fa-fish"></i>
+
+                                    </div>
+
+                                    <strong>
+                                        Seafood Pickles
+                                    </strong>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                Coastal seafood pickle varieties
+                            </td>
+
+
+                            <td>
+                                8
+                            </td>
+
+
+                            <td>
+
+                                <span class="category-status active">
+                                    Active
+                                </span>
+
+                            </td>
+
+
+                            <td>
+                                Sep 10, 2026
+                            </td>
+
+
+                            <td>
+
+                                <div class="category-actions">
+
+                                    <button
+                                        class="admin-view-btn edit-category-btn"
+                                        type="button"
+                                        aria-label="Edit Seafood Pickles"
+                                        title="Edit category">
+
+                                        <i class="fa-solid fa-pen"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="admin-view-btn delete-category-btn"
+                                        type="button"
+                                        aria-label="Delete Seafood Pickles"
+                                        title="Delete category">
+
+                                        <i class="fa-solid fa-trash"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr data-status="active">
+
+
+                            <td>
+
+                                <div class="table-category">
+
+                                    <div class="table-category-icon meat">
+
+                                        <i class="fa-solid fa-bone"></i>
+
+                                    </div>
+
+                                    <strong>
+                                        Mutton & Meat
+                                    </strong>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                Traditional meat pickle varieties
+                            </td>
+
+
+                            <td>
+                                9
+                            </td>
+
+
+                            <td>
+
+                                <span class="category-status active">
+                                    Active
+                                </span>
+
+                            </td>
+
+
+                            <td>
+                                Sep 08, 2026
+                            </td>
+
+
+                            <td>
+
+                                <div class="category-actions">
+
+                                    <button
+                                        class="admin-view-btn edit-category-btn"
+                                        type="button"
+                                        aria-label="Edit Mutton and Meat"
+                                        title="Edit category">
+
+                                        <i class="fa-solid fa-pen"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="admin-view-btn delete-category-btn"
+                                        type="button"
+                                        aria-label="Delete Mutton and Meat"
+                                        title="Delete category">
+
+                                        <i class="fa-solid fa-trash"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr data-status="active">
+
+
+                            <td>
+
+                                <div class="table-category">
+
+                                    <div class="table-category-icon combo">
+
+                                        <i class="fa-solid fa-gift"></i>
+
+                                    </div>
+
+                                    <strong>
+                                        Combo Packs
+                                    </strong>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                Curated VAAMIO combination packs
+                            </td>
+
+
+                            <td>
+                                7
+                            </td>
+
+
+                            <td>
+
+                                <span class="category-status active">
+                                    Active
+                                </span>
+
+                            </td>
+
+
+                            <td>
+                                Sep 06, 2026
+                            </td>
+
+
+                            <td>
+
+                                <div class="category-actions">
+
+                                    <button
+                                        class="admin-view-btn edit-category-btn"
+                                        type="button"
+                                        aria-label="Edit Combo Packs"
+                                        title="Edit category">
+
+                                        <i class="fa-solid fa-pen"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="admin-view-btn delete-category-btn"
+                                        type="button"
+                                        aria-label="Delete Combo Packs"
+                                        title="Delete category">
+
+                                        <i class="fa-solid fa-trash"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+
+            <!-- MOBILE CATEGORIES -->
+
+            <div class="mobile-categories">
+
+
+                <article
+                    class="mobile-category-card"
+                    data-status="active">
+
+                    <div class="mobile-category-top">
+
+                        <div class="table-category">
+
+                            <div class="table-category-icon chicken">
+
+                                <i class="fa-solid fa-drumstick-bite"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Chicken Pickles
+                                </strong>
+
+                                <small>
+                                    12 Products
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="category-status active">
+                            Active
+                        </span>
+
+                    </div>
+
+
+                    <p>
+                        Chicken-based Telugu pickles
+                    </p>
+
+
+                    <div class="mobile-category-actions">
+
+                        <button
+                            class="mobile-category-edit edit-category-btn"
+                            type="button"
+                            aria-label="Edit Chicken Pickles">
+
+                            <i class="fa-solid fa-pen"></i>
+
+                            Edit
+
+                        </button>
+
+
+                        <button
+                            class="mobile-category-delete delete-category-btn"
+                            type="button"
+                            aria-label="Delete Chicken Pickles">
+
+                            <i class="fa-solid fa-trash"></i>
+
+                            Delete
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    class="mobile-category-card"
+                    data-status="active">
+
+                    <div class="mobile-category-top">
+
+                        <div class="table-category">
+
+                            <div class="table-category-icon seafood">
+
+                                <i class="fa-solid fa-fish"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Seafood Pickles
+                                </strong>
+
+                                <small>
+                                    8 Products
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="category-status active">
+                            Active
+                        </span>
+
+                    </div>
+
+
+                    <p>
+                        Coastal seafood pickle varieties
+                    </p>
+
+
+                    <div class="mobile-category-actions">
+
+                        <button
+                            class="mobile-category-edit edit-category-btn"
+                            type="button"
+                            aria-label="Edit Seafood Pickles">
+
+                            <i class="fa-solid fa-pen"></i>
+
+                            Edit
+
+                        </button>
+
+
+                        <button
+                            class="mobile-category-delete delete-category-btn"
+                            type="button"
+                            aria-label="Delete Seafood Pickles">
+
+                            <i class="fa-solid fa-trash"></i>
+
+                            Delete
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    class="mobile-category-card"
+                    data-status="active">
+
+                    <div class="mobile-category-top">
+
+                        <div class="table-category">
+
+                            <div class="table-category-icon meat">
+
+                                <i class="fa-solid fa-bone"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Mutton & Meat
+                                </strong>
+
+                                <small>
+                                    9 Products
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="category-status active">
+                            Active
+                        </span>
+
+                    </div>
+
+
+                    <p>
+                        Traditional meat pickle varieties
+                    </p>
+
+
+                    <div class="mobile-category-actions">
+
+                        <button
+                            class="mobile-category-edit edit-category-btn"
+                            type="button"
+                            aria-label="Edit Mutton and Meat">
+
+                            <i class="fa-solid fa-pen"></i>
+
+                            Edit
+
+                        </button>
+
+
+                        <button
+                            class="mobile-category-delete delete-category-btn"
+                            type="button"
+                            aria-label="Delete Mutton and Meat">
+
+                            <i class="fa-solid fa-trash"></i>
+
+                            Delete
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    class="mobile-category-card"
+                    data-status="active">
+
+                    <div class="mobile-category-top">
+
+                        <div class="table-category">
+
+                            <div class="table-category-icon combo">
+
+                                <i class="fa-solid fa-gift"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Combo Packs
+                                </strong>
+
+                                <small>
+                                    7 Products
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="category-status active">
+                            Active
+                        </span>
+
+                    </div>
+
+
+                    <p>
+                        Curated VAAMIO combination packs
+                    </p>
+
+
+                    <div class="mobile-category-actions">
+
+                        <button
+                            class="mobile-category-edit edit-category-btn"
+                            type="button"
+                            aria-label="Edit Combo Packs">
+
+                            <i class="fa-solid fa-pen"></i>
+
+                            Edit
+
+                        </button>
+
+
+                        <button
+                            class="mobile-category-delete delete-category-btn"
+                            type="button"
+                            aria-label="Delete Combo Packs">
+
+                            <i class="fa-solid fa-trash"></i>
+
+                            Delete
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+
+            <!-- PAGINATION -->
+
+            <div class="categories-pagination">
+
+                <span>
+                    Showing 1–4 of 4 categories
+                </span>
+
+
+                <div class="pagination-buttons">
+
+
+                    <button
+                        type="button"
+                        disabled
+                        aria-label="Previous page"
+                        title="Previous page">
+
+                        <i class="fa-solid fa-chevron-left"></i>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="current"
+                        aria-label="Page 1"
+                        title="Page 1">
+
+                        1
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        aria-label="Next page"
+                        title="Next page">
+
+                        <i class="fa-solid fa-chevron-right"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+
+<!-- =====================================================
+     BOOTSTRAP JS
+===================================================== -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+
+<!-- =====================================================
+     CATEGORIES JS
+===================================================== -->
+
+<script>
+
+    /* =====================================================
+       MOBILE SIDEBAR
+    ====================================================== */
+
+    const mobileMenuBtn =
+        document.getElementById("mobileMenuBtn");
+
+    const adminSidebar =
+        document.getElementById("adminSidebar");
+
+    const sidebarOverlay =
+        document.getElementById("sidebarOverlay");
+
+
+    mobileMenuBtn.addEventListener(
+        "click",
+        function () {
+
+            adminSidebar.classList.toggle("show");
+
+            sidebarOverlay.classList.toggle("show");
+
+        }
+    );
+
+
+    sidebarOverlay.addEventListener(
+        "click",
+        function () {
+
+            adminSidebar.classList.remove("show");
+
+            sidebarOverlay.classList.remove("show");
+
+        }
+    );
+
+
+
+    /* =====================================================
+       CATEGORY SEARCH / FILTER
+    ====================================================== */
+
+    const categorySearch =
+        document.getElementById("categorySearch");
+
+    const globalCategorySearch =
+        document.getElementById(
+            "globalCategorySearch"
+        );
+
+    const categoryStatusFilter =
+        document.getElementById(
+            "categoryStatusFilter"
+        );
+
+
+    function filterCategories() {
+
+        const searchValue =
+            categorySearch.value
+                .trim()
+                .toLowerCase();
+
+        const selectedStatus =
+            categoryStatusFilter.value;
+
+
+        document
+            .querySelectorAll(
+                ".categories-table tbody tr"
+            )
+            .forEach(row => {
+
+                const rowText =
+                    row.innerText.toLowerCase();
+
+                const rowStatus =
+                    row.dataset.status;
+
+
+                const searchMatch =
+                    rowText.includes(searchValue);
+
+                const statusMatch =
+                    selectedStatus === "all" ||
+                    rowStatus === selectedStatus;
+
+
+                row.style.display =
+                    searchMatch &&
+                    statusMatch
+                        ? ""
+                        : "none";
+
+            });
+
+
+        document
+            .querySelectorAll(
+                ".mobile-category-card"
+            )
+            .forEach(card => {
+
+                const cardText =
+                    card.innerText.toLowerCase();
+
+                const cardStatus =
+                    card.dataset.status;
+
+
+                const searchMatch =
+                    cardText.includes(searchValue);
+
+                const statusMatch =
+                    selectedStatus === "all" ||
+                    cardStatus === selectedStatus;
+
+
+                card.style.display =
+                    searchMatch &&
+                    statusMatch
+                        ? ""
+                        : "none";
+
+            });
+
+    }
+
+
+    categorySearch.addEventListener(
+        "input",
+        filterCategories
+    );
+
+
+    categoryStatusFilter.addEventListener(
+        "change",
+        filterCategories
+    );
+
+
+
+    /* =====================================================
+       GLOBAL SEARCH
+    ====================================================== */
+
+    globalCategorySearch.addEventListener(
+        "input",
+        function () {
+
+            categorySearch.value =
+                this.value;
+
+            filterCategories();
+
+        }
+    );
+
+
+
+    /* =====================================================
+       ADD CATEGORY
+    ====================================================== */
+
+    document
+        .getElementById("addCategoryBtn")
+        .addEventListener(
+            "click",
+            function () {
+
+                alert(
+                    "Add Category form will open here."
+                );
+
+            }
+        );
+
+
+
+    /* =====================================================
+       VIEW CATEGORY
+    ====================================================== */
+
+    document
+        .querySelectorAll(".category-view-btn")
+        .forEach(button => {
+
+            button.addEventListener(
+                "click",
+                function () {
+
+                    alert(
+                        "Category products will open here."
+                    );
+
+                }
+            );
+
+        });
+
+
+
+    /* =====================================================
+       EDIT CATEGORY
+    ====================================================== */
+
+    document
+        .querySelectorAll(".edit-category-btn")
+        .forEach(button => {
+
+            button.addEventListener(
+                "click",
+                function () {
+
+                    alert(
+                        "Edit Category form will open here."
+                    );
+
+                }
+            );
+
+        });
+
+
+
+    /* =====================================================
+       DELETE CATEGORY
+    ====================================================== */
+
+    document
+        .querySelectorAll(".delete-category-btn")
+        .forEach(button => {
+
+            button.addEventListener(
+                "click",
+                function () {
+
+                    const confirmed =
+                        confirm(
+                            "Are you sure you want to delete this category?"
+                        );
+
+
+                    if (confirmed) {
+
+                        alert(
+                            "Category deleted."
+                        );
+
+                    }
+
+                }
+            );
+
+        });
+
+
+
+    /* =====================================================
+       CATEGORY MENU
+    ====================================================== */
+
+    document
+        .querySelectorAll(".category-menu-btn")
+        .forEach(button => {
+
+            button.addEventListener(
+                "click",
+                function () {
+
+                    alert(
+                        "Category options will open here."
+                    );
+
+                }
+            );
+
+        });
+
+
+
+    /* =====================================================
+       LOGOUT
+    ====================================================== */
+
+    document
+        .querySelector(".logout-link")
+        .addEventListener(
+            "click",
+            function (event) {
+
+                event.preventDefault();
+
+                const confirmed =
+                    confirm(
+                        "Are you sure you want to logout?"
+                    );
+
+
+                if (confirmed) {
+
+                    window.location.href =
+                        "../index.html";
+
+                }
+
+            }
+        );
+
+</script>
+
+
+</body>
+
+</html>

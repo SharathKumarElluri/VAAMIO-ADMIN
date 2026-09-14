@@ -1,19 +1,17 @@
 /* =========================================================
-   VAAMIO ADMIN
-   INDEX.CSS
-   DASHBOARD / PRODUCTS SHARED STYLE
+   VAAMIO ADMIN - REFUNDS
+   Complete standalone Refunds.css
 ========================================================= */
 
 
 /* =========================================================
-   VARIABLES
+   ROOT VARIABLES
 ========================================================= */
 
 :root {
 
     --green: #064b3b;
     --green-dark: #043d30;
-    --green-light: #e8efeb;
 
     --cream: #f8f4eb;
     --white: #ffffff;
@@ -27,9 +25,6 @@
     --orange: #d36632;
     --red: #bd4b40;
     --purple: #8063a8;
-
-    --sidebar-width: 305px;
-    --topbar-height: 90px;
 
 }
 
@@ -50,13 +45,11 @@
 html,
 body {
 
-    margin: 0;
-
-    padding: 0;
-
     width: 100%;
-
     min-height: 100%;
+
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -78,9 +71,18 @@ body {
 
 img {
 
+    display: block;
+
     max-width: 100%;
 
-    display: block;
+}
+
+
+a {
+
+    color: inherit;
+
+    text-decoration: none;
 
 }
 
@@ -94,11 +96,9 @@ select {
 }
 
 
-a {
+button {
 
-    text-decoration: none;
-
-    color: inherit;
+    cursor: pointer;
 
 }
 
@@ -119,6 +119,8 @@ a {
     width: 42px;
     height: 42px;
 
+    padding: 0;
+
     border: 0;
 
     border-radius: 11px;
@@ -134,6 +136,8 @@ a {
 
     justify-content: center;
 
+    font-size: 17px;
+
 }
 
 
@@ -146,6 +150,8 @@ a {
     align-items: center;
 
     line-height: 1;
+
+    color: #ffffff;
 
 }
 
@@ -167,13 +173,14 @@ a {
 
     margin-top: 5px;
 
+    color:
+        rgba(255,255,255,.68);
+
     font-size: 8px;
 
     font-weight: 700;
 
     letter-spacing: .18em;
-
-    opacity: .7;
 
 }
 
@@ -184,6 +191,8 @@ a {
 
     width: 42px;
     height: 42px;
+
+    padding: 0;
 
     border: 0;
 
@@ -200,6 +209,8 @@ a {
 
     justify-content: center;
 
+    font-size: 17px;
+
 }
 
 
@@ -207,9 +218,8 @@ a {
 
     position: absolute;
 
-    top: 4px;
-
-    right: 4px;
+    top: 3px;
+    right: 3px;
 
     min-width: 16px;
 
@@ -219,17 +229,19 @@ a {
 
     border-radius: 50px;
 
-    background: #d45b42;
+    background: #d25b45;
 
     color: #ffffff;
-
-    font-size: 8px;
 
     display: flex;
 
     align-items: center;
 
     justify-content: center;
+
+    font-size: 8px;
+
+    font-weight: 700;
 
 }
 
@@ -273,20 +285,18 @@ a {
     position: fixed;
 
     top: 0;
-
     left: 0;
-
     bottom: 0;
 
     z-index: 999;
 
-    width: var(--sidebar-width);
+    width: 305px;
 
     background:
         linear-gradient(
             180deg,
             #064b3b 0%,
-            #043f31 100%
+            #043d30 100%
         );
 
     color: #ffffff;
@@ -357,14 +367,14 @@ a {
 
     margin-top: 9px;
 
+    color:
+        rgba(255,255,255,.62);
+
     font-size: 10px;
 
     font-weight: 700;
 
     letter-spacing: .18em;
-
-    color:
-        rgba(255,255,255,.61);
 
 }
 
@@ -375,11 +385,12 @@ a {
 
 .admin-user {
 
-    margin: 20px 17px;
-
     min-height: 72px;
 
-    padding: 14px 12px;
+    margin: 20px 17px;
+
+    padding:
+        14px 12px;
 
     display: flex;
 
@@ -428,9 +439,9 @@ a {
 
     display: block;
 
-    font-size: 14px;
-
     color: #ffffff;
+
+    font-size: 14px;
 
 }
 
@@ -441,10 +452,10 @@ a {
 
     margin-top: 3px;
 
-    font-size: 10px;
-
     color:
         rgba(255,255,255,.60);
+
+    font-size: 10px;
 
 }
 
@@ -542,13 +553,13 @@ a {
     background:
         rgba(255,255,255,.10);
 
+    color: #ffffff;
+
     display: flex;
 
     align-items: center;
 
     justify-content: center;
-
-    color: #ffffff;
 
     font-size: 9px;
 
@@ -574,12 +585,12 @@ a {
 
 .nav-link.active {
 
+    position: relative;
+
     background:
         rgba(255,255,255,.13);
 
     color: #ffffff;
-
-    position: relative;
 
 }
 
@@ -593,7 +604,6 @@ a {
     left: 0;
 
     top: 10px;
-
     bottom: 10px;
 
     width: 3px;
@@ -631,9 +641,9 @@ a {
 
 .admin-main {
 
-    margin-left: var(--sidebar-width);
-
     min-height: 100vh;
+
+    margin-left: 305px;
 
     background: var(--cream);
 
@@ -646,7 +656,13 @@ a {
 
 .admin-topbar {
 
-    height: var(--topbar-height);
+    position: sticky;
+
+    top: 0;
+
+    z-index: 900;
+
+    height: 90px;
 
     padding:
         0 38px 0 60px;
@@ -665,12 +681,6 @@ a {
     border-bottom:
         1px solid var(--line);
 
-    position: sticky;
-
-    top: 0;
-
-    z-index: 900;
-
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
 
@@ -683,11 +693,11 @@ a {
 
 .search-box {
 
+    position: relative;
+
     width: 565px;
 
     max-width: 55%;
-
-    position: relative;
 
 }
 
@@ -774,6 +784,8 @@ a {
     width: 46px;
     height: 46px;
 
+    padding: 0;
+
     border:
         1px solid #dde2de;
 
@@ -797,7 +809,6 @@ a {
     position: absolute;
 
     top: -5px;
-
     right: -4px;
 
     min-width: 19px;
@@ -812,13 +823,13 @@ a {
 
     color: #ffffff;
 
-    font-size: 9px;
-
     display: flex;
 
     align-items: center;
 
     justify-content: center;
+
+    font-size: 9px;
 
 }
 
@@ -841,15 +852,15 @@ a {
 
     border-radius: 50%;
 
+    background: var(--green);
+
+    color: #ffffff;
+
     display: flex;
 
     align-items: center;
 
     justify-content: center;
-
-    background: var(--green);
-
-    color: #ffffff;
 
     font-size: 15px;
 
@@ -896,6 +907,8 @@ a {
 ========================================================= */
 
 .admin-content {
+
+    width: 100%;
 
     padding:
         48px 60px 55px;
@@ -951,9 +964,9 @@ a {
 
     font-size: 52px;
 
-    line-height: 1;
-
     font-weight: 600;
+
+    line-height: 1;
 
 }
 
@@ -971,32 +984,44 @@ a {
 
 
 /* =========================================================
-   DATE
+   EXPORT BUTTON
 ========================================================= */
 
-.dashboard-date {
+.refund-export-btn {
 
-    min-height: 50px;
+    min-height: 44px;
 
     padding:
-        0 15px;
+        0 17px;
 
-    border:
-        1px solid #d9dfda;
+    border: 0;
 
-    border-radius: 11px;
+    border-radius: 10px;
 
-    background: #ffffff;
+    background: var(--green);
 
-    display: flex;
+    color: #ffffff;
+
+    display: inline-flex;
 
     align-items: center;
 
+    justify-content: center;
+
     gap: 8px;
 
-    color: #68756e;
-
     font-size: 11px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+}
+
+
+.refund-export-btn:hover {
+
+    background: var(--green-dark);
 
 }
 
@@ -1124,9 +1149,9 @@ a {
 
 .stat-card small i {
 
-    color: var(--green);
-
     margin-right: 3px;
+
+    color: var(--green);
 
 }
 
@@ -1149,14 +1174,15 @@ a {
 
 
 /* =========================================================
-   ADMIN CARD
+   CARD
 ========================================================= */
 
 .admin-card {
 
     min-width: 0;
 
-    padding: 28px 30px;
+    padding:
+        28px 30px;
 
     border:
         1px solid #dce2dd;
@@ -1174,9 +1200,9 @@ a {
 
     display: flex;
 
-    justify-content: space-between;
-
     align-items: flex-start;
+
+    justify-content: space-between;
 
     gap: 15px;
 
@@ -1186,8 +1212,6 @@ a {
 .admin-card-header span {
 
     display: block;
-
-    margin-bottom: 8px;
 
     color: var(--green);
 
@@ -1202,7 +1226,7 @@ a {
 
 .admin-card-header h2 {
 
-    margin: 0;
+    margin: 7px 0 0;
 
     color: #14231b;
 
@@ -1218,51 +1242,26 @@ a {
 
 
 /* =========================================================
-   LINKS
+   REFUND PERIOD
 ========================================================= */
 
-.view-all-link {
+.refund-period-select {
 
-    padding-top: 2px;
+    min-width: 125px;
 
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 7px;
-
-    color: var(--green);
-
-    font-size: 10px;
-
-    font-weight: 700;
-
-    white-space: nowrap;
-
-}
-
-
-/* =========================================================
-   SELECT
-========================================================= */
-
-.dashboard-select {
-
-    min-width: 140px;
-
-    height: 40px;
+    height: 39px;
 
     padding:
-        0 12px;
+        0 11px;
 
     border:
         1px solid #d9dfda;
 
-    border-radius: 10px;
+    border-radius: 9px;
 
     background: #ffffff;
 
-    color: #65716b;
+    color: #68736d;
 
     font-size: 10px;
 
@@ -1272,12 +1271,63 @@ a {
 
 
 /* =========================================================
-   SALES TOTAL
+   REFUND TOTAL
 ========================================================= */
 
-.sales-total {
+.refund-total {
 
-    margin-bottom: 20px;
+    margin-bottom: 18px;
+
+}
+
+
+.refund-total strong {
+
+    display: block;
+
+    color: #13221a;
+
+    font-size: 31px;
+
+    line-height: 1.1;
+
+}
+
+
+.refund-total span {
+
+    display: block;
+
+    margin-top: 5px;
+
+    color: #7b867f;
+
+    font-size: 9px;
+
+}
+
+
+/* =========================================================
+   REFUND BREAKDOWN
+========================================================= */
+
+.refund-breakdown {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 10px;
+
+}
+
+
+.refund-breakdown-item {
+
+    min-height: 76px;
+
+    padding: 11px;
 
     display: flex;
 
@@ -1285,289 +1335,182 @@ a {
 
     gap: 10px;
 
-}
+    border:
+        1px solid #e1e6e2;
 
+    border-radius: 11px;
 
-.sales-total strong {
-
-    color: #122019;
-
-    font-size: 31px;
+    background: #fbfcfa;
 
 }
 
 
-.sales-total span {
+.refund-breakdown-icon {
 
-    padding:
-        5px 8px;
+    width: 38px;
+    height: 38px;
 
-    border-radius: 20px;
+    flex: 0 0 38px;
 
-    background: #e8f1ec;
+    display: flex;
 
-    color: var(--green);
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+    font-size: 13px;
+
+}
+
+
+.refund-breakdown-icon.pending {
+
+    background: #fff1dc;
+
+    color: #a86d18;
+
+}
+
+
+.refund-breakdown-icon.approved {
+
+    background: #e9f0f7;
+
+    color: #4c78a2;
+
+}
+
+
+.refund-breakdown-icon.completed {
+
+    background: #e7f2eb;
+
+    color: #28744d;
+
+}
+
+
+.refund-breakdown-icon.rejected {
+
+    background: #f9e8e6;
+
+    color: #b74e45;
+
+}
+
+
+.refund-breakdown-item span {
+
+    display: block;
+
+    color: #77837b;
+
+    font-size: 8px;
+
+}
+
+
+.refund-breakdown-item strong {
+
+    display: block;
+
+    margin-top: 4px;
+
+    color: #17241d;
+
+    font-size: 13px;
+
+}
+
+
+.refund-breakdown-item small {
+
+    display: block;
+
+    margin-top: 2px;
+
+    color: #7f8983;
+
+    font-size: 7px;
+
+}
+
+
+/* =========================================================
+   REFUND REASONS
+========================================================= */
+
+.reason-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 17px;
+
+}
+
+
+.reason-item {
+
+    width: 100%;
+
+}
+
+
+.reason-top {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+}
+
+
+.reason-top strong {
+
+    color: #18251e;
 
     font-size: 9px;
+
+}
+
+
+.reason-top span {
+
+    color: #68746d;
+
+    font-size: 8px;
 
     font-weight: 700;
 
 }
 
 
-/* =========================================================
-   CHART
-========================================================= */
-
-.sales-chart {
-
-    display: grid;
-
-    grid-template-columns: 46px 1fr;
-
-    grid-template-rows: 245px 25px;
-
-    gap: 5px 10px;
-
-}
-
-
-.chart-labels {
-
-    grid-column: 1;
-
-    grid-row: 1;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: space-between;
-
-    padding-top: 2px;
-
-    color: #8a938d;
-
-    font-size: 9px;
-
-}
-
-
-.chart {
-
-    position: relative;
-
-    grid-column: 2;
-
-    grid-row: 1;
-
-    height: 245px;
-
-}
-
-
-.chart-lines {
-
-    position: absolute;
-
-    inset: 0;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: space-between;
-
-}
-
-
-.chart-lines span {
+.reason-bar {
 
     width: 100%;
 
-    height: 1px;
-
-    background:
-        #edf0ed;
-
-}
-
-
-.chart svg {
-
-    position: absolute;
-
-    inset: 0;
-
-    width: 100%;
-
-    height: 100%;
-
-}
-
-
-.chart .area {
-
-    fill:
-        rgba(6,75,59,.08);
-
-}
-
-
-.chart .line {
-
-    fill: none;
-
-    stroke: #09503e;
-
-    stroke-width: 4;
-
-    stroke-linecap: round;
-
-    vector-effect: non-scaling-stroke;
-
-}
-
-
-.chart-days {
-
-    grid-column: 2;
-
-    grid-row: 2;
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(7,1fr);
-
-    color: #8a938d;
-
-    font-size: 9px;
-
-    text-align: center;
-
-}
-
-
-/* =========================================================
-   TOP PRODUCTS
-========================================================= */
-
-.top-products {
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 0;
-
-}
-
-
-.top-product {
-
-    min-width: 0;
-
-    padding: 13px 0;
-
-    display: grid;
-
-    grid-template-columns:
-        50px minmax(0,1fr) auto;
-
-    align-items: center;
-
-    gap: 12px;
-
-    border-bottom:
-        1px solid #edf0ed;
-
-}
-
-
-.top-product:first-child {
-
-    padding-top: 0;
-
-}
-
-
-.top-product:last-child {
-
-    border-bottom: 0;
-
-}
-
-
-.top-product > img {
-
-    width: 50px;
-    height: 50px;
-
-    object-fit: contain;
-
-    border-radius: 10px;
-
-    background: #f2f1ea;
-
-}
-
-
-.top-product-info {
-
-    min-width: 0;
-
-}
-
-
-.top-product-info strong {
-
-    display: block;
-
-    overflow: hidden;
-
-    white-space: nowrap;
-
-    text-overflow: ellipsis;
-
-    font-size: 11px;
-
-    color: #16251d;
-
-}
-
-
-.top-product-info small {
-
-    display: block;
-
-    margin-top: 3px;
-
-    color: #7a857f;
-
-    font-size: 9px;
-
-}
-
-
-.progress-bar {
-
-    width: 100%;
-
-    height: 4px;
+    height: 7px;
 
     margin-top: 7px;
 
-    border-radius: 20px;
-
     overflow: hidden;
 
-    background: #e8ede9;
+    border-radius: 20px;
+
+    background: #edf1ed;
 
 }
 
 
-.progress-bar span {
+.reason-bar > span {
 
     display: block;
 
@@ -1580,33 +1523,177 @@ a {
 }
 
 
-.progress-92 {
-    width: 92%;
+.reason-32 {
+    width: 32%;
 }
 
 
-.progress-75 {
-    width: 75%;
+.reason-24 {
+    width: 24%;
 }
 
 
-.progress-64 {
-    width: 64%;
+.reason-21 {
+    width: 21%;
 }
 
 
-.progress-42 {
-    width: 42%;
+.reason-14 {
+    width: 14%;
 }
 
 
-.top-product > strong {
+.reason-9 {
+    width: 9%;
+}
 
-    color: #16251d;
+
+/* =========================================================
+   REFUND COUNT
+========================================================= */
+
+.refund-count {
+
+    padding-top: 4px;
+
+    color: #748078;
 
     font-size: 9px;
 
     white-space: nowrap;
+
+}
+
+
+/* =========================================================
+   FILTERS
+========================================================= */
+
+.refund-filters {
+
+    margin-bottom: 20px;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(220px, 1.6fr)
+        repeat(3, minmax(130px, .75fr));
+
+    gap: 10px;
+
+}
+
+
+.refund-search {
+
+    position: relative;
+
+}
+
+
+.refund-search i {
+
+    position: absolute;
+
+    left: 13px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #8a948d;
+
+    font-size: 12px;
+
+}
+
+
+.refund-search input {
+
+    width: 100%;
+
+    height: 40px;
+
+    padding:
+        0 13px 0 37px;
+
+    border:
+        1px solid #dce2dd;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #25312b;
+
+    font-size: 10px;
+
+    outline: none;
+
+}
+
+
+.refund-search input::placeholder {
+
+    color: #929a95;
+
+}
+
+
+.refund-search input:focus {
+
+    border-color:
+        rgba(6,75,59,.30);
+
+    box-shadow:
+        0 0 0 3px rgba(6,75,59,.05);
+
+}
+
+
+.refund-filter-label {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+}
+
+
+.refund-filter-label > span {
+
+    color: #748078;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+}
+
+
+.refund-filter-select {
+
+    width: 100%;
+
+    height: 40px;
+
+    padding:
+        0 10px;
+
+    border:
+        1px solid #dce2dd;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #4f5c55;
+
+    font-size: 10px;
+
+    outline: none;
 
 }
 
@@ -1628,7 +1715,7 @@ a {
 
     width: 100%;
 
-    min-width: 760px;
+    min-width: 900px;
 
     border-collapse: collapse;
 
@@ -1638,7 +1725,7 @@ a {
 .admin-table th {
 
     padding:
-        13px 10px;
+        12px 10px;
 
     border-bottom:
         1px solid var(--line);
@@ -1649,11 +1736,13 @@ a {
 
     font-weight: 700;
 
-    text-transform: uppercase;
-
     letter-spacing: .08em;
 
     text-align: left;
+
+    text-transform: uppercase;
+
+    white-space: nowrap;
 
 }
 
@@ -1661,7 +1750,7 @@ a {
 .admin-table td {
 
     padding:
-        15px 10px;
+        14px 10px;
 
     border-bottom:
         1px solid #edf0ed;
@@ -1671,6 +1760,8 @@ a {
     font-size: 10px;
 
     white-space: nowrap;
+
+    vertical-align: middle;
 
 }
 
@@ -1682,29 +1773,24 @@ a {
 }
 
 
-.admin-table tbody tr:last-child td {
-
-    border-bottom: 0;
-
-}
-
-
 /* =========================================================
-   STATUS
+   REFUND STATUS
 ========================================================= */
 
-.order-status {
+.refund-status {
 
     display: inline-flex;
 
     align-items: center;
 
-    min-height: 24px;
+    justify-content: center;
+
+    min-height: 23px;
 
     padding:
-        0 9px;
+        0 8px;
 
-    border-radius: 30px;
+    border-radius: 20px;
 
     font-size: 8px;
 
@@ -1713,7 +1799,7 @@ a {
 }
 
 
-.order-status.processing {
+.refund-status.pending {
 
     background: #fff1dc;
 
@@ -1722,7 +1808,7 @@ a {
 }
 
 
-.order-status.shipped {
+.refund-status.approved {
 
     background: #e9f0f7;
 
@@ -1731,11 +1817,20 @@ a {
 }
 
 
-.order-status.delivered {
+.refund-status.refunded {
 
     background: #e7f2eb;
 
     color: #28744d;
+
+}
+
+
+.refund-status.rejected {
+
+    background: #f9e8e6;
+
+    color: #b74d44;
 
 }
 
@@ -1749,6 +1844,8 @@ a {
     width: 32px;
     height: 32px;
 
+    padding: 0;
+
     border:
         1px solid #dce2dd;
 
@@ -1756,13 +1853,13 @@ a {
 
     background: #ffffff;
 
+    color: var(--green);
+
     display: inline-flex;
 
     align-items: center;
 
     justify-content: center;
-
-    color: var(--green);
 
     font-size: 11px;
 
@@ -1770,51 +1867,182 @@ a {
 
 
 /* =========================================================
-   QUICK ACTIONS
+   MOBILE REFUNDS
 ========================================================= */
 
-.quick-actions {
+.mobile-refunds {
 
-    display: grid;
-
-    grid-template-columns:
-        repeat(2,1fr);
-
-    gap: 12px;
+    display: none;
 
 }
 
 
-.quick-action {
+.mobile-refund-card {
 
-    min-height: 72px;
+    margin-bottom: 12px;
 
-    padding: 12px;
+    padding: 14px;
 
     border:
         1px solid #e0e5e1;
 
-    border-radius: 12px;
+    border-radius: 13px;
 
     background: #fbfcfa;
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 11px;
 
 }
 
 
-.quick-icon {
+.mobile-refund-card:last-child {
 
-    width: 40px;
-    height: 40px;
+    margin-bottom: 0;
 
-    flex: 0 0 40px;
+}
 
-    border-radius: 10px;
+
+.mobile-refund-top {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 12px;
+
+    padding-bottom: 12px;
+
+    border-bottom:
+        1px solid #e8ece8;
+
+}
+
+
+.mobile-refund-top strong {
+
+    display: block;
+
+    color: #15231c;
+
+    font-size: 11px;
+
+}
+
+
+.mobile-refund-top small {
+
+    display: block;
+
+    margin-top: 4px;
+
+    color: #858f89;
+
+    font-size: 8px;
+
+}
+
+
+.mobile-refund-customer {
+
+    margin-top: 13px;
+
+}
+
+
+.mobile-refund-customer strong {
+
+    display: block;
+
+    color: #17251e;
+
+    font-size: 10px;
+
+}
+
+
+.mobile-refund-customer small {
+
+    display: block;
+
+    margin-top: 3px;
+
+    color: #89938d;
+
+    font-size: 8px;
+
+}
+
+
+.mobile-refund-info {
+
+    margin-top: 13px;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 8px;
+
+}
+
+
+.mobile-refund-info > div {
+
+    padding: 9px;
+
+    border:
+        1px solid #e3e8e4;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+}
+
+
+.mobile-refund-info span {
+
+    display: block;
+
+    color: #87918a;
+
+    font-size: 7px;
+
+}
+
+
+.mobile-refund-info strong {
+
+    display: block;
+
+    margin-top: 4px;
+
+    color: #19261f;
+
+    font-size: 9px;
+
+}
+
+
+.mobile-refund-btn {
+
+    width: 100%;
+
+    min-height: 37px;
+
+    margin-top: 13px;
+
+    padding: 0;
+
+    border:
+        1px solid #d8dfda;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #0a4e3c;
 
     display: flex;
 
@@ -1822,94 +2050,24 @@ a {
 
     justify-content: center;
 
-}
+    gap: 7px;
 
+    font-size: 9px;
 
-.quick-icon.green {
-
-    background: #e7f0eb;
-
-    color: var(--green);
-
-}
-
-
-.quick-icon.blue {
-
-    background: #e9eff6;
-
-    color: var(--blue);
-
-}
-
-
-.quick-icon.orange {
-
-    background: #fff0e5;
-
-    color: var(--orange);
-
-}
-
-
-.quick-icon.purple {
-
-    background: #f0ebf7;
-
-    color: var(--purple);
-
-}
-
-
-.quick-action strong {
-
-    display: block;
-
-    font-size: 10px;
-
-}
-
-
-.quick-action small {
-
-    display: block;
-
-    margin-top: 3px;
-
-    color: #77827c;
-
-    font-size: 8px;
+    font-weight: 700;
 
 }
 
 
 /* =========================================================
-   LOW STOCK
+   PAGINATION
 ========================================================= */
 
-.low-stock-grid {
+.refund-pagination {
 
-    display: flex;
+    margin-top: 20px;
 
-    flex-direction: column;
-
-    gap: 10px;
-
-}
-
-
-.stock-card {
-
-    min-height: 65px;
-
-    padding: 9px;
-
-    border:
-        1px solid #e1e6e2;
-
-    border-radius: 11px;
-
-    background: #fbfcfa;
+    padding-top: 18px;
 
     display: flex;
 
@@ -1917,112 +2075,131 @@ a {
 
     justify-content: space-between;
 
-    gap: 10px;
+    gap: 15px;
+
+    border-top:
+        1px solid #edf0ed;
 
 }
 
 
-.stock-product {
+.refund-pagination > span {
 
-    min-width: 0;
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 10px;
-
-}
-
-
-.stock-product img {
-
-    width: 42px;
-    height: 42px;
-
-    object-fit: contain;
-
-    border-radius: 8px;
-
-    background: #f1f2ec;
-
-}
-
-
-.stock-product strong {
-
-    display: block;
-
-    max-width: 250px;
-
-    overflow: hidden;
-
-    white-space: nowrap;
-
-    text-overflow: ellipsis;
+    color: #7d8881;
 
     font-size: 9px;
 
 }
 
 
-.stock-product small {
+.pagination-buttons {
 
-    display: block;
+    display: flex;
 
-    margin-top: 2px;
+    align-items: center;
 
-    color: #7d8881;
-
-    font-size: 7px;
+    gap: 6px;
 
 }
 
 
-.stock-warning,
-.stock-danger {
+.pagination-buttons button {
 
-    padding:
-        5px 8px;
+    width: 34px;
+    height: 34px;
 
-    border-radius: 20px;
+    padding: 0;
 
-    font-size: 8px;
+    border:
+        1px solid #d9dfda;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    color: #26332c;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+}
+
+
+.pagination-buttons button:hover:not(:disabled) {
+
+    background: #f1f5f2;
+
+    border-color: #bcc8c1;
+
+}
+
+
+.pagination-buttons button.current {
+
+    background: var(--green);
+
+    border-color: var(--green);
+
+    color: #ffffff;
 
     font-weight: 700;
 
-    white-space: nowrap;
+}
+
+
+.pagination-buttons button:disabled {
+
+    background: #f8f9f8;
+
+    color: #aab2ad;
+
+    border-color: #d9dfda;
+
+    cursor: not-allowed;
+
+    opacity: 1;
 
 }
 
 
-.stock-warning {
+.pagination-buttons button i {
 
-    background: #fff1dc;
-
-    color: #a56c18;
-
-}
-
-
-.stock-danger {
-
-    background: #f9e8e6;
-
-    color: #b34b42;
+    font-size: 11px;
 
 }
 
 
 /* =========================================================
-   RESPONSIVE - TABLET
+   LARGE TABLET
 ========================================================= */
 
-@media (max-width: 1199px) {
+@media (max-width: 1199.98px) {
 
-    :root {
+    .admin-sidebar {
 
-        --sidebar-width: 260px;
+        width: 260px;
+
+    }
+
+
+    .admin-main {
+
+        margin-left: 260px;
 
     }
 
@@ -2043,16 +2220,17 @@ a {
     }
 
 
-    .search-box {
+    .dashboard-grid {
 
-        max-width: 48%;
+        grid-template-columns: 1fr;
 
     }
 
 
-    .dashboard-grid {
+    .refund-filters {
 
-        grid-template-columns: 1fr;
+        grid-template-columns:
+            1fr 1fr;
 
     }
 
@@ -2060,7 +2238,7 @@ a {
 
 
 /* =========================================================
-   RESPONSIVE - MOBILE
+   TABLET
 ========================================================= */
 
 @media (max-width: 991.98px) {
@@ -2070,9 +2248,7 @@ a {
         position: fixed;
 
         top: 0;
-
         left: 0;
-
         right: 0;
 
         z-index: 1000;
@@ -2135,7 +2311,7 @@ a {
     .admin-content {
 
         padding:
-            25px 18px 35px;
+            28px 20px 35px;
 
     }
 
@@ -2149,18 +2325,9 @@ a {
     }
 
 
-    .page-header h1 {
+    .refund-export-btn {
 
-        font-size: 40px;
-
-    }
-
-
-    .dashboard-date {
-
-        width: 100%;
-
-        justify-content: center;
+        width: auto;
 
     }
 
@@ -2168,29 +2335,31 @@ a {
 
 
 /* =========================================================
-   RESPONSIVE - SMALL MOBILE
+   MOBILE
 ========================================================= */
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
 
     .admin-content {
 
         padding:
-            20px 13px 28px;
+            23px 15px 30px;
 
     }
 
 
     .page-header {
 
-        margin-bottom: 24px;
+        margin-bottom: 25px;
+
+        gap: 15px;
 
     }
 
 
     .page-header h1 {
 
-        font-size: 34px;
+        font-size: 40px;
 
     }
 
@@ -2204,13 +2373,20 @@ a {
     }
 
 
+    .refund-export-btn {
+
+        width: 100%;
+
+    }
+
+
     .stat-card {
 
-        min-height: 105px;
+        min-height: 108px;
 
-        padding: 14px;
+        padding: 15px;
 
-        gap: 10px;
+        gap: 11px;
 
     }
 
@@ -2222,7 +2398,9 @@ a {
 
         flex-basis: 43px;
 
-        font-size: 15px;
+        border-radius: 11px;
+
+        font-size: 16px;
 
     }
 
@@ -2265,67 +2443,232 @@ a {
     }
 
 
-    .dashboard-select {
-
-        min-width: 108px;
-
-        height: 35px;
+    .admin-card-header span {
 
         font-size: 8px;
 
     }
 
 
-    .sales-total strong {
+    .refund-period-select {
 
-        font-size: 23px;
+        min-width: 110px;
+
+        height: 36px;
+
+        font-size: 8px;
 
     }
 
 
-    .sales-chart {
+    .refund-total strong {
+
+        font-size: 25px;
+
+    }
+
+
+    .refund-breakdown {
 
         grid-template-columns:
-            34px 1fr;
-
-        grid-template-rows:
-            190px 20px;
+            1fr 1fr;
 
     }
 
 
-    .chart {
+    .refund-filters {
 
-        height: 190px;
-
-    }
-
-
-    .quick-actions {
-
-        grid-template-columns: 1fr;
+        grid-template-columns:
+            1fr;
 
     }
 
 
-    .stock-card {
+    .admin-table-wrapper {
 
-        align-items: flex-start;
-
-    }
-
-
-    .stock-product strong {
-
-        max-width: 150px;
+        display: none;
 
     }
 
 
-    .stock-warning,
-    .stock-danger {
+    .mobile-refunds {
+
+        display: block;
+
+    }
+
+
+    .refund-pagination {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .refund-pagination > span {
+
+        text-align: center;
+
+    }
+
+
+    .pagination-buttons {
+
+        justify-content: center;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 575.98px) {
+
+    .refund-breakdown {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .refund-breakdown-item {
+
+        min-height: 68px;
+
+    }
+
+
+    .reason-list {
+
+        gap: 14px;
+
+    }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 479.98px) {
+
+    .admin-content {
+
+        padding:
+            20px 11px 26px;
+
+    }
+
+
+    .page-header h1 {
+
+        font-size: 34px;
+
+    }
+
+
+    .stat-card {
+
+        min-height: 96px;
+
+        padding: 12px;
+
+    }
+
+
+    .stat-icon {
+
+        width: 37px;
+        height: 37px;
+
+        flex-basis: 37px;
+
+        border-radius: 9px;
+
+        font-size: 13px;
+
+    }
+
+
+    .stat-card strong {
+
+        font-size: 15px;
+
+    }
+
+
+    .stat-card span {
+
+        font-size: 8px;
+
+    }
+
+
+    .stat-card small {
 
         font-size: 7px;
+
+    }
+
+
+    .admin-card {
+
+        padding:
+            15px 12px;
+
+    }
+
+
+    .admin-card-header h2 {
+
+        font-size: 18px;
+
+    }
+
+
+    .refund-total strong {
+
+        font-size: 21px;
+
+    }
+
+
+    .refund-period-select {
+
+        min-width: 100px;
+
+        font-size: 7px;
+
+    }
+
+
+    .mobile-refund-info {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .refund-pagination > span {
+
+        font-size: 8px;
+
+    }
+
+
+    .pagination-buttons button {
+
+        width: 32px;
+
+        height: 32px;
 
     }
 

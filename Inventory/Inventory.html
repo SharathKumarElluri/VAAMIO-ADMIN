@@ -1,0 +1,2639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="VAAMIO Admin Inventory">
+
+    <title>VAAMIO | Inventory</title>
+
+
+    <!-- =====================================================
+         BOOTSTRAP
+    ====================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         INVENTORY CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="Inventory.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     MOBILE HEADER
+===================================================== -->
+
+<header class="admin-mobile-header">
+
+    <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        type="button"
+        aria-label="Open admin menu"
+        title="Open admin menu">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+
+    <div class="mobile-brand">
+
+        <strong>VAAMIO</strong>
+
+        <small>ADMIN PANEL</small>
+
+    </div>
+
+
+    <button
+        class="mobile-notification"
+        type="button"
+        aria-label="Notifications"
+        title="Notifications">
+
+        <i class="fa-regular fa-bell"></i>
+
+        <span>3</span>
+
+    </button>
+
+</header>
+
+
+
+<!-- =====================================================
+     SIDEBAR OVERLAY
+===================================================== -->
+
+<div
+    class="sidebar-overlay"
+    id="sidebarOverlay">
+</div>
+
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside
+    class="admin-sidebar"
+    id="adminSidebar">
+
+
+    <!-- LOGO -->
+
+    <div class="admin-logo">
+
+        <strong>VAAMIO</strong>
+
+        <span>ADMIN PANEL</span>
+
+    </div>
+
+
+    <!-- ADMIN USER -->
+
+    <div class="admin-user">
+
+        <div class="admin-avatar">
+            A
+        </div>
+
+        <div>
+
+            <strong>Admin</strong>
+
+            <small>Super Admin</small>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+    <nav class="admin-nav">
+
+
+        <!-- MAIN -->
+
+        <div class="nav-heading">
+            MAIN
+        </div>
+
+
+        <a
+            href="../index.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-chart-pie"></i>
+
+            <span>Dashboard</span>
+
+        </a>
+
+
+
+        <!-- SALES -->
+
+        <div class="nav-heading">
+            SALES
+        </div>
+
+
+        <a
+            href="../Orders/Orders.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            <span>Orders</span>
+
+            <b>12</b>
+
+        </a>
+
+
+        <a
+            href="../Payments/Payments.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-credit-card"></i>
+
+            <span>Payments</span>
+
+        </a>
+
+
+        <a
+            href="/Refunds/Rrefunds.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-rotate-left"></i>
+
+            <span>Refunds</span>
+
+        </a>
+
+
+        <a
+            href="../Shipping/Shipping.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-truck"></i>
+
+            <span>Shipping</span>
+
+        </a>
+
+
+
+        <!-- CATALOG -->
+
+        <div class="nav-heading">
+            CATALOG
+        </div>
+
+
+        <a
+            href="../Products/Products.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-box"></i>
+
+            <span>Products</span>
+
+        </a>
+
+
+        <a
+            href="../Categories/Categories.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-layer-group"></i>
+
+            <span>Categories</span>
+
+        </a>
+
+
+        <a
+            href="Inventory.html"
+            class="nav-link active">
+
+            <i class="fa-solid fa-warehouse"></i>
+
+            <span>Inventory</span>
+
+            <b class="warning">
+                3
+            </b>
+
+        </a>
+
+
+
+        <!-- CUSTOMERS -->
+
+        <div class="nav-heading">
+            CUSTOMERS
+        </div>
+
+
+        <a
+            href="../Customers/Customers.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-users"></i>
+
+            <span>Customers</span>
+
+        </a>
+
+
+        <a
+            href="/Reviews/Reviews.html"
+            class="nav-link">
+
+            <i class="fa-regular fa-star"></i>
+
+            <span>Reviews</span>
+
+        </a>
+
+
+        <a
+            href="../Support/Support.html"
+            class="nav-link">
+
+            <i class="fa-regular fa-comments"></i>
+
+            <span>Support</span>
+
+        </a>
+
+
+
+        <!-- MARKETING -->
+
+        <div class="nav-heading">
+            MARKETING
+        </div>
+
+
+        <a
+            href="../Coupons/Coupons.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-ticket"></i>
+
+            <span>Coupons</span>
+
+        </a>
+
+
+        <a
+            href="../Offers/Offers.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-bullseye"></i>
+
+            <span>Offers</span>
+
+        </a>
+
+
+        <a
+            href="../Banners/Banners.html"
+            class="nav-link">
+
+            <i class="fa-regular fa-image"></i>
+
+            <span>Banners</span>
+
+        </a>
+
+
+        <a
+            href="../Newsletter/Newsletter.html"
+            class="nav-link">
+
+            <i class="fa-regular fa-envelope"></i>
+
+            <span>Newsletter</span>
+
+        </a>
+
+
+
+        <!-- BUSINESS -->
+
+        <div class="nav-heading">
+            BUSINESS
+        </div>
+
+
+        <a
+            href="../Bulk-Orders/Bulk-Orders.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-handshake"></i>
+
+            <span>Bulk Orders</span>
+
+        </a>
+
+
+        <a
+            href="../Distributor-Review/Distributor.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-store"></i>
+
+            <span>Distributor-Review</span>
+
+        </a>
+
+
+        <a
+            href="../Franchise/Franchise.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-building"></i>
+
+            <span>Franchise</span>
+
+        </a>
+
+
+
+        <!-- REPORTS -->
+
+        <div class="nav-heading">
+            REPORTS
+        </div>
+
+
+        <a
+            href="../Sales-Reports/Sales-Reports.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            <span>Sales Reports</span>
+
+        </a>
+
+
+        <a
+            href="../Product-Reports/Product-Reports.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-chart-column"></i>
+
+            <span>Product Reports</span>
+
+        </a>
+
+
+
+        <!-- SYSTEM -->
+
+        <div class="nav-heading">
+            SYSTEM
+        </div>
+
+
+        <a
+            href="../Staff-Roles/Staff-Roles.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-user-shield"></i>
+
+            <span>Staff & Roles</span>
+
+        </a>
+
+
+        <a
+            href="../Audit-Logs/Audit-Logs.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-file-shield"></i>
+
+            <span>Audit Logs</span>
+
+        </a>
+
+
+        <a
+            href="../Settings/Settings.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-gear"></i>
+
+            <span>Settings</span>
+
+        </a>
+
+
+        <div class="nav-divider"></div>
+
+
+        <a
+            href="../index.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            <span>View Website</span>
+
+        </a>
+
+
+        <a
+            href="#"
+            class="nav-link logout-link">
+
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+            <span>Logout</span>
+
+        </a>
+
+    </nav>
+
+</aside>
+
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main class="admin-main">
+
+
+    <!-- =================================================
+         TOPBAR
+    ================================================== -->
+
+    <header class="admin-topbar">
+
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="search"
+                id="globalInventorySearch"
+                placeholder="Search products, SKU..."
+                aria-label="Search inventory">
+
+        </div>
+
+
+        <div class="topbar-right">
+
+
+            <button
+                class="notification-btn"
+                type="button"
+                aria-label="Notifications"
+                title="Notifications">
+
+                <i class="fa-regular fa-bell"></i>
+
+                <span>3</span>
+
+            </button>
+
+
+            <div class="admin-profile">
+
+                <div class="profile-avatar">
+                    A
+                </div>
+
+                <div>
+
+                    <strong>Admin</strong>
+
+                    <small>Super Admin</small>
+
+                </div>
+
+                <i class="fa-solid fa-chevron-down"></i>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================================
+         CONTENT
+    ================================================== -->
+
+    <div class="admin-content">
+
+
+        <!-- =================================================
+             PAGE HEADER
+        ================================================== -->
+
+        <section class="page-header">
+
+            <div>
+
+                <span class="page-eyebrow">
+                    CATALOG MANAGEMENT
+                </span>
+
+                <h1>
+                    Inventory
+                </h1>
+
+                <p>
+                    Monitor stock levels, product availability and restocking needs.
+                </p>
+
+            </div>
+
+
+            <button
+                class="inventory-export-btn"
+                id="exportInventoryBtn"
+                type="button"
+                aria-label="Export inventory"
+                title="Export inventory">
+
+                <i class="fa-solid fa-download"></i>
+
+                Export Inventory
+
+            </button>
+
+        </section>
+
+
+
+        <!-- =================================================
+             STAT CARDS
+        ================================================== -->
+
+        <div class="row g-3">
+
+
+            <!-- TOTAL STOCK -->
+
+            <div class="col-6 col-xl-3">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+
+                        <i class="fa-solid fa-boxes-stacked"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Total Units
+                        </span>
+
+                        <strong>
+                            4,862
+                        </strong>
+
+                        <small>
+                            Across 36 products
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- IN STOCK -->
+
+            <div class="col-6 col-xl-3">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            In Stock
+                        </span>
+
+                        <strong>
+                            4,721
+                        </strong>
+
+                        <small>
+                            31 active products
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- LOW STOCK -->
+
+            <div class="col-6 col-xl-3">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">
+
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Low Stock
+                        </span>
+
+                        <strong>
+                            3
+                        </strong>
+
+                        <small>
+                            Needs restocking
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- OUT OF STOCK -->
+
+            <div class="col-6 col-xl-3">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon red">
+
+                        <i class="fa-solid fa-box-open"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Out of Stock
+                        </span>
+
+                        <strong>
+                            2
+                        </strong>
+
+                        <small>
+                            Currently unavailable
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             STOCK OVERVIEW
+        ================================================== -->
+
+        <section class="dashboard-grid mt-4">
+
+
+            <!-- STOCK HEALTH -->
+
+            <div class="admin-card">
+
+
+                <div class="admin-card-header">
+
+                    <div>
+
+                        <span>
+                            INVENTORY HEALTH
+                        </span>
+
+                        <h2>
+                            Stock Overview
+                        </h2>
+
+                    </div>
+
+
+                    <select
+                        class="inventory-period-select"
+                        aria-label="Select inventory period">
+
+                        <option>
+                            This Month
+                        </option>
+
+                        <option>
+                            Last Month
+                        </option>
+
+                        <option>
+                            Last 3 Months
+                        </option>
+
+                        <option>
+                            This Year
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="inventory-health">
+
+
+                    <div class="health-total">
+
+                        <strong>
+                            97.1%
+                        </strong>
+
+                        <span>
+                            Healthy stock level
+                        </span>
+
+                    </div>
+
+
+                    <div class="health-bar-wrap">
+
+                        <div class="health-bar">
+
+                            <span class="health-good"></span>
+
+                            <span class="health-low"></span>
+
+                            <span class="health-out"></span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="health-legend">
+
+
+                        <div class="health-legend-item">
+
+                            <span class="health-dot good"></span>
+
+                            <div>
+
+                                <strong>
+                                    Healthy
+                                </strong>
+
+                                <small>
+                                    31 products
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="health-legend-item">
+
+                            <span class="health-dot low"></span>
+
+                            <div>
+
+                                <strong>
+                                    Low Stock
+                                </strong>
+
+                                <small>
+                                    3 products
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="health-legend-item">
+
+                            <span class="health-dot out"></span>
+
+                            <div>
+
+                                <strong>
+                                    Out of Stock
+                                </strong>
+
+                                <small>
+                                    2 products
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- RESTOCK ALERTS -->
+
+            <div class="admin-card">
+
+
+                <div class="admin-card-header">
+
+                    <div>
+
+                        <span>
+                            ATTENTION REQUIRED
+                        </span>
+
+                        <h2>
+                            Restock Alerts
+                        </h2>
+
+                    </div>
+
+
+                    <span class="alert-count">
+                        3 Alerts
+                    </span>
+
+                </div>
+
+
+                <div class="restock-list">
+
+
+                    <div class="restock-item">
+
+                        <div class="restock-icon orange">
+
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Traditional Mutton Pickle
+                            </strong>
+
+                            <small>
+                                Only 12 units remaining
+                            </small>
+
+                        </div>
+
+                        <span class="restock-level low">
+                            Low
+                        </span>
+
+                    </div>
+
+
+                    <div class="restock-item">
+
+                        <div class="restock-icon red">
+
+                            <i class="fa-solid fa-circle-xmark"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Andhra Fish Pickle
+                            </strong>
+
+                            <small>
+                                0 units available
+                            </small>
+
+                        </div>
+
+                        <span class="restock-level out">
+                            Out
+                        </span>
+
+                    </div>
+
+
+                    <div class="restock-item">
+
+                        <div class="restock-icon orange">
+
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Coastal Prawn Pickle
+                            </strong>
+
+                            <small>
+                                Only 18 units remaining
+                            </small>
+
+                        </div>
+
+                        <span class="restock-level low">
+                            Low
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             INVENTORY TABLE
+        ================================================== -->
+
+        <section class="admin-card mt-4">
+
+
+            <div class="admin-card-header">
+
+                <div>
+
+                    <span>
+                        INVENTORY MANAGEMENT
+                    </span>
+
+                    <h2>
+                        Stock Levels
+                    </h2>
+
+                </div>
+
+
+                <span class="inventory-count">
+                    36 Products
+                </span>
+
+            </div>
+
+
+
+            <!-- FILTERS -->
+
+            <div class="inventory-filters">
+
+
+                <div class="inventory-search">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        id="inventorySearch"
+                        placeholder="Search product name or SKU..."
+                        aria-label="Search product name or SKU">
+
+                </div>
+
+
+                <label class="inventory-filter-label">
+
+                    <span>Category</span>
+
+                    <select
+                        id="inventoryCategoryFilter"
+                        class="inventory-filter-select"
+                        aria-label="Filter inventory by category">
+
+                        <option value="all">
+                            All Categories
+                        </option>
+
+                        <option value="chicken">
+                            Chicken
+                        </option>
+
+                        <option value="seafood">
+                            Seafood
+                        </option>
+
+                        <option value="meat">
+                            Mutton & Meat
+                        </option>
+
+                        <option value="combo">
+                            Combo Packs
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <label class="inventory-filter-label">
+
+                    <span>Stock</span>
+
+                    <select
+                        id="inventoryStockFilter"
+                        class="inventory-filter-select"
+                        aria-label="Filter inventory by stock">
+
+                        <option value="all">
+                            All Stock
+                        </option>
+
+                        <option value="healthy">
+                            Healthy
+                        </option>
+
+                        <option value="low">
+                            Low Stock
+                        </option>
+
+                        <option value="out">
+                            Out of Stock
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <label class="inventory-filter-label">
+
+                    <span>Sort</span>
+
+                    <select
+                        class="inventory-filter-select"
+                        aria-label="Sort inventory">
+
+                        <option>
+                            Stock: Low to High
+                        </option>
+
+                        <option>
+                            Stock: High to Low
+                        </option>
+
+                        <option>
+                            Product: A-Z
+                        </option>
+
+                        <option>
+                            Product: Z-A
+                        </option>
+
+                    </select>
+
+                </label>
+
+            </div>
+
+
+
+            <!-- DESKTOP TABLE -->
+
+            <div class="admin-table-wrapper">
+
+                <table class="admin-table inventory-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Product
+                            </th>
+
+                            <th>
+                                SKU
+                            </th>
+
+                            <th>
+                                Category
+                            </th>
+
+                            <th>
+                                Current Stock
+                            </th>
+
+                            <th>
+                                Minimum
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                            <th>
+                                Action
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <!-- PRODUCT 1 -->
+
+                        <tr
+                            data-category="chicken"
+                            data-stock="healthy">
+
+                            <td>
+
+                                <div class="inventory-product">
+
+                                    <div class="inventory-image">
+
+                                        <img
+                                            src="../Chickenpickle1.png"
+                                            alt="Andhra Chicken Pickle">
+
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Andhra Chicken Pickle
+                                        </strong>
+
+                                        <small>
+                                            250g Jar
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                VAA-CHK-001
+                            </td>
+
+
+                            <td>
+                                Chicken
+                            </td>
+
+
+                            <td>
+
+                                <strong class="stock-number healthy-text">
+                                    128
+                                </strong>
+
+                            </td>
+
+
+                            <td>
+                                25
+                            </td>
+
+
+                            <td>
+
+                                <span class="inventory-status healthy">
+                                    Healthy
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <button
+                                    class="admin-view-btn restock-btn"
+                                    type="button"
+                                    aria-label="Manage stock for Andhra Chicken Pickle"
+                                    title="Manage stock">
+
+                                    <i class="fa-solid fa-boxes-stacked"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- PRODUCT 2 -->
+
+                        <tr
+                            data-category="seafood"
+                            data-stock="healthy">
+
+                            <td>
+
+                                <div class="inventory-product">
+
+                                    <div class="inventory-image">
+
+                                        <img
+                                            src="../prawnpickle.png"
+                                            alt="Coastal Prawn Pickle">
+
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Coastal Prawn Pickle
+                                        </strong>
+
+                                        <small>
+                                            250g Jar
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                VAA-PRW-002
+                            </td>
+
+
+                            <td>
+                                Seafood
+                            </td>
+
+
+                            <td>
+
+                                <strong class="stock-number healthy-text">
+                                    86
+                                </strong>
+
+                            </td>
+
+
+                            <td>
+                                25
+                            </td>
+
+
+                            <td>
+
+                                <span class="inventory-status healthy">
+                                    Healthy
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <button
+                                    class="admin-view-btn restock-btn"
+                                    type="button"
+                                    aria-label="Manage stock for Coastal Prawn Pickle"
+                                    title="Manage stock">
+
+                                    <i class="fa-solid fa-boxes-stacked"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- PRODUCT 3 -->
+
+                        <tr
+                            data-category="meat"
+                            data-stock="low">
+
+                            <td>
+
+                                <div class="inventory-product">
+
+                                    <div class="inventory-image">
+
+                                        <img
+                                            src="../mutton pickle.png"
+                                            alt="Traditional Mutton Pickle">
+
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Traditional Mutton Pickle
+                                        </strong>
+
+                                        <small>
+                                            250g Jar
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                VAA-MUT-003
+                            </td>
+
+
+                            <td>
+                                Mutton & Meat
+                            </td>
+
+
+                            <td>
+
+                                <strong class="stock-number low-text">
+                                    12
+                                </strong>
+
+                            </td>
+
+
+                            <td>
+                                25
+                            </td>
+
+
+                            <td>
+
+                                <span class="inventory-status low">
+                                    Low Stock
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <button
+                                    class="admin-view-btn restock-btn"
+                                    type="button"
+                                    aria-label="Restock Traditional Mutton Pickle"
+                                    title="Restock product">
+
+                                    <i class="fa-solid fa-plus"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- PRODUCT 4 -->
+
+                        <tr
+                            data-category="seafood"
+                            data-stock="out">
+
+                            <td>
+
+                                <div class="inventory-product">
+
+                                    <div class="inventory-image">
+
+                                        <img
+                                            src="../fish pickle.png"
+                                            alt="Andhra Fish Pickle">
+
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Andhra Fish Pickle
+                                        </strong>
+
+                                        <small>
+                                            250g Jar
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                VAA-FSH-004
+                            </td>
+
+
+                            <td>
+                                Seafood
+                            </td>
+
+
+                            <td>
+
+                                <strong class="stock-number out-text">
+                                    0
+                                </strong>
+
+                            </td>
+
+
+                            <td>
+                                25
+                            </td>
+
+
+                            <td>
+
+                                <span class="inventory-status out">
+                                    Out of Stock
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <button
+                                    class="admin-view-btn restock-btn"
+                                    type="button"
+                                    aria-label="Restock Andhra Fish Pickle"
+                                    title="Restock product">
+
+                                    <i class="fa-solid fa-plus"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- PRODUCT 5 -->
+
+                        <tr
+                            data-category="chicken"
+                            data-stock="healthy">
+
+                            <td>
+
+                                <div class="inventory-product">
+
+                                    <div class="inventory-image">
+
+                                        <img
+                                            src="../Chickenpickle1.png"
+                                            alt="Spicy Chicken Pickle">
+
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Spicy Chicken Pickle
+                                        </strong>
+
+                                        <small>
+                                            500g Jar
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                VAA-CHK-005
+                            </td>
+
+
+                            <td>
+                                Chicken
+                            </td>
+
+
+                            <td>
+
+                                <strong class="stock-number healthy-text">
+                                    74
+                                </strong>
+
+                            </td>
+
+
+                            <td>
+                                25
+                            </td>
+
+
+                            <td>
+
+                                <span class="inventory-status healthy">
+                                    Healthy
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <button
+                                    class="admin-view-btn restock-btn"
+                                    type="button"
+                                    aria-label="Manage stock for Spicy Chicken Pickle"
+                                    title="Manage stock">
+
+                                    <i class="fa-solid fa-boxes-stacked"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- PRODUCT 6 -->
+
+                        <tr
+                            data-category="combo"
+                            data-stock="healthy">
+
+                            <td>
+
+                                <div class="inventory-product">
+
+                                    <div class="inventory-image">
+
+                                        <img
+                                            src="../Chickenpickle1.png"
+                                            alt="VAAMIO Signature Combo">
+
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            VAAMIO Signature Combo
+                                        </strong>
+
+                                        <small>
+                                            3 x 250g Jars
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                VAA-CMB-006
+                            </td>
+
+
+                            <td>
+                                Combo Packs
+                            </td>
+
+
+                            <td>
+
+                                <strong class="stock-number healthy-text">
+                                    42
+                                </strong>
+
+                            </td>
+
+
+                            <td>
+                                15
+                            </td>
+
+
+                            <td>
+
+                                <span class="inventory-status healthy">
+                                    Healthy
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <button
+                                    class="admin-view-btn restock-btn"
+                                    type="button"
+                                    aria-label="Manage stock for VAAMIO Signature Combo"
+                                    title="Manage stock">
+
+                                    <i class="fa-solid fa-boxes-stacked"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 MOBILE INVENTORY
+            ================================================== -->
+
+            <div class="mobile-inventory">
+
+
+                <!-- MOBILE PRODUCT 1 -->
+
+                <article
+                    class="mobile-inventory-card"
+                    data-category="chicken"
+                    data-stock="healthy">
+
+
+                    <div class="mobile-inventory-top">
+
+                        <div class="inventory-product">
+
+                            <div class="inventory-image">
+
+                                <img
+                                    src="../Chickenpickle1.png"
+                                    alt="Andhra Chicken Pickle">
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Andhra Chicken Pickle
+                                </strong>
+
+                                <small>
+                                    VAA-CHK-001 • 250g
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="inventory-status healthy">
+                            Healthy
+                        </span>
+
+                    </div>
+
+
+                    <div class="mobile-inventory-info">
+
+                        <div>
+
+                            <span>
+                                Category
+                            </span>
+
+                            <strong>
+                                Chicken
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Stock
+                            </span>
+
+                            <strong>
+                                128
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Minimum
+                            </span>
+
+                            <strong>
+                                25
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="mobile-inventory-btn restock-btn"
+                        type="button"
+                        aria-label="Manage stock for Andhra Chicken Pickle">
+
+                        <i class="fa-solid fa-boxes-stacked"></i>
+
+                        Manage Stock
+
+                    </button>
+
+                </article>
+
+
+
+                <!-- MOBILE PRODUCT 2 -->
+
+                <article
+                    class="mobile-inventory-card"
+                    data-category="seafood"
+                    data-stock="healthy">
+
+
+                    <div class="mobile-inventory-top">
+
+                        <div class="inventory-product">
+
+                            <div class="inventory-image">
+
+                                <img
+                                    src="../prawnpickle.png"
+                                    alt="Coastal Prawn Pickle">
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Coastal Prawn Pickle
+                                </strong>
+
+                                <small>
+                                    VAA-PRW-002 • 250g
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="inventory-status healthy">
+                            Healthy
+                        </span>
+
+                    </div>
+
+
+                    <div class="mobile-inventory-info">
+
+                        <div>
+
+                            <span>
+                                Category
+                            </span>
+
+                            <strong>
+                                Seafood
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Stock
+                            </span>
+
+                            <strong>
+                                86
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Minimum
+                            </span>
+
+                            <strong>
+                                25
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="mobile-inventory-btn restock-btn"
+                        type="button"
+                        aria-label="Manage stock for Coastal Prawn Pickle">
+
+                        <i class="fa-solid fa-boxes-stacked"></i>
+
+                        Manage Stock
+
+                    </button>
+
+                </article>
+
+
+
+                <!-- MOBILE PRODUCT 3 -->
+
+                <article
+                    class="mobile-inventory-card"
+                    data-category="meat"
+                    data-stock="low">
+
+
+                    <div class="mobile-inventory-top">
+
+                        <div class="inventory-product">
+
+                            <div class="inventory-image">
+
+                                <img
+                                    src="../mutton pickle.png"
+                                    alt="Traditional Mutton Pickle">
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Traditional Mutton Pickle
+                                </strong>
+
+                                <small>
+                                    VAA-MUT-003 • 250g
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="inventory-status low">
+                            Low Stock
+                        </span>
+
+                    </div>
+
+
+                    <div class="mobile-inventory-info">
+
+                        <div>
+
+                            <span>
+                                Category
+                            </span>
+
+                            <strong>
+                                Mutton & Meat
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Stock
+                            </span>
+
+                            <strong>
+                                12
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Minimum
+                            </span>
+
+                            <strong>
+                                25
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="mobile-inventory-btn restock-btn"
+                        type="button"
+                        aria-label="Restock Traditional Mutton Pickle">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        Restock Product
+
+                    </button>
+
+                </article>
+
+
+
+                <!-- MOBILE PRODUCT 4 -->
+
+                <article
+                    class="mobile-inventory-card"
+                    data-category="seafood"
+                    data-stock="out">
+
+
+                    <div class="mobile-inventory-top">
+
+                        <div class="inventory-product">
+
+                            <div class="inventory-image">
+
+                                <img
+                                    src="../fish pickle.png"
+                                    alt="Andhra Fish Pickle">
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Andhra Fish Pickle
+                                </strong>
+
+                                <small>
+                                    VAA-FSH-004 • 250g
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="inventory-status out">
+                            Out of Stock
+                        </span>
+
+                    </div>
+
+
+                    <div class="mobile-inventory-info">
+
+                        <div>
+
+                            <span>
+                                Category
+                            </span>
+
+                            <strong>
+                                Seafood
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Stock
+                            </span>
+
+                            <strong>
+                                0
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Minimum
+                            </span>
+
+                            <strong>
+                                25
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="mobile-inventory-btn restock-btn"
+                        type="button"
+                        aria-label="Restock Andhra Fish Pickle">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        Restock Product
+
+                    </button>
+
+                </article>
+
+
+
+                <!-- MOBILE PRODUCT 5 -->
+
+                <article
+                    class="mobile-inventory-card"
+                    data-category="chicken"
+                    data-stock="healthy">
+
+
+                    <div class="mobile-inventory-top">
+
+                        <div class="inventory-product">
+
+                            <div class="inventory-image">
+
+                                <img
+                                    src="../Chickenpickle1.png"
+                                    alt="Spicy Chicken Pickle">
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Spicy Chicken Pickle
+                                </strong>
+
+                                <small>
+                                    VAA-CHK-005 • 500g
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="inventory-status healthy">
+                            Healthy
+                        </span>
+
+                    </div>
+
+
+                    <div class="mobile-inventory-info">
+
+                        <div>
+
+                            <span>
+                                Category
+                            </span>
+
+                            <strong>
+                                Chicken
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Stock
+                            </span>
+
+                            <strong>
+                                74
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Minimum
+                            </span>
+
+                            <strong>
+                                25
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="mobile-inventory-btn restock-btn"
+                        type="button"
+                        aria-label="Manage stock for Spicy Chicken Pickle">
+
+                        <i class="fa-solid fa-boxes-stacked"></i>
+
+                        Manage Stock
+
+                    </button>
+
+                </article>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PAGINATION
+            ================================================== -->
+
+            <div class="inventory-pagination">
+
+                <span>
+                    Showing 1–6 of 36 products
+                </span>
+
+
+                <div class="pagination-buttons">
+
+
+                    <button
+                        type="button"
+                        disabled
+                        aria-label="Previous page"
+                        title="Previous page">
+
+                        <i class="fa-solid fa-chevron-left"></i>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="current"
+                        aria-label="Page 1"
+                        title="Page 1">
+
+                        1
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        aria-label="Page 2"
+                        title="Page 2">
+
+                        2
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        aria-label="Page 3"
+                        title="Page 3">
+
+                        3
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        aria-label="Page 4"
+                        title="Page 4">
+
+                        4
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        aria-label="Next page"
+                        title="Next page">
+
+                        <i class="fa-solid fa-chevron-right"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+
+<!-- =====================================================
+     BOOTSTRAP JS
+===================================================== -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+
+<!-- =====================================================
+     INVENTORY JS
+===================================================== -->
+
+<script>
+
+    /* =====================================================
+       MOBILE SIDEBAR
+    ====================================================== */
+
+    const mobileMenuBtn =
+        document.getElementById("mobileMenuBtn");
+
+    const adminSidebar =
+        document.getElementById("adminSidebar");
+
+    const sidebarOverlay =
+        document.getElementById("sidebarOverlay");
+
+
+    mobileMenuBtn.addEventListener(
+        "click",
+        function () {
+
+            adminSidebar.classList.toggle("show");
+
+            sidebarOverlay.classList.toggle("show");
+
+        }
+    );
+
+
+    sidebarOverlay.addEventListener(
+        "click",
+        function () {
+
+            adminSidebar.classList.remove("show");
+
+            sidebarOverlay.classList.remove("show");
+
+        }
+    );
+
+
+
+    /* =====================================================
+       INVENTORY FILTERING
+    ====================================================== */
+
+    const inventorySearch =
+        document.getElementById("inventorySearch");
+
+    const inventoryCategoryFilter =
+        document.getElementById(
+            "inventoryCategoryFilter"
+        );
+
+    const inventoryStockFilter =
+        document.getElementById(
+            "inventoryStockFilter"
+        );
+
+
+    function filterInventory() {
+
+        const searchValue =
+            inventorySearch.value
+                .trim()
+                .toLowerCase();
+
+        const selectedCategory =
+            inventoryCategoryFilter.value;
+
+        const selectedStock =
+            inventoryStockFilter.value;
+
+
+        document
+            .querySelectorAll(
+                ".inventory-table tbody tr"
+            )
+            .forEach(row => {
+
+                const rowText =
+                    row.innerText.toLowerCase();
+
+                const rowCategory =
+                    row.dataset.category;
+
+                const rowStock =
+                    row.dataset.stock;
+
+
+                const searchMatch =
+                    rowText.includes(searchValue);
+
+                const categoryMatch =
+                    selectedCategory === "all" ||
+                    rowCategory === selectedCategory;
+
+                const stockMatch =
+                    selectedStock === "all" ||
+                    rowStock === selectedStock;
+
+
+                row.style.display =
+                    searchMatch &&
+                    categoryMatch &&
+                    stockMatch
+                        ? ""
+                        : "none";
+
+            });
+
+
+        document
+            .querySelectorAll(
+                ".mobile-inventory-card"
+            )
+            .forEach(card => {
+
+                const cardText =
+                    card.innerText.toLowerCase();
+
+                const cardCategory =
+                    card.dataset.category;
+
+                const cardStock =
+                    card.dataset.stock;
+
+
+                const searchMatch =
+                    cardText.includes(searchValue);
+
+                const categoryMatch =
+                    selectedCategory === "all" ||
+                    cardCategory === selectedCategory;
+
+                const stockMatch =
+                    selectedStock === "all" ||
+                    cardStock === selectedStock;
+
+
+                card.style.display =
+                    searchMatch &&
+                    categoryMatch &&
+                    stockMatch
+                        ? ""
+                        : "none";
+
+            });
+
+    }
+
+
+    inventorySearch.addEventListener(
+        "input",
+        filterInventory
+    );
+
+
+    inventoryCategoryFilter.addEventListener(
+        "change",
+        filterInventory
+    );
+
+
+    inventoryStockFilter.addEventListener(
+        "change",
+        filterInventory
+    );
+
+
+
+    /* =====================================================
+       GLOBAL SEARCH
+    ====================================================== */
+
+    const globalInventorySearch =
+        document.getElementById(
+            "globalInventorySearch"
+        );
+
+
+    globalInventorySearch.addEventListener(
+        "input",
+        function () {
+
+            inventorySearch.value =
+                this.value;
+
+            filterInventory();
+
+        }
+    );
+
+
+
+    /* =====================================================
+       EXPORT
+    ====================================================== */
+
+    document
+        .getElementById("exportInventoryBtn")
+        .addEventListener(
+            "click",
+            function () {
+
+                alert(
+                    "Inventory export started."
+                );
+
+            }
+        );
+
+
+
+    /* =====================================================
+       RESTOCK
+    ====================================================== */
+
+    document
+        .querySelectorAll(".restock-btn")
+        .forEach(button => {
+
+            button.addEventListener(
+                "click",
+                function () {
+
+                    alert(
+                        "Stock management form will open here."
+                    );
+
+                }
+            );
+
+        });
+
+
+
+    /* =====================================================
+       LOGOUT
+    ====================================================== */
+
+    document
+        .querySelector(".logout-link")
+        .addEventListener(
+            "click",
+            function (event) {
+
+                event.preventDefault();
+
+                const confirmed =
+                    confirm(
+                        "Are you sure you want to logout?"
+                    );
+
+                if (confirmed) {
+
+                    window.location.href =
+                        "../index.html";
+
+                }
+
+            }
+        );
+
+</script>
+
+
+</body>
+
+</html>

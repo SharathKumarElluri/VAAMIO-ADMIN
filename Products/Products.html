@@ -1,0 +1,2974 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="VAAMIO Admin Products">
+
+    <title>VAAMIO | Products</title>
+
+
+    <!-- =====================================================
+         BOOTSTRAP
+    ====================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         PRODUCTS CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="Products.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     MOBILE HEADER
+===================================================== -->
+
+<header class="admin-mobile-header">
+
+    <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        type="button"
+        aria-label="Open admin menu"
+        title="Open admin menu">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+
+    <div class="mobile-brand">
+
+        <strong>VAAMIO</strong>
+
+        <small>ADMIN PANEL</small>
+
+    </div>
+
+
+    <button
+        class="mobile-notification"
+        type="button"
+        aria-label="Notifications"
+        title="Notifications">
+
+        <i class="fa-regular fa-bell"></i>
+
+        <span>3</span>
+
+    </button>
+
+</header>
+
+
+
+<!-- =====================================================
+     SIDEBAR OVERLAY
+===================================================== -->
+
+<div
+    class="sidebar-overlay"
+    id="sidebarOverlay">
+</div>
+
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside
+    class="admin-sidebar"
+    id="adminSidebar">
+
+
+    <div class="admin-logo">
+
+        <strong>VAAMIO</strong>
+
+        <span>ADMIN PANEL</span>
+
+    </div>
+
+
+    <div class="admin-user">
+
+        <div class="admin-avatar">
+            A
+        </div>
+
+        <div>
+
+            <strong>Admin</strong>
+
+            <small>Super Admin</small>
+
+        </div>
+
+    </div>
+
+
+
+    <nav class="admin-nav">
+
+
+        <!-- MAIN -->
+
+        <div class="nav-heading">
+            MAIN
+        </div>
+
+
+        <a
+            href="../index.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-chart-pie"></i>
+
+            <span>Dashboard</span>
+
+        </a>
+
+
+
+        <!-- SALES -->
+
+        <div class="nav-heading">
+            SALES
+        </div>
+
+
+        <a
+            href="../Orders/Orders.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            <span>Orders</span>
+
+            <b>12</b>
+
+        </a>
+
+
+        <a
+            href="../Payments/Payments.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-credit-card"></i>
+
+            <span>Payments</span>
+
+        </a>
+
+
+        <a
+            href="/Refunds/Rrefunds.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-rotate-left"></i>
+
+            <span>Refunds</span>
+
+        </a>
+
+
+        <a
+            href="../Shipping/Shipping.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-truck"></i>
+
+            <span>Shipping</span>
+
+        </a>
+
+
+
+        <!-- CATALOG -->
+
+        <div class="nav-heading">
+            CATALOG
+        </div>
+
+
+        <a
+            href="Products.html"
+            class="nav-link active">
+
+            <i class="fa-solid fa-box"></i>
+
+            <span>Products</span>
+
+        </a>
+
+
+        <a
+            href="../Categories/Categories.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-layer-group"></i>
+
+            <span>Categories</span>
+
+        </a>
+
+
+        <a
+            href="../Inventory/Inventory.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-warehouse"></i>
+
+            <span>Inventory</span>
+
+            <b class="warning">
+                3
+            </b>
+
+        </a>
+
+
+
+        <!-- CUSTOMERS -->
+
+        <div class="nav-heading">
+            CUSTOMERS
+        </div>
+
+
+        <a
+            href="../Customers/Customers.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-users"></i>
+
+            <span>Customers</span>
+
+        </a>
+
+
+        <a
+            href="../Reviews/Reviews.html"
+            class="nav-link">
+
+            <i class="fa-regular fa-star"></i>
+
+            <span>Reviews</span>
+
+        </a>
+
+
+        <a
+            href="../Support/Support.html"
+            class="nav-link">
+
+            <i class="fa-regular fa-comments"></i>
+
+            <span>Support</span>
+
+        </a>
+
+
+
+        <!-- MARKETING -->
+
+        <div class="nav-heading">
+            MARKETING
+        </div>
+
+
+        <a
+            href="../Coupons/Coupons.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-ticket"></i>
+
+            <span>Coupons</span>
+
+        </a>
+
+
+        <a
+            href="../Offers/Offers.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-bullseye"></i>
+
+            <span>Offers</span>
+
+        </a>
+
+
+        <a
+            href="../Banners/Banners.html"
+            class="nav-link">
+
+            <i class="fa-regular fa-image"></i>
+
+            <span>Banners</span>
+
+        </a>
+
+
+        <a
+            href="../Newsletter/Newsletter.html"
+            class="nav-link">
+
+            <i class="fa-regular fa-envelope"></i>
+
+            <span>Newsletter</span>
+
+        </a>
+
+
+
+        <!-- BUSINESS -->
+
+        <div class="nav-heading">
+            BUSINESS
+        </div>
+
+
+        <a
+            href="../Bulk-Orders/Bulk-Orders.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-handshake"></i>
+
+            <span>Bulk Orders</span>
+
+        </a>
+
+
+        <a
+            href="../Distributor-Review/Distributor.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-store"></i>
+
+            <span>Distributor-Review</span>
+
+        </a>
+
+
+        <a
+            href="../Franchise/Franchise.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-building"></i>
+
+            <span>Franchise</span>
+
+        </a>
+
+
+
+        <!-- REPORTS -->
+
+        <div class="nav-heading">
+            REPORTS
+        </div>
+
+
+        <a
+            href="../Sales-Reports/Sales-Reports.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            <span>Sales Reports</span>
+
+        </a>
+
+
+        <a
+            href="../Product-Reports/Product-Reports.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-chart-column"></i>
+
+            <span>Product Reports</span>
+
+        </a>
+
+
+
+        <!-- SYSTEM -->
+
+        <div class="nav-heading">
+            SYSTEM
+        </div>
+
+
+        <a
+            href="../Staff-Roles/Staff-Roles.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-user-shield"></i>
+
+            <span>Staff & Roles</span>
+
+        </a>
+
+
+        <a
+            href="../Audit-Logs/Audit-Logs.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-file-shield"></i>
+
+            <span>Audit Logs</span>
+
+        </a>
+
+
+        <a
+            href="../Settings/Settings.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-gear"></i>
+
+            <span>Settings</span>
+
+        </a>
+
+
+        <div class="nav-divider"></div>
+
+
+        <a
+            href="../index.html"
+            class="nav-link">
+
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            <span>View Website</span>
+
+        </a>
+
+
+        <a
+            href="#"
+            class="nav-link logout-link">
+
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+            <span>Logout</span>
+
+        </a>
+
+    </nav>
+
+</aside>
+
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main class="admin-main">
+
+
+    <!-- TOPBAR -->
+
+    <header class="admin-topbar">
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="search"
+                id="globalProductSearch"
+                placeholder="Search products, SKU..."
+                aria-label="Search products and SKU">
+
+        </div>
+
+
+        <div class="topbar-right">
+
+            <button
+                class="notification-btn"
+                type="button"
+                aria-label="Notifications"
+                title="Notifications">
+
+                <i class="fa-regular fa-bell"></i>
+
+                <span>3</span>
+
+            </button>
+
+
+            <div class="admin-profile">
+
+                <div class="profile-avatar">
+                    A
+                </div>
+
+                <div>
+
+                    <strong>Admin</strong>
+
+                    <small>Super Admin</small>
+
+                </div>
+
+                <i class="fa-solid fa-chevron-down"></i>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================================
+         CONTENT
+    ================================================== -->
+
+    <div class="admin-content">
+
+
+        <!-- PAGE HEADER -->
+
+        <section class="page-header">
+
+            <div>
+
+                <span class="page-eyebrow">
+                    CATALOG MANAGEMENT
+                </span>
+
+                <h1>
+                    Products
+                </h1>
+
+                <p>
+                    Manage your VAAMIO product catalog, prices and availability.
+                </p>
+
+            </div>
+
+
+            <button
+                class="primary-btn"
+                id="addProductBtn"
+                type="button"
+                aria-label="Add new product"
+                title="Add new product">
+
+                <i class="fa-solid fa-plus"></i>
+
+                Add Product
+
+            </button>
+
+        </section>
+
+
+
+        <!-- =================================================
+             STAT CARDS
+        ================================================== -->
+
+        <div class="row g-3">
+
+
+            <div class="col-6 col-xl-3">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+
+                        <i class="fa-solid fa-box"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Total Products
+                        </span>
+
+                        <strong>
+                            36
+                        </strong>
+
+                        <small>
+                            4 added this month
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-xl-3">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Active
+                        </span>
+
+                        <strong>
+                            31
+                        </strong>
+
+                        <small>
+                            Available for sale
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-xl-3">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">
+
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Low Stock
+                        </span>
+
+                        <strong>
+                            3
+                        </strong>
+
+                        <small>
+                            Needs restocking
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-xl-3">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon red">
+
+                        <i class="fa-solid fa-box-open"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Out of Stock
+                        </span>
+
+                        <strong>
+                            2
+                        </strong>
+
+                        <small>
+                            Currently unavailable
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             CATEGORY SUMMARY
+        ================================================== -->
+
+        <section class="category-summary">
+
+
+            <div class="category-summary-header">
+
+                <div>
+
+                    <span>
+                        PRODUCT CATEGORIES
+                    </span>
+
+                    <h2>
+                        Catalog Overview
+                    </h2>
+
+                </div>
+
+
+                <a
+                    href="../Categories/Categories.html"
+                    class="manage-link">
+
+                    Manage Categories
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+
+            <div class="category-summary-grid">
+
+
+                <div class="category-summary-card">
+
+                    <div class="category-summary-icon chicken">
+
+                        <i class="fa-solid fa-drumstick-bite"></i>
+
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Chicken Pickles
+                        </strong>
+
+                        <span>
+                            12 Products
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="category-summary-card">
+
+                    <div class="category-summary-icon seafood">
+
+                        <i class="fa-solid fa-fish"></i>
+
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Seafood Pickles
+                        </strong>
+
+                        <span>
+                            8 Products
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="category-summary-card">
+
+                    <div class="category-summary-icon meat">
+
+                        <i class="fa-solid fa-bone"></i>
+
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Mutton & Meat
+                        </strong>
+
+                        <span>
+                            9 Products
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="category-summary-card">
+
+                    <div class="category-summary-icon combo">
+
+                        <i class="fa-solid fa-gift"></i>
+
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Combo Packs
+                        </strong>
+
+                        <span>
+                            7 Products
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PRODUCTS
+        ================================================== -->
+
+        <section class="products-card">
+
+
+            <div class="products-header">
+
+                <div>
+
+                    <span>
+                        PRODUCT MANAGEMENT
+                    </span>
+
+                    <h2>
+                        All Products
+                    </h2>
+
+                </div>
+
+
+                <button
+                    class="secondary-btn"
+                    type="button"
+                    id="exportProductsBtn"
+                    aria-label="Export product catalog"
+                    title="Export product catalog">
+
+                    <i class="fa-solid fa-download"></i>
+
+                    Export
+
+                </button>
+
+            </div>
+
+
+
+            <!-- FILTER BAR -->
+
+            <div class="filters">
+
+
+                <div class="filter-search">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        id="productSearch"
+                        placeholder="Search product name or SKU..."
+                        aria-label="Search product name or SKU">
+
+                </div>
+
+
+                <label class="filter-label">
+
+                    <span>
+                        Category
+                    </span>
+
+                    <select
+                        class="filter-select"
+                        id="categoryFilter"
+                        aria-label="Filter products by category">
+
+                        <option value="all">
+                            All Categories
+                        </option>
+
+                        <option value="chicken">
+                            Chicken
+                        </option>
+
+                        <option value="seafood">
+                            Seafood
+                        </option>
+
+                        <option value="meat">
+                            Mutton & Meat
+                        </option>
+
+                        <option value="combo">
+                            Combo Packs
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <label class="filter-label">
+
+                    <span>
+                        Status
+                    </span>
+
+                    <select
+                        class="filter-select"
+                        id="stockFilter"
+                        aria-label="Filter products by stock status">
+
+                        <option value="all">
+                            All Status
+                        </option>
+
+                        <option value="active">
+                            Active
+                        </option>
+
+                        <option value="low">
+                            Low Stock
+                        </option>
+
+                        <option value="out">
+                            Out of Stock
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <label class="filter-label">
+
+                    <span>
+                        Sort
+                    </span>
+
+                    <select
+                        class="filter-select"
+                        id="sortFilter"
+                        aria-label="Sort products">
+
+                        <option value="newest">
+                            Newest
+                        </option>
+
+                        <option value="price-low">
+                            Price: Low to High
+                        </option>
+
+                        <option value="price-high">
+                            Price: High to Low
+                        </option>
+
+                        <option value="best">
+                            Best Selling
+                        </option>
+
+                    </select>
+
+                </label>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 DESKTOP TABLE
+            ================================================== -->
+
+            <div class="table-wrapper">
+
+                <table class="products-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Product
+                            </th>
+
+                            <th>
+                                SKU
+                            </th>
+
+                            <th>
+                                Category
+                            </th>
+
+                            <th>
+                                Price
+                            </th>
+
+                            <th>
+                                Stock
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                            <th>
+                                Rating
+                            </th>
+
+                            <th>
+                                Action
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <!-- PRODUCT 1 -->
+
+                        <tr
+                            data-category="chicken"
+                            data-stock="active">
+
+                            <td>
+
+                                <div class="product-cell">
+
+                                    <div class="product-image-wrap">
+
+                                        <img
+                                            src="../Chickenpickle1.png"
+                                            alt="Andhra Chicken Pickle">
+
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Andhra Chicken Pickle
+                                        </strong>
+
+                                        <small>
+                                            250g Jar
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="sku">
+                                    VAA-CHK-001
+                                </span>
+
+                            </td>
+
+
+                            <td>
+                                Chicken
+                            </td>
+
+
+                            <td>
+
+                                <strong>
+                                    ₹249
+                                </strong>
+
+                            </td>
+
+
+                            <td>
+                                128 Units
+                            </td>
+
+
+                            <td>
+
+                                <span class="stock-status active">
+                                    In Stock
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    4.9
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <div class="action-buttons">
+
+                                    <button
+                                        class="action-btn edit-btn"
+                                        type="button"
+                                        aria-label="Edit Andhra Chicken Pickle"
+                                        title="Edit product">
+
+                                        <i class="fa-solid fa-pen"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="action-btn delete-btn"
+                                        type="button"
+                                        aria-label="Delete Andhra Chicken Pickle"
+                                        title="Delete product">
+
+                                        <i class="fa-solid fa-trash"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- PRODUCT 2 -->
+
+                        <tr
+                            data-category="seafood"
+                            data-stock="active">
+
+                            <td>
+
+                                <div class="product-cell">
+
+                                    <div class="product-image-wrap">
+
+                                        <img
+                                            src="../prawnpickle.png"
+                                            alt="Coastal Prawn Pickle">
+
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Coastal Prawn Pickle
+                                        </strong>
+
+                                        <small>
+                                            250g Jar
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="sku">
+                                    VAA-PRW-002
+                                </span>
+
+                            </td>
+
+
+                            <td>
+                                Seafood
+                            </td>
+
+
+                            <td>
+
+                                <strong>
+                                    ₹299
+                                </strong>
+
+                            </td>
+
+
+                            <td>
+                                86 Units
+                            </td>
+
+
+                            <td>
+
+                                <span class="stock-status active">
+                                    In Stock
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    4.9
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <div class="action-buttons">
+
+                                    <button
+                                        class="action-btn edit-btn"
+                                        type="button"
+                                        aria-label="Edit Coastal Prawn Pickle"
+                                        title="Edit product">
+
+                                        <i class="fa-solid fa-pen"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="action-btn delete-btn"
+                                        type="button"
+                                        aria-label="Delete Coastal Prawn Pickle"
+                                        title="Delete product">
+
+                                        <i class="fa-solid fa-trash"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- PRODUCT 3 -->
+
+                        <tr
+                            data-category="meat"
+                            data-stock="low">
+
+                            <td>
+
+                                <div class="product-cell">
+
+                                    <div class="product-image-wrap">
+
+                                        <img
+                                            src="../mutton pickle.png"
+                                            alt="Traditional Mutton Pickle">
+
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Traditional Mutton Pickle
+                                        </strong>
+
+                                        <small>
+                                            250g Jar
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="sku">
+                                    VAA-MUT-003
+                                </span>
+
+                            </td>
+
+
+                            <td>
+                                Mutton & Meat
+                            </td>
+
+
+                            <td>
+
+                                <strong>
+                                    ₹329
+                                </strong>
+
+                            </td>
+
+
+                            <td>
+                                12 Units
+                            </td>
+
+
+                            <td>
+
+                                <span class="stock-status low">
+                                    Low Stock
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    4.9
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <div class="action-buttons">
+
+                                    <button
+                                        class="action-btn edit-btn"
+                                        type="button"
+                                        aria-label="Edit Traditional Mutton Pickle"
+                                        title="Edit product">
+
+                                        <i class="fa-solid fa-pen"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="action-btn delete-btn"
+                                        type="button"
+                                        aria-label="Delete Traditional Mutton Pickle"
+                                        title="Delete product">
+
+                                        <i class="fa-solid fa-trash"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- PRODUCT 4 -->
+
+                        <tr
+                            data-category="seafood"
+                            data-stock="out">
+
+                            <td>
+
+                                <div class="product-cell">
+
+                                    <div class="product-image-wrap">
+
+                                        <img
+                                            src="../fish pickle.png"
+                                            alt="Andhra Fish Pickle">
+
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Andhra Fish Pickle
+                                        </strong>
+
+                                        <small>
+                                            250g Jar
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="sku">
+                                    VAA-FSH-004
+                                </span>
+
+                            </td>
+
+
+                            <td>
+                                Seafood
+                            </td>
+
+
+                            <td>
+
+                                <strong>
+                                    ₹279
+                                </strong>
+
+                            </td>
+
+
+                            <td>
+                                0 Units
+                            </td>
+
+
+                            <td>
+
+                                <span class="stock-status out">
+                                    Out of Stock
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    4.7
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <div class="action-buttons">
+
+                                    <button
+                                        class="action-btn edit-btn"
+                                        type="button"
+                                        aria-label="Edit Andhra Fish Pickle"
+                                        title="Edit product">
+
+                                        <i class="fa-solid fa-pen"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="action-btn delete-btn"
+                                        type="button"
+                                        aria-label="Delete Andhra Fish Pickle"
+                                        title="Delete product">
+
+                                        <i class="fa-solid fa-trash"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- PRODUCT 5 -->
+
+                        <tr
+                            data-category="chicken"
+                            data-stock="active">
+
+                            <td>
+
+                                <div class="product-cell">
+
+                                    <div class="product-image-wrap">
+
+                                        <img
+                                            src="../Chickenpickle1.png"
+                                            alt="Spicy Chicken Pickle">
+
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Spicy Chicken Pickle
+                                        </strong>
+
+                                        <small>
+                                            500g Jar
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="sku">
+                                    VAA-CHK-005
+                                </span>
+
+                            </td>
+
+
+                            <td>
+                                Chicken
+                            </td>
+
+
+                            <td>
+
+                                <strong>
+                                    ₹449
+                                </strong>
+
+                            </td>
+
+
+                            <td>
+                                74 Units
+                            </td>
+
+
+                            <td>
+
+                                <span class="stock-status active">
+                                    In Stock
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    4.8
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <div class="action-buttons">
+
+                                    <button
+                                        class="action-btn edit-btn"
+                                        type="button"
+                                        aria-label="Edit Spicy Chicken Pickle"
+                                        title="Edit product">
+
+                                        <i class="fa-solid fa-pen"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="action-btn delete-btn"
+                                        type="button"
+                                        aria-label="Delete Spicy Chicken Pickle"
+                                        title="Delete product">
+
+                                        <i class="fa-solid fa-trash"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- PRODUCT 6 -->
+
+                        <tr
+                            data-category="combo"
+                            data-stock="active">
+
+                            <td>
+
+                                <div class="product-cell">
+
+                                    <div class="product-image-wrap">
+
+                                        <img
+                                            src="../Chickenpickle1.png"
+                                            alt="VAAMIO Signature Combo">
+
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            VAAMIO Signature Combo
+                                        </strong>
+
+                                        <small>
+                                            3 x 250g Jars
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="sku">
+                                    VAA-CMB-006
+                                </span>
+
+                            </td>
+
+
+                            <td>
+                                Combo Packs
+                            </td>
+
+
+                            <td>
+
+                                <strong>
+                                    ₹799
+                                </strong>
+
+                            </td>
+
+
+                            <td>
+                                42 Units
+                            </td>
+
+
+                            <td>
+
+                                <span class="stock-status active">
+                                    In Stock
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    5.0
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <div class="action-buttons">
+
+                                    <button
+                                        class="action-btn edit-btn"
+                                        type="button"
+                                        aria-label="Edit VAAMIO Signature Combo"
+                                        title="Edit product">
+
+                                        <i class="fa-solid fa-pen"></i>
+
+                                    </button>
+
+
+                                    <button
+                                        class="action-btn delete-btn"
+                                        type="button"
+                                        aria-label="Delete VAAMIO Signature Combo"
+                                        title="Delete product">
+
+                                        <i class="fa-solid fa-trash"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 MOBILE PRODUCTS
+            ================================================== -->
+
+            <div class="mobile-products">
+
+
+                <article
+                    class="mobile-product-card"
+                    data-category="chicken"
+                    data-stock="active">
+
+
+                    <div class="mobile-product-top">
+
+                        <div class="mobile-product-image">
+
+                            <img
+                                src="../Chickenpickle1.png"
+                                alt="Andhra Chicken Pickle">
+
+                        </div>
+
+
+                        <div class="mobile-product-title">
+
+                            <strong>
+                                Andhra Chicken Pickle
+                            </strong>
+
+                            <small>
+                                VAA-CHK-001 • 250g
+                            </small>
+
+                            <span class="stock-status active">
+                                In Stock
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mobile-product-info">
+
+                        <div>
+
+                            <span>
+                                Category
+                            </span>
+
+                            <strong>
+                                Chicken
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Price
+                            </span>
+
+                            <strong>
+                                ₹249
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Stock
+                            </span>
+
+                            <strong>
+                                128
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Rating
+                            </span>
+
+                            <strong>
+                                ★ 4.9
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mobile-product-actions">
+
+                        <button
+                            class="mobile-edit-btn edit-btn"
+                            type="button"
+                            aria-label="Edit Andhra Chicken Pickle"
+                            title="Edit product">
+
+                            <i class="fa-solid fa-pen"></i>
+
+                            Edit
+
+                        </button>
+
+
+                        <button
+                            class="mobile-delete-btn delete-btn"
+                            type="button"
+                            aria-label="Delete Andhra Chicken Pickle"
+                            title="Delete product">
+
+                            <i class="fa-solid fa-trash"></i>
+
+                            Delete
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    class="mobile-product-card"
+                    data-category="seafood"
+                    data-stock="active">
+
+
+                    <div class="mobile-product-top">
+
+                        <div class="mobile-product-image">
+
+                            <img
+                                src="../prawnpickle.png"
+                                alt="Coastal Prawn Pickle">
+
+                        </div>
+
+
+                        <div class="mobile-product-title">
+
+                            <strong>
+                                Coastal Prawn Pickle
+                            </strong>
+
+                            <small>
+                                VAA-PRW-002 • 250g
+                            </small>
+
+                            <span class="stock-status active">
+                                In Stock
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mobile-product-info">
+
+                        <div>
+
+                            <span>
+                                Category
+                            </span>
+
+                            <strong>
+                                Seafood
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Price
+                            </span>
+
+                            <strong>
+                                ₹299
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Stock
+                            </span>
+
+                            <strong>
+                                86
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Rating
+                            </span>
+
+                            <strong>
+                                ★ 4.9
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mobile-product-actions">
+
+                        <button
+                            class="mobile-edit-btn edit-btn"
+                            type="button"
+                            aria-label="Edit Coastal Prawn Pickle"
+                            title="Edit product">
+
+                            <i class="fa-solid fa-pen"></i>
+
+                            Edit
+
+                        </button>
+
+
+                        <button
+                            class="mobile-delete-btn delete-btn"
+                            type="button"
+                            aria-label="Delete Coastal Prawn Pickle"
+                            title="Delete product">
+
+                            <i class="fa-solid fa-trash"></i>
+
+                            Delete
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    class="mobile-product-card"
+                    data-category="meat"
+                    data-stock="low">
+
+
+                    <div class="mobile-product-top">
+
+                        <div class="mobile-product-image">
+
+                            <img
+                                src="../mutton pickle.png"
+                                alt="Traditional Mutton Pickle">
+
+                        </div>
+
+
+                        <div class="mobile-product-title">
+
+                            <strong>
+                                Traditional Mutton Pickle
+                            </strong>
+
+                            <small>
+                                VAA-MUT-003 • 250g
+                            </small>
+
+                            <span class="stock-status low">
+                                Low Stock
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mobile-product-info">
+
+                        <div>
+
+                            <span>
+                                Category
+                            </span>
+
+                            <strong>
+                                Mutton & Meat
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Price
+                            </span>
+
+                            <strong>
+                                ₹329
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Stock
+                            </span>
+
+                            <strong>
+                                12
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Rating
+                            </span>
+
+                            <strong>
+                                ★ 4.9
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mobile-product-actions">
+
+                        <button
+                            class="mobile-edit-btn edit-btn"
+                            type="button"
+                            aria-label="Edit Traditional Mutton Pickle"
+                            title="Edit product">
+
+                            <i class="fa-solid fa-pen"></i>
+
+                            Edit
+
+                        </button>
+
+
+                        <button
+                            class="mobile-delete-btn delete-btn"
+                            type="button"
+                            aria-label="Delete Traditional Mutton Pickle"
+                            title="Delete product">
+
+                            <i class="fa-solid fa-trash"></i>
+
+                            Delete
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    class="mobile-product-card"
+                    data-category="seafood"
+                    data-stock="out">
+
+
+                    <div class="mobile-product-top">
+
+                        <div class="mobile-product-image">
+
+                            <img
+                                src="../fish pickle.png"
+                                alt="Andhra Fish Pickle">
+
+                        </div>
+
+
+                        <div class="mobile-product-title">
+
+                            <strong>
+                                Andhra Fish Pickle
+                            </strong>
+
+                            <small>
+                                VAA-FSH-004 • 250g
+                            </small>
+
+                            <span class="stock-status out">
+                                Out of Stock
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mobile-product-info">
+
+                        <div>
+
+                            <span>
+                                Category
+                            </span>
+
+                            <strong>
+                                Seafood
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Price
+                            </span>
+
+                            <strong>
+                                ₹279
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Stock
+                            </span>
+
+                            <strong>
+                                0
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Rating
+                            </span>
+
+                            <strong>
+                                ★ 4.7
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mobile-product-actions">
+
+                        <button
+                            class="mobile-edit-btn edit-btn"
+                            type="button"
+                            aria-label="Edit Andhra Fish Pickle"
+                            title="Edit product">
+
+                            <i class="fa-solid fa-pen"></i>
+
+                            Edit
+
+                        </button>
+
+
+                        <button
+                            class="mobile-delete-btn delete-btn"
+                            type="button"
+                            aria-label="Delete Andhra Fish Pickle"
+                            title="Delete product">
+
+                            <i class="fa-solid fa-trash"></i>
+
+                            Delete
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    class="mobile-product-card"
+                    data-category="chicken"
+                    data-stock="active">
+
+
+                    <div class="mobile-product-top">
+
+                        <div class="mobile-product-image">
+
+                            <img
+                                src="../Chickenpickle1.png"
+                                alt="Spicy Chicken Pickle">
+
+                        </div>
+
+
+                        <div class="mobile-product-title">
+
+                            <strong>
+                                Spicy Chicken Pickle
+                            </strong>
+
+                            <small>
+                                VAA-CHK-005 • 500g
+                            </small>
+
+                            <span class="stock-status active">
+                                In Stock
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mobile-product-info">
+
+                        <div>
+
+                            <span>
+                                Category
+                            </span>
+
+                            <strong>
+                                Chicken
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Price
+                            </span>
+
+                            <strong>
+                                ₹449
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Stock
+                            </span>
+
+                            <strong>
+                                74
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Rating
+                            </span>
+
+                            <strong>
+                                ★ 4.8
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mobile-product-actions">
+
+                        <button
+                            class="mobile-edit-btn edit-btn"
+                            type="button"
+                            aria-label="Edit Spicy Chicken Pickle"
+                            title="Edit product">
+
+                            <i class="fa-solid fa-pen"></i>
+
+                            Edit
+
+                        </button>
+
+
+                        <button
+                            class="mobile-delete-btn delete-btn"
+                            type="button"
+                            aria-label="Delete Spicy Chicken Pickle"
+                            title="Delete product">
+
+                            <i class="fa-solid fa-trash"></i>
+
+                            Delete
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    class="mobile-product-card"
+                    data-category="combo"
+                    data-stock="active">
+
+
+                    <div class="mobile-product-top">
+
+                        <div class="mobile-product-image">
+
+                            <img
+                                src="../Chickenpickle1.png"
+                                alt="VAAMIO Signature Combo">
+
+                        </div>
+
+
+                        <div class="mobile-product-title">
+
+                            <strong>
+                                VAAMIO Signature Combo
+                            </strong>
+
+                            <small>
+                                VAA-CMB-006 • 3 x 250g
+                            </small>
+
+                            <span class="stock-status active">
+                                In Stock
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mobile-product-info">
+
+                        <div>
+
+                            <span>
+                                Category
+                            </span>
+
+                            <strong>
+                                Combo Packs
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Price
+                            </span>
+
+                            <strong>
+                                ₹799
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Stock
+                            </span>
+
+                            <strong>
+                                42
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Rating
+                            </span>
+
+                            <strong>
+                                ★ 5.0
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mobile-product-actions">
+
+                        <button
+                            class="mobile-edit-btn edit-btn"
+                            type="button"
+                            aria-label="Edit VAAMIO Signature Combo"
+                            title="Edit product">
+
+                            <i class="fa-solid fa-pen"></i>
+
+                            Edit
+
+                        </button>
+
+
+                        <button
+                            class="mobile-delete-btn delete-btn"
+                            type="button"
+                            aria-label="Delete VAAMIO Signature Combo"
+                            title="Delete product">
+
+                            <i class="fa-solid fa-trash"></i>
+
+                            Delete
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+
+            <!-- PAGINATION -->
+
+            <div class="pagination-area">
+
+                <span>
+                    Showing 1–6 of 36 products
+                </span>
+
+
+                <div class="pagination-buttons">
+
+
+                    <button
+                        type="button"
+                        disabled
+                        aria-label="Previous page"
+                        title="Previous page">
+
+                        <i class="fa-solid fa-chevron-left"></i>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="current"
+                        aria-label="Page 1"
+                        title="Page 1">
+
+                        1
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        aria-label="Page 2"
+                        title="Page 2">
+
+                        2
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        aria-label="Page 3"
+                        title="Page 3">
+
+                        3
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        aria-label="Page 4"
+                        title="Page 4">
+
+                        4
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        aria-label="Next page"
+                        title="Next page">
+
+                        <i class="fa-solid fa-chevron-right"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+
+<!-- =====================================================
+     BOOTSTRAP JS
+===================================================== -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+
+<!-- =====================================================
+     PRODUCTS JS
+===================================================== -->
+
+<script>
+
+    /* =====================================================
+       MOBILE SIDEBAR
+    ====================================================== */
+
+    const mobileMenuBtn =
+        document.getElementById("mobileMenuBtn");
+
+    const adminSidebar =
+        document.getElementById("adminSidebar");
+
+    const sidebarOverlay =
+        document.getElementById("sidebarOverlay");
+
+
+    mobileMenuBtn.addEventListener(
+        "click",
+        function () {
+
+            adminSidebar.classList.toggle("show");
+
+            sidebarOverlay.classList.toggle("show");
+
+        }
+    );
+
+
+    sidebarOverlay.addEventListener(
+        "click",
+        function () {
+
+            adminSidebar.classList.remove("show");
+
+            sidebarOverlay.classList.remove("show");
+
+        }
+    );
+
+
+
+    /* =====================================================
+       PRODUCT FILTERING
+    ====================================================== */
+
+    const productSearch =
+        document.getElementById("productSearch");
+
+    const categoryFilter =
+        document.getElementById("categoryFilter");
+
+    const stockFilter =
+        document.getElementById("stockFilter");
+
+
+    function filterProducts() {
+
+        const searchValue =
+            productSearch.value
+                .trim()
+                .toLowerCase();
+
+        const selectedCategory =
+            categoryFilter.value;
+
+        const selectedStock =
+            stockFilter.value;
+
+
+        document
+            .querySelectorAll(
+                ".products-table tbody tr"
+            )
+            .forEach(row => {
+
+                const rowText =
+                    row.innerText.toLowerCase();
+
+                const rowCategory =
+                    row.dataset.category;
+
+                const rowStock =
+                    row.dataset.stock;
+
+
+                const searchMatch =
+                    rowText.includes(searchValue);
+
+                const categoryMatch =
+                    selectedCategory === "all" ||
+                    rowCategory === selectedCategory;
+
+                const stockMatch =
+                    selectedStock === "all" ||
+                    rowStock === selectedStock;
+
+
+                row.style.display =
+                    searchMatch &&
+                    categoryMatch &&
+                    stockMatch
+                        ? ""
+                        : "none";
+
+            });
+
+
+        document
+            .querySelectorAll(
+                ".mobile-product-card"
+            )
+            .forEach(card => {
+
+                const cardText =
+                    card.innerText.toLowerCase();
+
+                const cardCategory =
+                    card.dataset.category;
+
+                const cardStock =
+                    card.dataset.stock;
+
+
+                const searchMatch =
+                    cardText.includes(searchValue);
+
+                const categoryMatch =
+                    selectedCategory === "all" ||
+                    cardCategory === selectedCategory;
+
+                const stockMatch =
+                    selectedStock === "all" ||
+                    cardStock === selectedStock;
+
+
+                card.style.display =
+                    searchMatch &&
+                    categoryMatch &&
+                    stockMatch
+                        ? ""
+                        : "none";
+
+            });
+
+    }
+
+
+    productSearch.addEventListener(
+        "input",
+        filterProducts
+    );
+
+
+    categoryFilter.addEventListener(
+        "change",
+        filterProducts
+    );
+
+
+    stockFilter.addEventListener(
+        "change",
+        filterProducts
+    );
+
+
+
+    /* =====================================================
+       GLOBAL SEARCH
+    ====================================================== */
+
+    const globalProductSearch =
+        document.getElementById(
+            "globalProductSearch"
+        );
+
+
+    globalProductSearch.addEventListener(
+        "input",
+        function () {
+
+            productSearch.value =
+                this.value;
+
+            filterProducts();
+
+        }
+    );
+
+
+
+    /* =====================================================
+       ADD PRODUCT
+    ====================================================== */
+
+    document
+        .getElementById("addProductBtn")
+        .addEventListener(
+            "click",
+            function () {
+
+                alert(
+                    "Add Product form will open here."
+                );
+
+            }
+        );
+
+
+
+    /* =====================================================
+       EXPORT
+    ====================================================== */
+
+    document
+        .getElementById("exportProductsBtn")
+        .addEventListener(
+            "click",
+            function () {
+
+                alert(
+                    "Product catalog export started."
+                );
+
+            }
+        );
+
+
+
+    /* =====================================================
+       EDIT
+    ====================================================== */
+
+    document
+        .querySelectorAll(".edit-btn")
+        .forEach(button => {
+
+            button.addEventListener(
+                "click",
+                function () {
+
+                    alert(
+                        "Edit Product form will open here."
+                    );
+
+                }
+            );
+
+        });
+
+
+
+    /* =====================================================
+       DELETE
+    ====================================================== */
+
+    document
+        .querySelectorAll(".delete-btn")
+        .forEach(button => {
+
+            button.addEventListener(
+                "click",
+                function () {
+
+                    const confirmed =
+                        confirm(
+                            "Are you sure you want to delete this product?"
+                        );
+
+
+                    if (confirmed) {
+
+                        alert(
+                            "Product deleted."
+                        );
+
+                    }
+
+                }
+            );
+
+        });
+
+
+
+    /* =====================================================
+       LOGOUT
+    ====================================================== */
+
+    document
+        .querySelector(".logout-link")
+        .addEventListener(
+            "click",
+            function (event) {
+
+                event.preventDefault();
+
+                const confirmed =
+                    confirm(
+                        "Are you sure you want to logout?"
+                    );
+
+
+                if (confirmed) {
+
+                    window.location.href =
+                        "../index.html";
+
+                }
+
+            }
+        );
+
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1079 @@
+/* =========================================================
+   VAAMIO ORDERS
+   Orders.css
+   Orders-specific styling only
+========================================================= */
+
+
+/* =========================================================
+   ORDERS EXPORT BUTTON
+========================================================= */
+
+.orders-export-btn {
+
+    min-height: 44px;
+
+    padding:
+        0 17px;
+
+    border:
+        1px solid #d9dfda;
+
+    border-radius: 10px;
+
+    background: #064b3b;
+
+    color: #ffffff;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+}
+
+
+.orders-export-btn:hover {
+
+    background: #043d30;
+
+}
+
+
+/* =========================================================
+   ORDERS SELECT
+========================================================= */
+
+.orders-select {
+
+    min-width: 125px;
+
+    height: 39px;
+
+    padding:
+        0 11px;
+
+    border:
+        1px solid #d9dfda;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #68736d;
+
+    font-size: 10px;
+
+    outline: none;
+
+}
+
+
+/* =========================================================
+   ORDER STATUS OVERVIEW
+========================================================= */
+
+.status-overview {
+
+    width: 100%;
+
+}
+
+
+.status-progress-wrap {
+
+    width: 100%;
+
+    padding-top: 6px;
+
+}
+
+
+.status-progress {
+
+    width: 100%;
+
+    height: 13px;
+
+    display: flex;
+
+    overflow: hidden;
+
+    border-radius: 30px;
+
+    background: #edf1ed;
+
+}
+
+
+.status-progress span {
+
+    display: block;
+
+    height: 100%;
+
+}
+
+
+.status-progress-delivered {
+
+    width: 82.2%;
+
+    background: #397d59;
+
+}
+
+
+.status-progress-shipped {
+
+    width: 7.5%;
+
+    background: #5b82aa;
+
+}
+
+
+.status-progress-processing {
+
+    width: 6.9%;
+
+    background: #d88a42;
+
+}
+
+
+.status-legend {
+
+    margin-top: 24px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 18px 22px;
+
+}
+
+
+.status-legend-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+}
+
+
+.legend-dot {
+
+    width: 10px;
+    height: 10px;
+
+    flex: 0 0 10px;
+
+    border-radius: 50%;
+
+}
+
+
+.delivered-dot {
+
+    background: #397d59;
+
+}
+
+
+.shipped-dot {
+
+    background: #5b82aa;
+
+}
+
+
+.processing-dot {
+
+    background: #d88a42;
+
+}
+
+
+.cancelled-dot {
+
+    background: #aa7565;
+
+}
+
+
+.status-legend-item strong {
+
+    display: block;
+
+    color: #18251e;
+
+    font-size: 10px;
+
+}
+
+
+.status-legend-item small {
+
+    display: block;
+
+    margin-top: 2px;
+
+    color: #7b867f;
+
+    font-size: 8px;
+
+}
+
+
+/* =========================================================
+   MONTHLY SUMMARY
+========================================================= */
+
+.monthly-summary {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+
+}
+
+
+.summary-item {
+
+    min-height: 78px;
+
+    padding: 13px;
+
+    border:
+        1px solid #e1e6e2;
+
+    border-radius: 11px;
+
+    background: #fbfcfa;
+
+}
+
+
+.summary-item span {
+
+    display: block;
+
+    color: #77827b;
+
+    font-size: 8px;
+
+}
+
+
+.summary-item strong {
+
+    display: block;
+
+    margin-top: 7px;
+
+    color: #17241d;
+
+    font-size: 17px;
+
+    line-height: 1.1;
+
+}
+
+
+.summary-item small {
+
+    display: block;
+
+    margin-top: 5px;
+
+    color: #27704a;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================================
+   ORDER COUNT
+========================================================= */
+
+.orders-count {
+
+    padding-top: 4px;
+
+    color: #6f7a74;
+
+    font-size: 9px;
+
+    white-space: nowrap;
+
+}
+
+
+/* =========================================================
+   FILTERS
+========================================================= */
+
+.orders-filters {
+
+    margin-bottom: 20px;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(220px, 1.6fr)
+        repeat(3, minmax(130px, .75fr));
+
+    gap: 10px;
+
+}
+
+
+.order-search {
+
+    position: relative;
+
+    min-width: 0;
+
+}
+
+
+.order-search i {
+
+    position: absolute;
+
+    left: 13px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #8a948d;
+
+    font-size: 12px;
+
+}
+
+
+.order-search input {
+
+    width: 100%;
+
+    height: 40px;
+
+    padding:
+        0 13px 0 37px;
+
+    border:
+        1px solid #dce2dd;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #233028;
+
+    font-size: 10px;
+
+    outline: none;
+
+}
+
+
+.order-search input::placeholder {
+
+    color: #929a95;
+
+}
+
+
+.order-search input:focus {
+
+    border-color:
+        rgba(6,75,59,.30);
+
+    box-shadow:
+        0 0 0 3px rgba(6,75,59,.05);
+
+}
+
+
+.order-filter-label {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+}
+
+
+.order-filter-label > span {
+
+    color: #748078;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+}
+
+
+.order-filter-select {
+
+    width: 100%;
+
+    height: 40px;
+
+    padding:
+        0 10px;
+
+    border:
+        1px solid #dce2dd;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #4f5d55;
+
+    font-size: 10px;
+
+    outline: none;
+
+}
+
+
+/* =========================================================
+   ORDERS TABLE
+========================================================= */
+
+.orders-table {
+
+    min-width: 930px;
+
+}
+
+
+.orders-table th {
+
+    padding-top: 12px;
+
+    padding-bottom: 12px;
+
+}
+
+
+.orders-table td {
+
+    padding-top: 13px;
+
+    padding-bottom: 13px;
+
+}
+
+
+/* =========================================================
+   CUSTOMER CELL
+========================================================= */
+
+.customer-cell {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+}
+
+
+.customer-avatar {
+
+    width: 35px;
+    height: 35px;
+
+    flex: 0 0 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e8efeb;
+
+    color: #0a513e;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+}
+
+
+.customer-cell > div:last-child {
+
+    min-width: 0;
+
+}
+
+
+.customer-cell strong {
+
+    display: block;
+
+    max-width: 145px;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+    font-size: 9px;
+
+}
+
+
+.customer-cell small {
+
+    display: block;
+
+    margin-top: 2px;
+
+    max-width: 145px;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+    color: #89928c;
+
+    font-size: 7px;
+
+}
+
+
+/* =========================================================
+   PAYMENT STATUS
+========================================================= */
+
+.payment-status {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    min-height: 23px;
+
+    padding:
+        0 8px;
+
+    border-radius: 20px;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+}
+
+
+.payment-status.paid {
+
+    background: #e7f2eb;
+
+    color: #28744d;
+
+}
+
+
+.payment-status.pending {
+
+    background: #fff1dc;
+
+    color: #a66d19;
+
+}
+
+
+.payment-status.failed {
+
+    background: #f9e8e6;
+
+    color: #b84c43;
+
+}
+
+
+/* =========================================================
+   MOBILE ORDERS
+========================================================= */
+
+.mobile-orders {
+
+    display: none;
+
+}
+
+
+.mobile-order-card {
+
+    margin-bottom: 12px;
+
+    padding: 14px;
+
+    border:
+        1px solid #e0e5e1;
+
+    border-radius: 13px;
+
+    background: #fbfcfa;
+
+}
+
+
+.mobile-order-card:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+.mobile-order-top {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 12px;
+
+    padding-bottom: 12px;
+
+    border-bottom:
+        1px solid #e8ece8;
+
+}
+
+
+.mobile-order-top strong {
+
+    display: block;
+
+    color: #15231c;
+
+    font-size: 11px;
+
+}
+
+
+.mobile-order-top small {
+
+    display: block;
+
+    margin-top: 4px;
+
+    color: #858f89;
+
+    font-size: 8px;
+
+}
+
+
+.mobile-order-customer {
+
+    margin-top: 13px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+}
+
+
+.mobile-order-customer strong {
+
+    display: block;
+
+    color: #17251e;
+
+    font-size: 10px;
+
+}
+
+
+.mobile-order-customer small {
+
+    display: block;
+
+    margin-top: 2px;
+
+    color: #89938d;
+
+    font-size: 8px;
+
+}
+
+
+.mobile-order-info {
+
+    margin-top: 14px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 8px;
+
+}
+
+
+.mobile-order-info > div {
+
+    padding:
+        9px;
+
+    border:
+        1px solid #e3e8e4;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+}
+
+
+.mobile-order-info span {
+
+    display: block;
+
+    color: #869089;
+
+    font-size: 7px;
+
+}
+
+
+.mobile-order-info strong {
+
+    display: block;
+
+    margin-top: 4px;
+
+    color: #18251e;
+
+    font-size: 9px;
+
+}
+
+
+.mobile-order-btn {
+
+    width: 100%;
+
+    min-height: 37px;
+
+    margin-top: 13px;
+
+    border:
+        1px solid #d8dfda;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #0a4e3c;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================================
+   PAGINATION
+========================================================= */
+
+.orders-pagination {
+
+    margin-top: 20px;
+
+    padding-top: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    border-top:
+        1px solid #edf0ed;
+
+}
+
+
+.orders-pagination > span {
+
+    color: #7d8881;
+
+    font-size: 9px;
+
+}
+
+
+.pagination-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+}
+
+
+.pagination-buttons button {
+
+    width: 31px;
+    height: 31px;
+
+    border:
+        1px solid #dde3de;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    color: #53605a;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 9px;
+
+}
+
+
+.pagination-buttons button:hover:not(:disabled) {
+
+    background: #f5f8f5;
+
+}
+
+
+.pagination-buttons button.current {
+
+    background: #064b3b;
+
+    border-color: #064b3b;
+
+    color: #ffffff;
+
+}
+
+
+.pagination-buttons button:disabled {
+
+    opacity: .45;
+
+    cursor: not-allowed;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1199.98px) {
+
+    .orders-filters {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 991.98px) {
+
+    .page-header {
+
+        align-items: flex-start;
+
+    }
+
+}
+
+
+@media (max-width: 767.98px) {
+
+    .orders-export-btn {
+
+        width: 100%;
+
+    }
+
+
+    .orders-filters {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .admin-table-wrapper {
+
+        display: none;
+
+    }
+
+
+    .mobile-orders {
+
+        display: block;
+
+    }
+
+
+    .orders-pagination {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .orders-pagination > span {
+
+        text-align: center;
+
+    }
+
+
+    .pagination-buttons {
+
+        justify-content: center;
+
+    }
+
+
+    .status-legend {
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 12px;
+
+    }
+
+
+    .monthly-summary {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 479.98px) {
+
+    .orders-select {
+
+        min-width: 105px;
+
+        font-size: 8px;
+
+    }
+
+
+    .status-legend {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .monthly-summary {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .mobile-order-info {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+
+    .mobile-order-info > div:last-child {
+
+        grid-column:
+            1 / -1;
+
+    }
+
+
+    .customer-avatar {
+
+        width: 32px;
+        height: 32px;
+
+        flex-basis: 32px;
+
+        font-size: 8px;
+
+    }
+
+}
